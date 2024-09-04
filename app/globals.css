@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Adicione esse estilo se você estiver lidando com o menu suspenso */
+.dropdown-menu {
+  display: none;
+}
+.dropdown-menu.show {
+  display: block;
+}
+
+#home {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
