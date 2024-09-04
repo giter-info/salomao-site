@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6febcae2-668b-4733-bbac-43aadc035972" name="redesa15">
+        <fileTransfer rootFolder="/home2/redesa15/www/new-rt/" accessType="SFTP" host="redesalomao.com.br" port="2222" sshConfigId="e64af07b-e7ce-41fd-b71b-a47cd7775507" sshConfig="redesa15@redesalomao.com.br:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
