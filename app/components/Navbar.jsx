@@ -92,7 +92,8 @@ export default function Navbar() {
                             onClick={toggleDropdownMenu}
                         >
                             <span>Serviços</span>
-                            <svg className="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <svg className="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                 viewBox="0 0 24 24">
                                 <title>chevron-down</title>
                                 <path
                                     d="M19.5 8.25l-7.5 7.5-7.5-7.5"
@@ -107,11 +108,13 @@ export default function Navbar() {
                             id="dropdown-menu"
                             className={`absolute ${isDropdownOpen ? "block" : "hidden"} bg-rt-primary text-rt-dark w-48 mt-2 rounded-lg`}
                         >
-                            <a href="#" className="block px-4 py-2 hover:bg-rt-info">Residência Terapêutica</a>
-                            <a href="#" className="block px-4 py-2 hover:bg-rt-info">Atendimento Individualizado</a>
-                            <a href="#" className="block px-4 py-2 hover:bg-rt-info">Acompanhamento</a>
+                            <a href="#servicos" className="block px-4 py-2 hover:bg-rt-info">Residência Terapêutica</a>
+                            <a href="#servicos" className="block px-4 py-2 hover:bg-rt-info">Atendimento
+                                Individualizado</a>
+                            <a href="#servicos" className="block px-4 py-2 hover:bg-rt-info">Acompanhamento</a>
                         </div>
                     </div>
+                    <a href="#posts" className="block px-4 py-2 hover:bg-rt-info">Blog Digital</a>
                     <a href="#contato" className="py-2 px-3 block hover:text-rt-primary">Contato</a>
                 </div>
             </div>

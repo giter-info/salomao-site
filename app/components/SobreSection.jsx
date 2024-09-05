@@ -3,12 +3,12 @@ import * as motion from "framer-motion/client";
 import {WhatsAppIcon} from "@/app/components/SVGs";
 import about1 from "@/app/images/about1.jpg";
 import about2 from "@/app/images/about2.jpg";
-import about3 from "@/app/images/about3.jpeg";
+import about3 from "@/app/images/about3.jpg";
 import Image from "next/image";
 
 export default function SobreSection() {
     return (
-        <section id="sobre" className="py-20 bg-rt-primary pb-12">
+        <section id="sobre" className="py-20 bg-rt-info pb-12">
             <div className="container mx-auto px-4 pt-32">
                 <motion.h2
                     className="text-4xl font-bold text-rt-dark text-center mb-8"
@@ -46,7 +46,7 @@ export default function SobreSection() {
                                 animate={{opacity: 1, scale: 1}}
                                 transition={{duration: 0.5}}
                             >
-                                <Image src={about1} alt="about 1 "/>
+                                <Image src={about1} alt="about 1 " className="rounded-lg"/>
                             </motion.div>
                         </div>
                         {/* Texto */}
@@ -104,7 +104,7 @@ export default function SobreSection() {
                                 animate={{opacity: 1, scale: 1}}
                                 transition={{duration: 0.5}}
                             >
-                                <Image src={about2} alt="about 2 "/>
+                                <Image src={about2} alt="about 2 " className="rounded-lg"/>
                             </motion.div>
                         </div>
                     </motion.div>
@@ -123,19 +123,17 @@ export default function SobreSection() {
                                 animate={{opacity: 1, scale: 1}}
                                 transition={{duration: 0.5}}
                             >
-                                <Image src={about3} alt="about 3 "/>
+                                <Image src={about3} alt="about 3 " className="rounded-lg"/>
                             </motion.div>
                         </div>
                         {/* Texto */}
                         <div className="md:w-2/3 md:pl-6 text-rt-green">
                             <h3 className="text-2xl font-bold mb-4">Acompanhamento</h3>
                             <p>
-                                Cada residente conta com o suporte de uma equipe multidisciplinar, composta por
-                                profissionais
-                                altamente capacitados e dedicados. Esses profissionais trabalham juntos para oferecer um
+                                Cada residente conta com o suporte da equipe multidisciplinar, composta por
+                                profissionais capacitados e dedicados, que trabalham juntos para oferecer um
                                 acompanhamento contínuo, ajustando o plano terapêutico conforme necessário para refletir
-                                o
-                                progresso e as novas necessidades que possam surgir ao longo do tempo.
+                                o progresso e as novas necessidades que possam surgir ao longo do tempo de residência.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                                 <a

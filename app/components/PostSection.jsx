@@ -5,32 +5,37 @@ import Image from "next/image";
 
 export default function PostSection() {
     return (
-        <div className="bg-rt-info">
-            <div className="container mx-auto px-4 py-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div>
-                        <Image
-                            src={post1}
-                            alt="Imagem 1"
-                            className="w-full h-auto rounded-lg shadow-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src={post2}
-                            alt="Imagem 2"
-                            className="w-full h-auto rounded-lg shadow-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src={post3}
-                            alt="Imagem 3"
-                            className="w-full h-auto rounded-lg shadow-lg"
-                        />
+        <section id="posts">
+            <div className="bg-rt-info">
+                <div className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl text-rt-green font-bold text-center mb-8">
+                        Blog Digital
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <Image
+                                src={post1}
+                                alt="Imagem 1"
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                src={post2}
+                                alt="Imagem 2"
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                src={post3}
+                                alt="Imagem 3"
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
