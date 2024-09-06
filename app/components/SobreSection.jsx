@@ -25,7 +25,7 @@ export default function SobreSection() {
                     transition={{duration: 0.5, delay: 0.2}}
                 >
                     Nosso compromisso é proporcionar uma abordagem holística, focada em atender as necessidades
-                    emocionais, mentais e físicas de cada residente. Sabemos que o caminho para a recuperação e o
+                    emocionais, mentais e físicas de cada residente. Sabemos que o caminho para o
                     desenvolvimento pessoal é único para cada pessoa, e estamos dedicados a oferecer o suporte
                     necessário em cada etapa dessa jornada.
                 </motion.p>
@@ -53,8 +53,8 @@ export default function SobreSection() {
                         <div className="md:w-2/3 md:pl-6 text-rt-green">
                             <h3 className="text-2xl font-bold mb-4">Residência Terapêutica</h3>
                             <p>
-                                No Residencial Terapêutico Salomão, os residentes encontram não apenas um lugar para
-                                morar, mas uma comunidade de cuidado e compreensão, onde podem construir uma nova vida,
+                                No Residencial Terapêutico Salomão, os residentes encontram um lugar de cuidado e
+                                compreensão, onde podem construir uma nova perspectiva de vida,
                                 repleta de oportunidades para alcançar o equilíbrio e a paz interior.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
@@ -130,10 +130,10 @@ export default function SobreSection() {
                         <div className="md:w-2/3 md:pl-6 text-rt-green">
                             <h3 className="text-2xl font-bold mb-4">Acompanhamento</h3>
                             <p>
-                                Cada residente conta com o suporte da equipe multidisciplinar, composta por
-                                profissionais capacitados e dedicados, que trabalham juntos para oferecer um
-                                acompanhamento contínuo, ajustando o plano terapêutico conforme necessário para refletir
-                                o progresso e as novas necessidades que possam surgir ao longo do tempo de residência.
+                                Cada residente conta com o suporte de
+                                profissionais capacitados e dedicados, que trabalham juntos para oferecer
+                                acompanhamento conforme necessário para refletir o progresso e as novas necessidades que
+                                possam surgir ao longo do tempo de residência.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                                 <a

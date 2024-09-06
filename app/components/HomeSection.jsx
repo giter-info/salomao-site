@@ -48,7 +48,7 @@ export default function HomeSection() {
                             className="py-6 text-lg md:text-2xl leading-8 text-rt-dark md:text-center text-left"
                         >
                             Bem-vindo ao Residencial Terapêutico Salomão, um ambiente seguro e acolhedor, criado para
-                            oferecer suporte integral aos nossos residentes.
+                            oferecer suporte integral aos moradores.
                         </motion.p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <motion.a

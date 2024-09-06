@@ -13,7 +13,6 @@ export default function Home() {
             <HomeSection/>
             <SobreSection />
             <ServicesSection />
-            <PostSection />
             <ContactSection />
             <Footer />
         </>
