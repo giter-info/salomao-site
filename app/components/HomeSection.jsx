@@ -2,7 +2,7 @@
 import Image from "next/image";
 import logo from "@/app/images/logo.png";
 import {WhatsAppIcon} from "@/app/components/SVGs";
-import * as motion from "framer-motion/client"
+import * as motion from "framer-motion/client";
 
 export default function HomeSection() {
     return (
@@ -12,9 +12,9 @@ export default function HomeSection() {
                     <div className="sm:mb-8 flex justify-center">
                         <div className="relative px-3 py-1 text-sm leading-6 text-gray-600">
                             <motion.div
-                                initial={{ opacity: 0, y: -20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, ease: "easeOut" }}
+                                initial={{opacity: 0, y: -20}}
+                                animate={{opacity: 1, y: 0}}
+                                transition={{duration: 1, ease: "easeOut"}}
                             >
                                 <Image
                                     src={logo}
@@ -26,25 +26,25 @@ export default function HomeSection() {
                     </div>
                     <div className="text-center">
                         <motion.h1
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+                            initial={{opacity: 0, y: -20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                             className="text-4xl md:text-6xl font-bold text-rt-green mb-4"
                         >
                             Um lugar de paz
                         </motion.h1>
                         <motion.h2
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                            initial={{opacity: 0, y: -20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
                             className="text-2xl md:text-2xl font-bold text-rt-green mb-4"
                         >
                             para ter seu tempo...
                         </motion.h2>
                         <motion.p
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                            initial={{opacity: 0, y: 20}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{duration: 1, delay: 0.6, ease: "easeOut"}}
                             className="py-6 text-lg md:text-2xl leading-8 text-rt-dark md:text-center text-left"
                         >
                             Bem-vindo ao Residencial Terapêutico Salomão, um ambiente seguro e acolhedor, criado para
@@ -56,10 +56,10 @@ export default function HomeSection() {
                                 target="_blank"
                                 className="flex gap-2 items-center justify-center bg-rt-green mb-12 text-rt-info px-4 py-2 rounded-full font-semibold hover:bg-rt-dark transition text-sm md:text-base"
                                 rel="noopener noreferrer"
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileHover={{ scale: 1.05 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.3, ease: "easeOut" }}
+                                initial={{opacity: 0, scale: 0.9}}
+                                whileHover={{scale: 1.05}}
+                                animate={{opacity: 1}}
+                                transition={{duration: 0.3, ease: "easeOut"}}
                             >
                                 <WhatsAppIcon/>
                                 Entre em Contato

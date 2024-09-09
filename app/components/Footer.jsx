@@ -55,18 +55,12 @@ export default function Footer() {
                                 href="https://redesalomao.com.br/iff_plan/"
                                 target="_blank"
                             >
-                                <button
-                                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-                                    type="button"
-                                >
-                                    <FontAwesomeIcon icon={faLinux} className=" bg-rt-green"/>
-                                </button>
                             </a>
                         </div>
                     </div>
                     <div className="w-full lg:w-6/12 px-4">
                         <div className="flex flex-wrap items-top mb-6">
-                        <div className="w-full lg:w-4/12 px-4 ml-auto">
+                            <div className="w-full lg:w-4/12 px-4 ml-auto">
                                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                                   Mapa do Site
                                 </span>
