@@ -2,41 +2,43 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({subsets: ["latin"]});
+const commonTitle = "Residencial Terapêutico Salomão";
+const commonDescription = "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de longa permanência e hospitais de custódia.";
+const commonUrl = "https://redesalomao.com.br/";
+const commonImage = "https://redesalomao.com.br/capa.jpg";
+const commonImageDetails = {
+    url: commonImage,
+    width: 1200,
+    height: 620,
+    alt: "Imagem de prévia",
+};
 
 export const metadata = {
-    title: "Residencial Terapêutico Salomão",
-    description: "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de longa" +
-        " permanência e hospitais de custódia.",
+    title: commonTitle,
+    description: commonDescription,
+    url: commonUrl,
     openGraph: {
-        url: "https://redesalomao.com.br/",
         type: "website",
-        title: "Residencial Terapêutico Salomão",
-        description: "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de" +
-            " longa permanência e hospitais de custódia.",
-        images: [
-            {
-                url: "https://redesalomao.com.br/capa.jpg",
-                width: 1200,
-                height: 620,
-                alt: "Imagem de prévia",
-            },
-        ],
+        title: commonTitle,
+        description: commonDescription,
+        url: commonUrl,
+        images: [commonImageDetails],
         locale: "pt_BR",
     },
     twitter: {
         card: "summary_large_image",
-        url: "https://redesalomao.com.br/",
-        title: "Residencial Terapêutico Salomão",
-        description: "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de" +
-            " longa permanência e hospitais de custódia.",
-        image: "https://redesalomao.com.br/capa.jpg",
+        title: commonTitle,
+        description: commonDescription,
+        url: commonUrl,
+        image: commonImage,
     },
     whatsapp: {
-        title: "Residencial Terapêutico Salomão",
-        description: "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de" +
-            " longa permanência e hospitais de custódia.",
-        image: "https://redesalomao.com.br/capa.jpg",
-    }
+        title: commonTitle,
+        description: commonDescription,
+        image: commonImage,
+    },
+    author: "Je4nPw",
+    keywords: ["Residencial Terapêutico", "Transtornos Mentais", "Residencial", "desospitalização"],
 };
 
 export default function RootLayout({children}) {
