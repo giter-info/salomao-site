@@ -48,8 +48,8 @@ export default function HomeSection() {
                             transition={{duration: 1, delay: 0.6, ease: "easeOut"}}
                             className="py-6 text-lg md:text-2xl leading-8 text-rt-dark md:text-center text-left"
                         >
-                            Bem-vindo ao Residencial Terapêutico Salomão, um ambiente seguro e acolhedor, criado para
-                            oferecer um ambiente acolhedor aos moradores.
+                            Bem-vindo ao Residencial Terapêutico Salomão, criado para
+                            oferecer um ambiente seguro e acolhedor aos moradores.
                         </motion.p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <motion.a
