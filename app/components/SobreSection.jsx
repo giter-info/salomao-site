@@ -24,10 +24,9 @@ export default function SobreSection() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 0.2}}
                 >
-                    Nosso compromisso é proporcionar uma abordagem holística, focada em atender as necessidades
-                    emocionais, mentais e físicas de cada residente. Sabemos que o caminho para o
-                    desenvolvimento pessoal é único para cada pessoa, e estamos dedicados a oferecer o suporte
-                    necessário em cada etapa dessa jornada.
+                    O serviço Residencial Terapêutico Salomã oferece residência seguindo o modelo assistencial
+                    substitutivo da internação psiquiátrica prolongada, acolhendo pessoas com internação de longa
+                    permanência, egressas de hospitais psiquiátricos e hospitais de custódia.
                 </motion.p>
 
                 <div className="grid gap-8 md:grid-cols-1">
@@ -53,9 +52,8 @@ export default function SobreSection() {
                         <div className="md:w-2/3 md:pl-6 text-rt-green">
                             <h3 className="text-2xl font-bold mb-4">Residência Terapêutica</h3>
                             <p>
-                                No Residencial Terapêutico Salomão, os residentes encontram um lugar de cuidado e
-                                compreensão, onde podem construir uma nova perspectiva de vida,
-                                repleta de oportunidades para alcançar o equilíbrio e a paz interior.
+                                O Residencial Terapêutico Salomão é uma residência do tipo 1, atendendo pessoas com
+                                transtorno mental em processo de desinstitucionalização.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                                 <a
@@ -82,8 +80,8 @@ export default function SobreSection() {
                             <h3 className="text-2xl font-bold mb-4">Atendimento Individualizado</h3>
                             <p>
                                 Entendemos que cada residente é único, com suas próprias experiências, desafios e metas.
-                                Por isso, oferecemos um atendimento individualizado, cuidadosamente planejado para
-                                atender às necessidades específicas de cada pessoa.
+                                Por isso, oferecemos um atendimento individualizado, planejado para atender às
+                                necessidades de cada morador.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                                 <a
@@ -130,10 +128,9 @@ export default function SobreSection() {
                         <div className="md:w-2/3 md:pl-6 text-rt-green">
                             <h3 className="text-2xl font-bold mb-4">Acompanhamento</h3>
                             <p>
-                                Cada residente conta com o suporte de
-                                profissionais capacitados e dedicados, que trabalham juntos para oferecer
+                                Cada residente conta com o suporte de profissionais que trabalham juntos para oferecer
                                 acompanhamento conforme necessário para refletir o progresso e as novas necessidades que
-                                possam surgir ao longo do tempo de residência.
+                                possam surgir ao longo da moradia.
                             </p>
                             <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                                 <a

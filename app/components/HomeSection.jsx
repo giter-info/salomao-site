@@ -31,15 +31,16 @@ export default function HomeSection() {
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                             className="text-4xl md:text-6xl font-bold text-rt-green mb-4"
                         >
-                            Um lugar de paz
+                            Um Lugar de Paz
                         </motion.h1>
                         <motion.h2
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-2xl md:text-2xl font-bold text-rt-green mb-4"
+                            className="text-lg md:text-lg font-bold text-rt-green mb-4"
                         >
-                            para ter seu tempo...
+                            para portadores de transtornos mentais, egressos de internações psiquiátricas de longa
+                            permanência e hospitais de custódia.
                         </motion.h2>
                         <motion.p
                             initial={{opacity: 0, y: 20}}
@@ -48,7 +49,7 @@ export default function HomeSection() {
                             className="py-6 text-lg md:text-2xl leading-8 text-rt-dark md:text-center text-left"
                         >
                             Bem-vindo ao Residencial Terapêutico Salomão, um ambiente seguro e acolhedor, criado para
-                            oferecer suporte integral aos moradores.
+                            oferecer um ambiente acolhedor aos moradores.
                         </motion.p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <motion.a

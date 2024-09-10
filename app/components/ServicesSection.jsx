@@ -1,8 +1,8 @@
 import * as motion from "framer-motion/client";
 import {WhatsAppIcon} from "@/app/components/SVGs";
-import service1 from '@/app/images/service1.svg'
-import service2 from '@/app/images/service2.svg'
-import service3 from '@/app/images/service3.svg'
+import service1 from "@/app/images/service1.svg";
+import service2 from "@/app/images/service2.svg";
+import service3 from "@/app/images/service3.svg";
 import Image from "next/image";
 
 export default function ServicesSection() {
@@ -19,12 +19,9 @@ export default function ServicesSection() {
                     >
                         <Image className="p-10" src={service1} alt="Residência Terapêutica"/>
                         <h3 className="text-2xl font-bold mb-4">Residência Terapêutica</h3>
-                        <p>Você pode morar em um regime de residência, em casas adaptadas para o convívio
-                            terapêutico.</p>
                         <p>
-                            Nosso enfoque personalizado começa desde o momento da admissão, onde realizamos uma
-                            avaliação
-                            completa para entender o histórico, as condições atuais e os objetivos de cada residente.
+                            O cuidado começa desde o momento da admissão, onde realizamos uma avaliação completa para
+                            entender o histórico e o diagóstico, as condições atuais e os objetivos de cada residente.
                         </p>
                     </motion.div>
 
@@ -35,13 +32,13 @@ export default function ServicesSection() {
                         transition={{duration: 0.5, delay: 0.2}}
                     >
                         <Image className="p-10" src={service2} alt="Atendimento Individualizado"/>
-                        <h3 className="text-2xl font-bold mb-4">Atendimento Individualizado</h3>
+                        <h3 className="text-2xl font-bold mb-4">Autogestão e Gestão Comunitária</h3>
                         <p>
                             Incentivamos a participação ativa dos residentes na construção do seu plano de cuidados.
-                            Acreditamos
-                            que a autonomia e a autoexpressão são fundamentais para o sucesso do processo terapêutico.
-                            Dessa
-                            forma, os residentes são sempre ouvidos e têm voz nas decisões que impactam seu bem-estar.
+                            Acreditamos que a autonomia e a autoexpressão são fundamentais para o sucesso do processo
+                            terapêutico.
+                            Dessa forma, os residentes são sempre ouvidos e têm voz nas decisões pessoais e comunitárias
+                            que impactam seu bem-estar.
                         </p>
                         <div className="flex flex-col justify-center max-w-64 items-center mx-auto mt-6">
                             <a
@@ -64,11 +61,9 @@ export default function ServicesSection() {
                         <Image className="p-10" src={service3} alt="Acompanhamento"/>
                         <h3 className="text-2xl font-bold mb-4">Acompanhamento</h3>
                         <p>
-                            O atendimento individualizado no Residencial Terapêutico Salomão é mais do que uma abordagem
-                            personalizada; é um compromisso com a dignidade, o respeito e a eficácia, sempre buscando
-                            proporcionar as melhores condições para que cada residente possa alcançar uma transformação
-                            profunda
-                            e sustentável.
+                            O atendimento individualizado no Residencial Terapêutico Salomão é um compromisso com a
+                            dignidade, o respeito e a eficácia, sempre buscando proporcionar as melhores condições para
+                            que cada residente possa sentir-se em um lar.
                         </p>
                     </motion.div>
                 </div>
