@@ -24,7 +24,7 @@ export default function SobreSection() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 0.2}}
                 >
-                    O serviço Residencial Terapêutico Salomã oferece residência seguindo o modelo assistencial
+                    O serviço Residencial Terapêutico Salomão oferece residência seguindo o modelo assistencial
                     substitutivo da internação psiquiátrica prolongada, acolhendo pessoas com internação de longa
                     permanência, egressas de hospitais psiquiátricos e hospitais de custódia.
                 </motion.p>
