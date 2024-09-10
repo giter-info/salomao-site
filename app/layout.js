@@ -8,9 +8,9 @@ const commonUrl = "https://redesalomao.com.br/";
 const commonImage = "https://redesalomao.com.br/capa.jpg";
 const commonImageDetails = {
     url: commonImage,
-    width: 1200,
-    height: 620,
-    alt: "Imagem de prévia",
+    width: 600 ,
+    height: 600,
+    alt: "Imagem de prévia do site.",
 };
 
 export const metadata = {
