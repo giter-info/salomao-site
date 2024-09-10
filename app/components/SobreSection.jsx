@@ -1,7 +1,7 @@
 // SobreSection.jsx
 import * as motion from "framer-motion/client";
 import {WhatsAppIcon} from "@/app/components/SVGs";
-import about1 from "@/app/images/about1.jpg";
+import about1 from "@/app/images/camabox.jpg";
 import about2 from "@/app/images/about2.jpg";
 import about3 from "@/app/images/about3.jpg";
 import Image from "next/image";
