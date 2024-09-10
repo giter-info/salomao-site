@@ -63,7 +63,7 @@ export default function ServicesSection() {
                         <p>
                             O atendimento individualizado no Residencial Terapêutico Salomão é um compromisso com a
                             dignidade, o respeito e a eficácia, sempre buscando proporcionar as melhores condições para
-                            que cada residente possa sentir-se em um lar.
+                            que cada morador possa sentir-se de fato inserido em um lar.
                         </p>
                     </motion.div>
                 </div>
