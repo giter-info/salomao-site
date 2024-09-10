@@ -13,7 +13,15 @@ export const metadata = {
         title: "Residencial Terapêutico Salomão",
         description: "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de" +
             " longa permanência e hospitais de custódia.",
-        image: "https://redesalomao.com.br/capa.jpg",
+        images: [
+            {
+                url: "https://redesalomao.com.br/capa.jpg",
+                width: 1200,
+                height: 620,
+                alt: "Imagem de prévia",
+            },
+        ],
+        locale: "pt_BR",
     },
     twitter: {
         card: "summary_large_image",
