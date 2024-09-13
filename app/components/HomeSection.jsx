@@ -29,28 +29,20 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text-4xl md:text-6xl font-bold text-rt-green mb-4"
+                            className="text-2xl md:text-4xl font-bold text-rt-green mb-4"
                         >
-                            Um Lugar de Paz
+                            Respeitando o normal de cada um!
                         </motion.h1>
                         <motion.h2
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-lg md:text-lg font-bold text-rt-green mb-4"
+                            className="text-lg font-bold text-rt-green mb-4"
                         >
-                            para portadores de transtornos mentais, egressos de internações psiquiátricas de longa
+                            Bem-vindo ao Residencial Terapêutico Salomão, criado para oferecer um ambiente seguro e
+                            acolhedor à pacientes com transtornos mentais egressos de internações psiquiátricas de longa
                             permanência e hospitais de custódia.
                         </motion.h2>
-                        <motion.p
-                            initial={{opacity: 0, y: 20}}
-                            animate={{opacity: 1, y: 0}}
-                            transition={{duration: 1, delay: 0.6, ease: "easeOut"}}
-                            className="py-6 text-lg md:text-2xl leading-8 text-rt-dark md:text-center text-left"
-                        >
-                            Bem-vindo ao Residencial Terapêutico Salomão, criado para
-                            oferecer um ambiente seguro e acolhedor aos moradores.
-                        </motion.p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <motion.a
                                 href="https://api.whatsapp.com/send?phone=5547999604301&text=Entrei%20em%20contato%20pelo%20novo%20site.%20"

@@ -9,9 +9,6 @@ export default function Footer() {
                 <div className="flex flex-wrap text-left lg:text-left">
                     <div className="w-full lg:w-6/12 px-4">
                         <h4 className="text-3xl font-semibold text-blueGray-700">Siga-nos em nossas redes sociais!</h4>
-                        <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-                            Ficaremos felizes em ajudar a encontrar sua melhor modalidade de residência.
-                        </h5>
                         <div className="flex flex-row gap-3 mt-6 lg:mb-0 mb-6 flex space-x-2">
                             <a href="https://www.instagram.com/residencial.salomao/" target="_blank"
                                rel="noopener noreferrer">
@@ -66,35 +63,35 @@ export default function Footer() {
                                 </span>
                                 <ul className="list-unstyled">
                                     <li>
-                                        <a
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            href="#"
-                                        >
-                                            Início
+                                        <a href="#home"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Início
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            href="#"
-                                        >
-                                            Sobre Nós
+                                        <a href="#sobre"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Sobre
+                                            Nós
                                         </a>
                                     </li>
+                                    <li><a href="#diferenciais"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Nossos
+                                        Diferenciais
+                                    </a>
+                                    </li>
                                     <li>
-                                        <a
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            href="#"
-                                        >
+                                        <a href="#servicos"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Nossos
                                             Serviços
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            href="#"
-                                        >
-                                            Contato
+                                        <a href="#estrutura"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Estrutura
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contato"
+                                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Contato
                                         </a>
                                     </li>
                                 </ul>

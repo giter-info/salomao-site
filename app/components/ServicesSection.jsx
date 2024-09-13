@@ -6,10 +6,16 @@ import service3 from "@/app/images/service3.svg";
 import Image from "next/image";
 
 export default function ServicesSection() {
-    return (
-        <section id="servicos" className="py-16 bg-rt-info">
+    return (<section id="servicos" className="py-16 bg-rt-green">
             <div className="container mx-auto px-4 text-rt-green">
-                <h2 className="text-3xl font-bold text-center mb-8">Nossos Serviços</h2>
+                <motion.h2
+                    initial={{opacity: 0, y: -20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
+                    className="text-2xl md:text-4xl pb-12 font-bold text-rt-info mb-4 text-center mt-16"
+                >
+                    Nossos Serviços
+                </motion.h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     <motion.div
                         className="bg-white p-6 shadow-lg rounded-lg"
@@ -18,7 +24,7 @@ export default function ServicesSection() {
                         transition={{duration: 0.5}}
                     >
                         <Image className="p-10" src={service1} alt="Residência Terapêutica"/>
-                        <h3 className="text-2xl font-bold mb-4">Residência Terapêutica</h3>
+                        <h3 className="text-2xl font-bold mb-4">Atendimento Individualizado</h3>
                         <p>
                             O cuidado começa desde o momento da admissão, onde realizamos uma avaliação completa para
                             entender o histórico e o diagóstico, as condições atuais e os objetivos de cada residente.
@@ -68,6 +74,5 @@ export default function ServicesSection() {
                     </motion.div>
                 </div>
             </div>
-        </section>
-    );
+        </section>);
 }
