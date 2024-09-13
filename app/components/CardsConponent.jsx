@@ -123,7 +123,7 @@ export default function CardsComponent() {
                     <div className="md:w-2/3 md:pl-6 text-rt-white">
                         <h3 className="text-2xl font-bold mb-4">Amplo espaço</h3>
                         <p>onde cada ambiente foi pensado de forma a garantir<br/>
-                            a privacidadee respeitar aindividualidade de cada <br/>
+                            a privacidade e respeitar a individualidade de cada <br/>
                             um dos nossos moradores. </p>
                     </div>
 
