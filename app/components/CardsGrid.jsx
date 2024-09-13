@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Card = ({ title, fullText, isExpanded, onClick }) => {
     // Função para gerar o teaser com as 18 primeiras palavras
@@ -14,7 +15,7 @@ const Card = ({ title, fullText, isExpanded, onClick }) => {
     };
 
     return (
-        <div className="bg-rt-info p-4 rounded-lg shadow-md text-white" onClick={onClick}>
+        <div className="bg-rt-info p-4 rounded-lg shadow-md text-white cursor-pointer" onClick={onClick}>
             <h3 className="text-xl font-bold mb-2 text-rt-green">{title}</h3>
 
             {/* Teaser + "Veja mais" */}
@@ -25,12 +26,21 @@ const Card = ({ title, fullText, isExpanded, onClick }) => {
                 </button>
             </p>
 
-            {/* Conteúdo completo visível ao expandir */}
-            {isExpanded && (
-                <div className="mt-2">
-                    {extractParagraph(fullText)}
-                </div>
-            )}
+            {/* Animação para abrir e fechar o conteúdo */}
+            <AnimatePresence>
+                {isExpanded && (
+                    <motion.div
+                        key="content"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        className="mt-2 overflow-hidden"
+                    >
+                        {extractParagraph(fullText)}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
