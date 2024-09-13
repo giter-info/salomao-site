@@ -44,13 +44,13 @@ export default function CardsComponent() {
                         <h3 className="text-2xl font-bold mb-4">Equipe Profissional Interdisciplinar</h3>
                         <div>
                             <p className="text-rt-white text-lg"></p>
-                            <div className="flex flex-wrap gap-3 text-left">
-                                <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
-                                    <li className="no-">formada por:</li>
+                            <div className="flex flex-wrap gap-3 text-left px-5">
+                                <ul className="flex flex-col list-disc text-rt-white text-lg">
+                                    <li className="list-none">formada por:</li>
                                     <li>psicólogas</li>
                                     <li>psiquiatra</li>
                                 </ul>
-                                <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
+                                <ul className="flex flex-col list-disc text-rt-white text-lg mx-auto">
                                     <li>profissionais de enfermagem</li>
                                     <li>cuidadores</li>
                                     <li>musicoterapeuta</li>
