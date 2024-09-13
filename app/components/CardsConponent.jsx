@@ -81,7 +81,7 @@ export default function CardsComponent() {
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: 0.2}}
                         >
-                            Conheça as doenças que são atendidas e como podemos ajudar no tratamento.
+                            Conheça as doenças que são atendidas.
                         </motion.p>
                     </div>
                 </motion.div>
@@ -106,7 +106,7 @@ export default function CardsComponent() {
                             transition={{duration: 0.5, delay: 0.2}}
                         >
                             para ver mais imagens do Residencial Terapêutico Salomão.
-                            <p className="text-zinc-400">(Em breve)</p>
+                            <br/> (Em breve)
                         </motion.p>
                         <Image className="px-6 h-2/3" src={click2} alt="Click 1"/>
                     </div>
@@ -167,16 +167,6 @@ export default function CardsComponent() {
                                     &times;
                                 </button>
                             </div>
-
-                            {/* Modal Body */}
-                            <motion.p
-                                className="p-2 rounded-lg text-rt-info text-2xl max-w-2xl mx-auto mb-12 md:text-center text-left"
-                                initial={{opacity: 0, y: 20}}
-                                animate={{opacity: 1, y: 0}}
-                                transition={{duration: 0.5, delay: 0.2}}
-                            >
-                                Conheça as doenças que são atendidas e como podemos ajudar no tratamento.
-                            </motion.p>
 
                             <motion.h2
                                 className="text-4xl font-bold text-rt-primary text-center mb-8 "
