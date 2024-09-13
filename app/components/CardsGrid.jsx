@@ -1,6 +1,6 @@
-import {useState} from "react";
+import { useState } from "react";
 
-const Card = ({title, fullText, isExpanded, onClick}) => {
+const Card = ({ title, fullText, isExpanded, onClick }) => {
     // Função para gerar o teaser com as 18 primeiras palavras
     const teaser = fullText[1].split(" ").slice(0, 18).join(" ") + "...";
 
@@ -25,14 +25,12 @@ const Card = ({title, fullText, isExpanded, onClick}) => {
                 </button>
             </p>
 
-            {/* Conteúdo completo escondido por padrão, expande ao clicar */}
-            <div
-                className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-                    isExpanded ? "max-h-screen" : "max-h-0"
-                }`}
-            >
-                {isExpanded && extractParagraph(fullText)}
-            </div>
+            {/* Conteúdo completo visível ao expandir */}
+            {isExpanded && (
+                <div className="mt-2">
+                    {extractParagraph(fullText)}
+                </div>
+            )}
         </div>
     );
 };
