@@ -96,7 +96,7 @@ export default function CardsComponent() {
                 >
                     {/* Texto */}
                     <div className="text-rt-white">
-                        <h3 className="text-2xl text-center font-bold mb-4">Clique aqui!</h3>
+                        <h3 className="text-2xl text-center font-bold ">Clique aqui!</h3>
                     </div>
                     <div className="grid grid-cols-2">
                         <motion.p
@@ -119,24 +119,21 @@ export default function CardsComponent() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 0.4}}
                 >
-                    {/* Texto */}
-                    <div className="md:w-2/3 md:pl-6 text-rt-white">
-                        <h3 className="text-2xl font-bold mb-4">Amplo espaço</h3>
-                        <p>onde cada ambiente foi pensado de forma a garantir<br/>
-                            a privacidade e respeitar a individualidade de cada <br/>
-                            um dos nossos moradores. </p>
-                    </div>
-
                     {/* Imagem */}
-                    <div className="md:w-1/3 mb-4 md:mb-0">
+                    <div className="md:w-2/5 h-fit md:mb-0">
                         <motion.div
                             className="w-full h-auto rounded-lg"
                             initial={{opacity: 0, scale: 0.95}}
                             animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.5}}
                         >
-                            <Image src={about1} alt="about 1" className="rounded-lg"/>
+                            <Image src={about1} alt="about 1" className="rounded-lg h-full w-auto"/>
                         </motion.div>
+                    </div>
+                    <div className="md:w-3/5 md:pl-6 text-rt-white">
+                        <h3 className="text-2xl font-bold mb-4">Amplo espaço</h3>
+                        <p>onde cada ambiente foi pensado de forma a garantir a privacidade e respeitar a
+                            individualidade de cada um dos nossos moradores. </p>
                     </div>
                 </motion.div>
             </div>
