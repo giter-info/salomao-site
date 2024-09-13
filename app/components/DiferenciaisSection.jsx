@@ -38,9 +38,6 @@ export default function DiferenciaisSection(props) {
                                 <h3 className="text-md lg:text-xl   font-bold mb-4">O programa de atividades, coordenado pela equipe
                                     terapêutica é construído após criteriosa avaliação
                                     respeitando as necessidades de cada um.</h3>
-                                <p className="text-rt-white text-lg">
-                                    formada por:
-                                </p>
                                 <div className="flex flex-wrap gap-3 mt-6 text-left mx-4">
                                     <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
                                         <li>Acolhimento humanizado</li>
