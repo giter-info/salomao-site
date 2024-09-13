@@ -75,7 +75,6 @@ export default function CardsComponent() {
                     </div>
                     <div className="grid grid-cols-2">
                         <Image className="px-6" src={click1} alt="Click 1"/>
-                        {/*<div>{click1}</div>*/}
                         <motion.p
                             className="text-rt-info mx-auto text-left"
                             initial={{opacity: 0, y: 20}}
@@ -109,7 +108,7 @@ export default function CardsComponent() {
                             para ver mais imagens do Residencial Terapêutico Salomão.
                             <p className="text-zinc-400">(Em breve)</p>
                         </motion.p>
-                        <Image className="px-6" src={click2} alt="Click 1"/>
+                        <Image className="px-6 h-2/3" src={click2} alt="Click 1"/>
                     </div>
                 </motion.div>
 
@@ -123,19 +122,20 @@ export default function CardsComponent() {
                     {/* Texto */}
                     <div className="md:w-2/3 md:pl-6 text-rt-white">
                         <h3 className="text-2xl font-bold mb-4">Amplo espaço</h3>
-                        <p>onde cada ambiente foi pensado de forma a garantir a privacidade e respeitar a
-                            individualidade de cada um dos nossos moradores. </p>
+                        <p>onde cada ambiente foi pensado de forma a garantir<br/>
+                            a privacidadee respeitar aindividualidade de cada <br/>
+                            um dos nossos moradores. </p>
                     </div>
 
                     {/* Imagem */}
-                    <div className="md:w-1/3">
+                    <div className="md:w-1/3 mb-4 md:mb-0">
                         <motion.div
                             className="w-full h-auto rounded-lg"
                             initial={{opacity: 0, scale: 0.95}}
                             animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.5}}
                         >
-                            <Image src={about1} alt="about 2" className="rounded-lg"/>
+                            <Image src={about1} alt="about 1" className="rounded-lg"/>
                         </motion.div>
                     </div>
                 </motion.div>
