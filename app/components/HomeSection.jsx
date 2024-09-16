@@ -18,7 +18,7 @@ export default function HomeSection() {
                                 <Image
                                     src={logo}
                                     alt="Logo"
-                                    className="w-60 h-auto mx-auto"
+                                    className="w-40 md:w-48 xl-60 h-auto mx-auto"
                                 />
                             </motion.div>
                         </div>
