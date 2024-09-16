@@ -14,7 +14,8 @@ export default function WhatsAppButton() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed flex items-center justify-center py-1 px-2 rounded-t-full rounded-bl-full shadow-lg bg-green-500
-                transition-all duration-300 bottom-0 left-5 z-50 shadow-rt-green border border-rt-info text-rt-info"
+                transition-all duration-300 bottom-0 left-5 z-50 shadow-rt-green border border-rt-info text-rt-info
+                 hover:shadow-[2px_2px_15px_2px] hover:shadow-amber-200"
                 style={{transform: "translateY(-50%)"}}
             >
                 <FaWhatsapp fill="#bdf2d8" size={26} className="mx-1"/>

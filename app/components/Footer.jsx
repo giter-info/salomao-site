@@ -27,7 +27,9 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: 10 }}
                                 whileTap={{ scale: 0.9 }}
+                                className=" hover:text-rt-info"
                             >
+
                                 <FaInstagram size={42} />
                             </motion.a>
                             <motion.a
@@ -35,6 +37,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: -10 }}
+                                className=" hover:text-rt-info"
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <FaFacebook size={42} />
@@ -45,6 +48,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: 10 }}
                                 whileTap={{ scale: 0.9 }}
+                                className=" hover:text-rt-info"
                             >
                                 <FaEnvelope size={42} />
                             </motion.a>
@@ -53,6 +57,7 @@ export default function Footer() {
                                 target="_blank"
                                 whileHover={{ scale: 1.2, rotate: -10 }}
                                 whileTap={{ scale: 0.9 }}
+                                className=" hover:text-rt-info"
                             >
                                 <FaWhatsapp size={42} />
                             </motion.a>

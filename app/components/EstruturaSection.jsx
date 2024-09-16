@@ -15,7 +15,7 @@ export default function EstruturaSection() {
                         Conheça a Nossa Estrutura
                     </motion.h2>
                     <motion.p
-                        className="p-2 rounded-lg text-rt-green text-xl max-w-2xl mx-auto mb-12 md:text-center text-left"
+                        className="p-2 rounded-lg text-rt-green text-xl max-w-2xl mx-auto mb-12 text-center"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.2}}

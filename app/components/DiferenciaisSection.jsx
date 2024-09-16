@@ -24,7 +24,7 @@ export default function DiferenciaisSection() {
                             transition={{duration: 0.5, delay: 0.4}}
                         >
                             {/* Imagem */}
-                            <div className="md:w-1/3 mb-4 md:mb-0">
+                            <div className="md:w-2/5 mb-4 md:mb-0">
                                 <motion.div
                                     className="w-full h-auto rounded-lg"
                                     initial={{opacity: 0, scale: 0.95}}
@@ -34,18 +34,18 @@ export default function DiferenciaisSection() {
                                     <Image src={about2} alt="about 1 " className="rounded-lg"/>
                                 </motion.div>
                             </div>
-                            <div className="md:w-2/3 md:pl-6 text-rt-white">
+                            <div className="md:w-3/5 md:pl-6 text-rt-white">
                                 <h3 className="text-md lg:text-xl   font-bold mb-4">O programa de atividades, coordenado pela equipe
                                     terapêutica é construído após criteriosa avaliação
                                     respeitando as necessidades de cada um.</h3>
                                 <div className="flex flex-wrap gap-3 mt-6 text-left mx-4">
-                                    <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
+                                    <ul className="flex flex-col list-disc text-rt-white text-lg">
                                         <li>Acolhimento humanizado</li>
                                         <li>Serviços de Psicologia aos familiares</li>
                                         <li>Acompanhamento psicológico</li>
                                         <li>Arteterapia</li>
                                     </ul>
-                                    <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
+                                    <ul className="flex flex-col list-disc text-rt-white text-lg">
                                         <li>Musicoterapia</li>
                                         <li>Atualização da rotina da casa com fotos e vídeos em grupo do Whatsapp
                                         </li>

@@ -32,8 +32,8 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50">
-            <div className="container mx-auto px-4 flex justify-between items-center">
+        <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
+            <div className="container mx-auto px-4 flex justify-between items-center ">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#" className="text-white">
                         <Image src={brand} alt="Brand Logo" width="120" />
