@@ -3,11 +3,14 @@ import Navbar from "@/app/components/Navbar";
 import HomeSection from "@/app/components/HomeSection";
 import SobreSection from "@/app/components/SobreSection";
 import ServicesSection from "@/app/components/ServicesSection";
-import ContactSection from "@/app/components/ContactSection";
 import Footer from "@/app/components/Footer";
+import DiferenciaisSection from "@/app/components/DiferenciaisSection";
+import EstruturaSection from "@/app/components/EstruturaSection";
+import WhatsAppButton from "@/app/components/WhatsAppButton";
+import AtendidasSection from "@/app/components/AtendidasSection";
 
-const commonTitle = "Residencial Terapêutico Salomão";;
-const commonDescription = "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas de longa permanência e hospitais de custódia.";
+const commonTitle = "Residencial Terapêutico Salomão";
+const commonDescription = "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas e hospitais de custódia.";
 const commonUrl = "https://redesalomao.com.br/";
 const commonImage = "https://redesalomao.com.br/capa.jpg";
 const commonImageDetails = {
@@ -45,15 +48,18 @@ export const metadata = {
     keywords: ["Residencial Terapêutico", "Transtornos Mentais", "Residencial", "desospitalização"],
 };
 
-// Main Home component rendering various sections
 export default function Home() {
     return (
         <>
             <Navbar/>
             <HomeSection/>
             <SobreSection/>
+            <DiferenciaisSection/>
             <ServicesSection/>
-            <ContactSection/>
+            <AtendidasSection />
+            <EstruturaSection/>
+            {/*<ContactSection/>*/}
+            <WhatsAppButton/>
             <Footer/>
         </>
     );
