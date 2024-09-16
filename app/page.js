@@ -58,7 +58,6 @@ export default function Home() {
             <ServicesSection/>
             <AtendidasSection />
             <EstruturaSection/>
-            {/*<ContactSection/>*/}
             <WhatsAppButton/>
             <Footer/>
         </>
