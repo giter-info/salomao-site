@@ -2,13 +2,13 @@ import * as motion from "framer-motion/client";
 import Image from "next/image";
 import about2 from "@/app/images/about2.jpg";
 
-export default function DiferenciaisSection(props) {
+export default function DiferenciaisSection() {
     return (
-        <section id="diferenciais" className=" bg-rt-green ">
-            <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16 ">
+        <section id="diferenciais" className=" bg-rt-green mt-16 scroll-mt-20">
+            <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16">
                 <div className="container mx-auto px-4">
                     <motion.h2
-                        className="text-4xl font-bold text-rt-green text-center mb-8 mt-16"
+                        className="text-4xl font-bold text-rt-green text-center mb-8"
                         initial={{opacity: 0, y: -20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
@@ -47,7 +47,7 @@ export default function DiferenciaisSection(props) {
                                     </ul>
                                     <ul className="flex flex-col mx-auto list-disc text-rt-white text-lg">
                                         <li>Musicoterapia</li>
-                                        <li>Atualização da Rotina da casa com <br/>fotos e vídeos em grupo do Whatsapp
+                                        <li>Atualização da rotina da casa com fotos e vídeos em grupo do Whatsapp
                                         </li>
                                     </ul>
                                 </div>

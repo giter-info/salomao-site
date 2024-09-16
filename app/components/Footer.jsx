@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import * as motion from "framer-motion/client";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {FaEnvelope, FaFacebook, FaInstagram, FaWhatsapp} from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="relative bg-rt-green pt-8 pb-6">
+        <footer id="contato" className="relative bg-rt-green pt-8 pb-6">
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap text-left lg:text-left">
                     <div className="w-full lg:w-6/12 px-4">
@@ -30,12 +28,7 @@ export default function Footer() {
                                 whileHover={{ scale: 1.2, rotate: 10 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                <button
-                                    className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-                                    type="button"
-                                >
-                                    <FontAwesomeIcon icon={faInstagram} className=" bg-rt-green" />
-                                </button>
+                                <FaInstagram size={42} />
                             </motion.a>
                             <motion.a
                                 href="https://www.facebook.com/profile.php?id=61565632582956"
@@ -44,26 +37,16 @@ export default function Footer() {
                                 whileHover={{ scale: 1.2, rotate: -10 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                <button
-                                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-                                    type="button"
-                                >
-                                    <FontAwesomeIcon icon={faFacebook} className=" bg-rt-green" />
-                                </button>
+                                <FaFacebook size={42} />
                             </motion.a>
                             <motion.a
-                                href="mailto://contato@redesalomao.com.br"
+                                href="mailto:contato@redesalomao.com.br"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, rotate: 10 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                <button
-                                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-                                    type="button"
-                                >
-                                    <FontAwesomeIcon icon={faEnvelope} className=" bg-rt-green" />
-                                </button>
+                                <FaEnvelope size={42} />
                             </motion.a>
                             <motion.a
                                 href="https://api.whatsapp.com/send?phone=5547999604301&text=Entrei%20em%20contato%20pelo%20novo%20site.%20"
@@ -71,36 +54,31 @@ export default function Footer() {
                                 whileHover={{ scale: 1.2, rotate: -10 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                <button
-                                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-                                    type="button"
-                                >
-                                    <FontAwesomeIcon icon={faWhatsapp} className=" bg-rt-green" />
-                                </button>
+                                <FaWhatsapp size={42} />
                             </motion.a>
                         </motion.div>
 
                         {/* Texto com animação de fade-in */}
                         <motion.p
-                            className="text-rt-white mx-auto text-left mt-5 font-thin"
+                            className="text-rt-white mx-auto text-left mt-5 font-thin pb-4"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
-                            Rua Pedro Léo Menscheim, 180 CX 01<br/>
+                            Rua Pedro Léo Menscheim, n. 210<br/>
                             CEP 89117-805<br/>
                             Belchior Alto - Gaspar - Santa Catarina<br/>
                         </motion.p>
                     </div>
 
                     {/* Outra metade do footer */}
-                    <div className="w-full lg:w-6/12 px-4">
+                    <div className="w-full lg:w-6/12 xl:px-4">
                         <div className="flex flex-wrap items-top mb-6">
                             <div className="w-full lg:w-4/12 px-4 ml-auto">
                                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                                     Mapa do Site
                                 </span>
-                                <ul className="list-unstyled">
+                                <ul className="list-unstyled pb-4">
                                     {/* Links do footer */}
                                     <li>
                                         <motion.a
@@ -161,7 +139,7 @@ export default function Footer() {
                             {/* Mais links */}
                             <div className="w-full lg:w-4/12 px-4">
                                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                                    Links Úteis
+                                    Informações Adicionais
                                 </span>
                                 <ul className="list-unstyled">
                                     <li>
@@ -170,34 +148,17 @@ export default function Footer() {
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                                             whileHover={{ scale: 1.1 }}
                                         >
-                                            Como Contratar?
+                                            Dúvidas Frequentes
                                         </motion.a>
                                     </li>
+
                                     <li>
                                         <motion.a
-                                            href="#"
+                                            href=""
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                                             whileHover={{ scale: 1.1 }}
                                         >
-                                            É uma Clínica?
-                                        </motion.a>
-                                    </li>
-                                    <li>
-                                        <motion.a
-                                            href="#"
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            whileHover={{ scale: 1.1 }}
-                                        >
-                                            É um serviço de recuperação para dependentes?
-                                        </motion.a>
-                                    </li>
-                                    <li>
-                                        <motion.a
-                                            href="mailto://contato@redesalomao.com.br"
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                            whileHover={{ scale: 1.1 }}
-                                        >
-                                            Fale Conosco
+                                            Materiais Úteis
                                         </motion.a>
                                     </li>
                                 </ul>

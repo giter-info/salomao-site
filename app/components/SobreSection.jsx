@@ -7,8 +7,8 @@ import service3 from "@/app/images/diferencial3.svg";
 
 export default function SobreSection() {
     return (
-        <section id="sobre" className="py-5 bg-rt-green pb-12">
-            <div className="container mx-auto px-4 pt-32 pb-24">
+        <section id="sobre" className="bg-rt-green pt-16 mb-12 scroll-mt-14">
+            <div className="container mx-auto px-4 ">
                 <motion.h2
                     className="text-4xl font-bold text-rt-primary text-center mb-8 "
                     initial={{opacity: 0, y: -20}}
@@ -55,7 +55,7 @@ export default function SobreSection() {
                         <p className="text-rt-green text-lg">
                             Visa ainda promover dignidade, direito à cidadania, à liberdade e a autonomia desses
                             sujeitos. O acompanhamento diário com equipe especializada aliado a farmacoterapia são um
-                            importante diferencial para o avanço no quadro da doença.
+                            importante diferencial para o avanço no tratamento da doença.
                         </p>
                     </motion.div>
                 </div>

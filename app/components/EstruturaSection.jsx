@@ -1,11 +1,11 @@
 import * as motion from "framer-motion/client";
 import CardsConponent from "@/app/components/CardsConponent";
 
-export default function EstruturaSection(props) {
+export default function EstruturaSection() {
     return (
-        <section id="estrutura" className="pb-12 bg-rt-green">
+        <section id="estrutura" className=" bg-rt-green pt-4 mb-12 scroll-mt-20">
             <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16 ">
-                <div className="container mx-auto px-4 pt-32">
+                <div className="container mx-auto px-4">
                     <motion.h2
                         className="text-4xl font-bold text-rt-green text-center mb-8"
                         initial={{opacity: 0, y: -20}}
@@ -15,7 +15,7 @@ export default function EstruturaSection(props) {
                         Conheça a Nossa Estrutura
                     </motion.h2>
                     <motion.p
-                        className="p-2 rounded-lg text-rt-green text-2xl max-w-2xl mx-auto mb-12 md:text-center text-left"
+                        className="p-2 rounded-lg text-rt-green text-xl max-w-2xl mx-auto mb-12 md:text-center text-left"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.2}}
