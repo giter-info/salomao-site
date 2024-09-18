@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import {Inter} from "next/font/google";
+import {GoogleTagManager} from "@next/third-parties/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 const commonTitle = "Residencial Terapêutico Salomão";
 const commonDescription =
@@ -42,12 +43,15 @@ export const metadata = {
     ],
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
     return (
         <html lang="pt">
-        <body className={inter.className}>
-        <div className="bg-rt-green">{children}</div>
-        </body>
+            <GoogleTagManager gtmId="G-M6QQWBHFKV"/>
+            <body className={inter.className}>
+                <div className="bg-rt-green">
+                    {children}
+                </div>
+            </body>
         </html>
     );
 }
