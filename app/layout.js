@@ -1,6 +1,6 @@
 import {Inter} from "next/font/google";
-import {GoogleTagManager} from "@next/third-parties/google";
 import "./globals.css";
+import GTagComponent from "@/app/components/GTagComponent";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -46,7 +46,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="pt">
-            <GoogleTagManager gtmId="G-M6QQWBHFKV"/>
+        <GTagComponent />
             <body className={inter.className}>
                 <div className="bg-rt-green">
                     {children}
