@@ -7,7 +7,7 @@ const commonTitle = "Residencial Terapêutico Salomão";
 const commonDescription =
     "Respeitando o normal de cada um.";
 const commonUrl = "https://redesalomao.com.br/";
-const commonImage = "https://redesalomao.com.br/capa.jpg";
+const commonImage = "https://redesalomao.com.br/capa-2.jpg";
 const commonImageDetails = {
     url: commonImage,
     width: 1200,
