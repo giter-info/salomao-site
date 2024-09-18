@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const commonTitle = "Residencial Terapêutico Salomão";
 const commonDescription =
-    "Residência para portadores de transtornos mentais, egressos de internações psiquiátricas e hospitais de custódia.";
+    "Respeitando o normal de cada um.";
 const commonUrl = "https://redesalomao.com.br/";
 const commonImage = "https://redesalomao.com.br/capa.jpg";
 const commonImageDetails = {
