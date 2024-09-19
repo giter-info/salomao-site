@@ -19,6 +19,7 @@ export default function HomeSection() {
                                     src={logo}
                                     alt="Logo"
                                     className="w-40 md:w-48 xl-60 h-auto mx-auto"
+                                    priority
                                 />
                             </motion.div>
                         </div>
