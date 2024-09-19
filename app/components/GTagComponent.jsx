@@ -13,9 +13,8 @@ export default function GTagComponent() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-M6QQWBHFKV', {
-              page_path: window.location.pathname,
-              });
+            
+              gtag('config', 'G-M6QQWBHFKV');
           `}
             </Script>
         </>
