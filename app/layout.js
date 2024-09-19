@@ -49,11 +49,6 @@ export default function RootLayout({children}) {
         <html lang="pt">
         <GTagComponent />
             <body className={inter.className}>
-                <noscript>
-                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4JK2WLN"
-                              height="0" width="0" style={{display:'none', visibility:'hidden'}}>
-                    </iframe>
-                </noscript>
                 <div className="bg-rt-green">
                     {children}
                 </div>
