@@ -7,7 +7,6 @@ import Footer from "@/app/components/Footer";
 import DiferenciaisSection from "@/app/components/DiferenciaisSection";
 import EstruturaSection from "@/app/components/EstruturaSection";
 import WhatsAppButton from "@/app/components/WhatsAppButton";
-import AtendidasSection from "@/app/components/AtendidasSection";
 
 export default function Home() {
     return (
@@ -17,7 +16,6 @@ export default function Home() {
             <SobreSection/>
             <DiferenciaisSection/>
             <ServicesSection/>
-            <AtendidasSection />
             <EstruturaSection/>
             <WhatsAppButton/>
             <Footer/>

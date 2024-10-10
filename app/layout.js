@@ -41,6 +41,9 @@ export const metadata = {
         "Transtornos Mentais",
         "Residencial",
         "desospitalização",
+        "antimanicomial",
+        "raps",
+        "rede de atenção psicossocial"
     ],
 };
 

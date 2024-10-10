@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import brand from "@/app/images/brand.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,24 +53,31 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div id="nav-menu" className="hidden md:flex space-x-4">
-                    <motion.a href="#home" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Início
-                    </motion.a>
-                    <motion.a href="#sobre" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Sobre Nós
-                    </motion.a>
-                    <motion.a href="#diferenciais" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Nossos Diferenciais
-                    </motion.a>
-                    <motion.a href="#servicos" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Nossos Serviços
-                    </motion.a>
-                    <motion.a href="#estrutura" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Estrutura
-                    </motion.a>
-                    <motion.a href="#contato" className="py-2 px-3 block hover:text-rt-primary" whileHover={{ scale: 1.1 }}>
-                        Contato
-                    </motion.a>
+                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
+                        <Link href="/#home">
+                            Início
+                        </Link>
+                    </motion.div>
+                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
+                        <Link href="/#sobre">
+                            Sobre Nós
+                        </Link>
+                    </motion.div>
+                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
+                        <Link href="/doencas">
+                            Doenças Atendidas
+                        </Link>
+                    </motion.div>
+                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
+                        <Link href="/estrutura">
+                            Imagens
+                        </Link>
+                    </motion.div>
+                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
+                        <Link href="/#contato">
+                            Contato
+                        </Link>
+                    </motion.div>
                 </div>
             </div>
 
@@ -78,7 +86,7 @@ export default function Navbar() {
                 {isMobileMenuOpen && (
                     <motion.div
                         id="mobile-menu"
-                        initial={{ opacity: 0, y: -50 }}
+                        initial={{opacity: 0, y: -50}}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -50 }}
                         transition={{ duration: 0.3 }}
@@ -97,24 +105,31 @@ export default function Navbar() {
                             </svg>
                         </button>
 
-                        <motion.a href="#home" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Início
-                        </motion.a>
-                        <motion.a href="#sobre" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Sobre Nós
-                        </motion.a>
-                        <motion.a href="#diferenciais" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Nossos Diferenciais
-                        </motion.a>
-                        <motion.a href="#servicos" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Nossos Serviços
-                        </motion.a>
-                        <motion.a href="#estrutura" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Estrutura
-                        </motion.a>
-                        <motion.a href="#contato" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            Contato
-                        </motion.a>
+                        <motion.div href="#home" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
+                            <Link href="/#home">
+                                Início
+                            </Link>
+                        </motion.div>
+                        <motion.div href="#sobre" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
+                            <Link href="/#sobre">
+                                Sobre Nós
+                            </Link>
+                        </motion.div>
+                        <motion.div href="#diferenciais" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
+                            <Link href="/doencas">
+                                Doenças Atendidas
+                            </Link>
+                        </motion.div>
+                        <motion.div href="#estrutura" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
+                            <Link href="/estrutura">
+                                Imagens
+                            </Link>
+                        </motion.div>
+                        <motion.div href="#contato" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
+                            <Link href="/#contato">
+                                Contato
+                            </Link>
+                        </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>

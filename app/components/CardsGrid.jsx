@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {useState} from "react";
+import {motion, AnimatePresence} from "framer-motion";
 
-const Card = ({ title, fullText, isExpanded, onClick }) => {
-    // Função para gerar o teaser com as 18 primeiras palavras
-    const teaser = fullText[1].split(" ").slice(0, 18).join(" ") + "...";
-
+const Card = ({title, fullText, isExpanded, onClick}) => {
     // Função para gerar os parágrafos de cada seção do fullText
     const extractParagraph = (obj) => {
         return Object.entries(obj).map(([key, value]) => (
@@ -15,32 +12,18 @@ const Card = ({ title, fullText, isExpanded, onClick }) => {
     };
 
     return (
-        <div className="bg-rt-info p-4 rounded-lg shadow-md text-white cursor-pointer" onClick={onClick}>
+        <div className="bg-rt-info p-4 rounded-lg shadow-md text-white" onClick={onClick}>
             <h3 className="text-xl font-bold mb-2 text-rt-green">{title}</h3>
-
-            {/* Teaser + "Veja mais" */}
-            <p className="mb-2 text-rt-green">
-                {!isExpanded ? teaser : ""}{" "}
-                <button className="underline text-sm">
-                    {isExpanded ? "Veja menos" : "Veja mais"}
-                </button>
-            </p>
-
-            {/* Animação para abrir e fechar o conteúdo */}
-            <AnimatePresence>
-                {isExpanded && (
-                    <motion.div
-                        key="content"
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className="mt-2 overflow-hidden"
-                    >
-                        {extractParagraph(fullText)}
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            <motion.div
+                key="content"
+                initial={{opacity: 0, height: 0}}
+                animate={{opacity: 1, height: "auto"}}
+                exit={{opacity: 0, height: 0}}
+                transition={{duration: 0.5, ease: "easeInOut"}}
+                className="mt-2 overflow-hidden"
+            >
+                {extractParagraph(fullText)}
+            </motion.div>
         </div>
     );
 };
@@ -107,11 +90,6 @@ export default function CardsGrid() {
         }
     ];
 
-    const handleCardClick = (index) => {
-        // Se o card já está expandido, feche-o; caso contrário, expanda-o
-        setExpandedCardIndex(expandedCardIndex === index ? null : index);
-    };
-
     return (
         <div className="grid grid-cols-1 gap-6">
             {cardsData.map((card, index) => (
@@ -119,8 +97,6 @@ export default function CardsGrid() {
                     key={index}
                     title={card.title}
                     fullText={card.fullText}
-                    isExpanded={expandedCardIndex === index}
-                    onClick={() => handleCardClick(index)}
                 />
             ))}
         </div>
