@@ -14,6 +14,7 @@ export default function Navbar() {
         // Usa `startTransition` para gerenciar a transição da rota
         startTransition(() => {
             router.push(url); // Navega para a nova rota
+            setIsMobileMenuOpen(false)
         });
     };
 
