@@ -33,7 +33,7 @@ const images = [
 
 export default function EstruturaGridComponent() {
     return (
-        <div class="columns-1 md:columns-2 lg:columns-4">
+        <div className="columns-1 md:columns-2 lg:columns-4">
             {images.map((image, index) => (
                 <motion.div
                     className="px-2"

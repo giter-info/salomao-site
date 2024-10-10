@@ -1,13 +1,13 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {useEffect, useState} from "react";
+import {useRouter} from "next/navigation";
+import {motion, AnimatePresence} from "framer-motion";
 import brand from "@/app/images/brand.png";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Navbar() {
+    const router = useRouter();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
     useEffect(() => {
         const handleDocumentClick = (event) => {
             if (
@@ -25,15 +25,54 @@ export default function Navbar() {
     }, []);
 
     const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
+        return setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
+    const closeMobileMenu = (link) => {
+        router.push(link);
+        return setIsMobileMenuOpen(false);
     };
+    const links = [
+        {nome: "Início", link: "/",},
+        {nome: "Sobre Nós", link: "/#sobre",},
+        {nome: "Doenças Atendidas", link: "/doencas",},
+        {nome: "Imagens", link: "/estrutura",},
+        {nome: "Contato", link: "/#contato",},
+    ];
+
+    const NormalLinks = () => {
+        return (
+            links.map((link, index) => (
+                <motion.div
+                    key={index}
+                    className="py-2 px-3 block hover:text-rt-primary cursor-pointer"
+                    whileHover={{scale: 1.1}}
+                    onClick={() => router.push(link.link)}
+                >
+                    {link.nome}
+                </motion.div>
+            ))
+        );
+    };
+
+    const MobileLinks = () => {
+        return (
+            links.map((l, i) => (
+                <motion.div
+                    key={i}
+                    className="text-xl hover:text-rt-primary" onClick={closeMobileMenu(l.link)}
+                    whileHover={{scale: 1.1}}
+                >
+                    {l.nome}
+                </motion.div>
+            ))
+        );
+    };
+
 
     return (
-        <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
+        <nav
+            className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
             <div className="container mx-auto px-4 flex justify-between items-center ">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#" className="text-white">
@@ -53,31 +92,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div id="nav-menu" className="hidden md:flex space-x-4">
-                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
-                        <Link href="/#home">
-                            Início
-                        </Link>
-                    </motion.div>
-                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
-                        <Link href="/#sobre">
-                            Sobre Nós
-                        </Link>
-                    </motion.div>
-                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
-                        <Link href="/doencas">
-                            Doenças Atendidas
-                        </Link>
-                    </motion.div>
-                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
-                        <Link href="/estrutura">
-                            Imagens
-                        </Link>
-                    </motion.div>
-                    <motion.div className="py-2 px-3 block hover:text-rt-primary" whileHover={{scale: 1.1}}>
-                        <Link href="/#contato">
-                            Contato
-                        </Link>
-                    </motion.div>
+                    <NormalLinks/>
                 </div>
             </div>
 
@@ -87,9 +102,9 @@ export default function Navbar() {
                     <motion.div
                         id="mobile-menu"
                         initial={{opacity: 0, y: -50}}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -50 }}
-                        transition={{ duration: 0.3 }}
+                        animate={{opacity: 1, y: 0}}
+                        exit={{opacity: 0, y: -50}}
+                        transition={{duration: 0.3}}
                         className="fixed inset-0 bg-rt-green text-white flex flex-col items-center justify-center space-y-6"
                     >
                         <button id="mobile-menu-close" className="absolute top-4 right-4" onClick={closeMobileMenu}>
@@ -104,32 +119,7 @@ export default function Navbar() {
                                 ></path>
                             </svg>
                         </button>
-
-                        <motion.div href="#home" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            <Link href="/#home">
-                                Início
-                            </Link>
-                        </motion.div>
-                        <motion.div href="#sobre" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            <Link href="/#sobre">
-                                Sobre Nós
-                            </Link>
-                        </motion.div>
-                        <motion.div href="#diferenciais" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            <Link href="/doencas">
-                                Doenças Atendidas
-                            </Link>
-                        </motion.div>
-                        <motion.div href="#estrutura" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            <Link href="/estrutura">
-                                Imagens
-                            </Link>
-                        </motion.div>
-                        <motion.div href="#contato" className="text-xl hover:text-rt-primary" onClick={closeMobileMenu} whileHover={{ scale: 1.1 }}>
-                            <Link href="/#contato">
-                                Contato
-                            </Link>
-                        </motion.div>
+                        <MobileLinks/>
                     </motion.div>
                 )}
             </AnimatePresence>
