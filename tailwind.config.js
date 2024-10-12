@@ -18,6 +18,11 @@ module.exports = {
         "rt-white": "#F2F0EB",
         "rt-dark": "#0D0D0D",
       },
+      fontFamily:{
+        script: ['Lucien Schoenschriftv CAT', 'cursive'],
+        mont: ['Montserrat', 'sans-serif'],
+        cardo: ['Delius', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -29,7 +29,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text-2xl md:text-4xl font-bold text-rt-green"
+                            className="font-script text-4xl xl:text-7xl font-bold text-rt-green"
                         >
                             Respeitando o normal
                         </motion.h1>
@@ -37,7 +37,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text-2xl md:text-4xl font-bold text-rt-green mb-4"
+                            className="font-script text-4xl xl:text-7xl font-bold text-rt-green mb-4"
                         >
                             de cada um!
                         </motion.h1>

@@ -26,7 +26,7 @@ export default function Navbar() {
         { nome: "Início", link: "/" },
         { nome: "Sobre Nós", link: "/#sobre" },
         { nome: "Doenças Atendidas", link: "/doencas" },
-        { nome: "Imagens", link: "/estrutura" },
+        { nome: "Local", link: "/estrutura" },
         { nome: "Contato", link: "/#contato" }
     ];
 
