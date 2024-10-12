@@ -94,7 +94,7 @@ export default function Footer() {
 
                         {/* Texto com animação de fade-in */}
                         <motion.p
-                            className="text-rt-white mx-auto text-left mt-5 font-thin pb-4"
+                            className="text-blueGray-info mx-auto text-left mt-5  pb-4"
                             initial={{opacity: 0, y: 20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: 0.4}}

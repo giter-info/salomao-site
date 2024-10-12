@@ -20,11 +20,15 @@ export default function SaibaMaisPageComponent() {
     const obj = [
         {text: "Existimos para amenizar o sofrimento de famílias vítimas de transtorno mental.",},
         {text: "Os transtornos podem ser controlados e organizados!",},
-        {text: "Existimos para amenizar o sofrimento de famílias vítimas de transtorno mental.",}
+        {
+            text: "Possuímos uma equipe capacitada para estabilizar e cuidar de forma humanizada das pessoas sob" +
+                " nossa responsabilidade.",
+        },
+        {text: "Vagas limitadas abertas.",}
     ];
 
     return (
-        <section id="atendidas" className="py-24  scroll-mt-20 mb-14">
+        <section id="atendidas" className="py-24 ">
             <div className="bg-rt-green">
                 <div className="container mx-auto px-4 text-rt-green">
                     <div className="sm:mb-8 flex justify-center">
@@ -56,7 +60,7 @@ export default function SaibaMaisPageComponent() {
                     {obj.map((t, i) => (
                         <motion.p
                             key={i}
-                            className="text-xl p-2 rounded-lg text-rt-white text-md max-w-2xl mx-auto mb-2 text-center"
+                            className="text-xl p-2 rounded-lg text-rt-white text-md max-w-2xl mx-auto mb-2 text-center font-cardo"
                             initial={{opacity: 0, y: 20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: 0.2}}
@@ -135,7 +139,7 @@ export default function SaibaMaisPageComponent() {
                                     transition={{duration: 0.5, delay: 0.4}}
                                 >
                                     <motion.p
-                                        className="text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
+                                        className="text-xl xl:text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
                                         initial={{opacity: 0, y: 20}}
                                         animate={{opacity: 1, y: 0}}
                                         transition={{duration: 0.5, delay: 0.2}}
@@ -174,7 +178,7 @@ export default function SaibaMaisPageComponent() {
                                     transition={{duration: 0.5, delay: 0.4}}
                                 >
                                     <motion.p
-                                        className="text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
+                                        className="text-xl xl:text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
                                         initial={{opacity: 0, y: 20}}
                                         animate={{opacity: 1, y: 0}}
                                         transition={{duration: 0.5, delay: 0.2}}
@@ -200,7 +204,7 @@ export default function SaibaMaisPageComponent() {
                             </motion.h2>
                             <div className="grid gap-8 md:grid-cols-1">
                                 <motion.p
-                                    className="text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
+                                    className="text-xl xl:text-3xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-mont"
                                     initial={{opacity: 0, y: 20}}
                                     animate={{opacity: 1, y: 0}}
                                     transition={{duration: 0.5, delay: 0.2}}
@@ -380,13 +384,13 @@ export default function SaibaMaisPageComponent() {
             <div className="bg-rt-primary mt-12">
                 {/* Card 1 */}
                 <motion.div
-                    className="grid gap-8 md:grid-cols-1 md:flex-row p-6 rounded-lg py-12"
+                    className="grid gap-8 md:grid-cols-1 md:flex-row p-6 rounded-lg py-12 container mx-auto"
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 0.4}}
                 >
                     <motion.p
-                        className="text-4xl p-2 rounded-lg text-rt-green text-md max-w-3xl mx-auto mb-12 text-center font-cardo font-semibold"
+                        className="text-lg xl:text-4xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-cardo"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.2}}
@@ -396,7 +400,7 @@ export default function SaibaMaisPageComponent() {
                         internações psiquiátricas e hospitais de custódia.
                     </motion.p>
                     <motion.p
-                        className="text-4xl p-2 rounded-lg text-rt-green text-md max-w-3xl mx-auto mb-12 text-center font-cardo font-semibold"
+                        className="text-lg xl:text-4xl p-2 rounded-lg text-rt-green text-md max-w-2xl mx-auto mb-12 text-center font-cardo"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.2}}
@@ -409,7 +413,7 @@ export default function SaibaMaisPageComponent() {
                         reabilitação social e cultural.
                     </motion.p>
                     <motion.div
-                        className="text-3xl p-2 rounded-lg text-rt-green text-md max-w-3xl mx-auto mb-12 text-center font-mont font-semibold"
+                        className="text-lg xl:text-3xl p-2 rounded-lg text-rt-green text-md max-w-3xl mx-auto mb-12 text-center font-mont font-semibold"
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5, delay: 0.2}}

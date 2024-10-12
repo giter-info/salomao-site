@@ -6,6 +6,7 @@ import {FaWhatsapp} from "react-icons/fa";
 export default function WhatsAppButton() {
     const [scrollCount, setScrollCount] = useState(0);
     const [showBalloon, setShowBalloon] = useState(false);
+    const [balloonClosed, setBalloonClosed] = useState(false); // Estado para controlar o fechamento
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,14 +24,15 @@ export default function WhatsAppButton() {
     }, []);
 
     useEffect(() => {
-        // Exibe o balão de diálogo na segunda rolagem
-        if (scrollCount >= 2) {
+        // Exibe o balão de diálogo na segunda rolagem e se ele não tiver sido fechado
+        if (scrollCount >= 50 && !balloonClosed) {
             setShowBalloon(true);
         }
-    }, [scrollCount]);
+    }, [scrollCount, balloonClosed]);
 
     const closeBalloon = () => {
         setShowBalloon(false);
+        setBalloonClosed(true); // Marca o balão como fechado
     };
 
     return (
@@ -41,12 +43,11 @@ export default function WhatsAppButton() {
         >
             {/* Balão de diálogo */}
             {showBalloon && (
-
                 <motion.div
                     initial={{opacity: 0, y: 10}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
-                    className="fixed bottom-16 left-5 bg-white p-3 rounded-lg shadow-lg z-50"
+                    className="fixed bottom-16 left-5 bg-white p-3 rounded-t-lg rounded-br-lg shadow-lg z-50 pl-12"
                 >
                     <div className="flex justify-between items-center">
                         <a
@@ -54,11 +55,11 @@ export default function WhatsAppButton() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <p className="text-gray-800 text-sm">Estou aqui para ajudar se precisar!</p>
+                            <p className="text-gray-800 ">Estou aqui para ajudar se precisar!</p>
                         </a>
                         <button
                             onClick={closeBalloon}
-                            className="ml-4 text-gray-500 hover:text-gray-800"
+                            className="ml-4 hover:bg-red-600 hover:text-rt-green border-2 border-red-600 text-red-600 rounded-full px-1.5"
                         >
                             &times;
                         </button>
