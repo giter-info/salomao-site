@@ -2,7 +2,7 @@
 import {useTransition, useState} from "react";
 import {useRouter} from "next/navigation";
 import {motion, AnimatePresence} from "framer-motion";
-import brand from "@/app/images/brand.png";
+import brand from "@/app/images/layout/brand.png";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -26,7 +26,8 @@ export default function Navbar() {
         { nome: "Início", link: "/" },
         { nome: "Sobre Nós", link: "/#sobre" },
         { nome: "Doenças Atendidas", link: "/doencas" },
-        { nome: "Local", link: "/estrutura" },
+        { nome: "Estrutura", link: "/estrutura" },
+        { nome: "Dúvidas Frequentes", link: "/faq" },
         { nome: "Contato", link: "/#contato" }
     ];
 
@@ -35,7 +36,7 @@ export default function Navbar() {
             links.map((link, index) => (
                 <div
                     key={index}
-                    className="py-2 px-3 block hover:text-rt-primary cursor-pointer"
+                    className="py-2 px-3 block hover:text-rt-primary cursor-pointer font-cardo font-semibold"
                     onClick={() => handleNavigation(link.link)} // Navega para a rota clicada
                 >
                     {link.nome}
@@ -49,7 +50,7 @@ export default function Navbar() {
             links.map((link, index) => (
                 <div
                     key={index}
-                    className="text-xl hover:text-rt-primary cursor-pointer"
+                    className="text-2xl hover:text-rt-primary cursor-pointer font-cardo font-semibold"
                     onClick={() => handleNavigation(link.link)} // Navega para a rota clicada
                 >
                     {link.nome}

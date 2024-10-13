@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
 
     useEffect(() => {
         // Exibe o balão de diálogo na segunda rolagem e se ele não tiver sido fechado
-        if (scrollCount >= 50 && !balloonClosed) {
+        if (scrollCount >= 40 && !balloonClosed) {
             setShowBalloon(true);
         }
     }, [scrollCount, balloonClosed]);
@@ -47,7 +47,7 @@ export default function WhatsAppButton() {
                     initial={{opacity: 0, y: 10}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
-                    className="fixed bottom-16 left-5 bg-white p-3 rounded-t-lg rounded-br-lg shadow-lg z-50 pl-12"
+                    className="fixed bottom-16 left-5 bg-white p-3 rounded-t-xl rounded-br-xl shadow-lg z-50 pl-12"
                 >
                     <div className="flex justify-between items-center">
                         <a
@@ -55,7 +55,8 @@ export default function WhatsAppButton() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <p className="text-gray-800 ">Estou aqui para ajudar se precisar!</p>
+                            <p className="text-gray-800 ">Posso ajudar?</p>
+                            <p className="text-gray-800 ">Qualquer dúvida clique aqui.</p>
                         </a>
                         <button
                             onClick={closeBalloon}

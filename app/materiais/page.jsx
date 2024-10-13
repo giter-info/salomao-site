@@ -1,12 +1,12 @@
 import Navbar from "@/app/components/layout/Navbar";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 import Footer from "@/app/components/layout/Footer";
-import SaibaMaisPageComponent from "@/app/components/saibamais/PageComponent";
+import MateriaisPageComponent from "@/app/components/materiais/PageComponent";
 
-const commonTitle = "Saiba Mais - Residencial Terapêutico Salomão";
+const commonTitle = "Materiais úteis - Residencial Terapêutico Salomão";
 const commonDescription =
-    "Os transtornos podem ser controlados e organizados!";
-const commonUrl = "https://redesalomao.com.br/saibamais";
+    "Materiais sobre Residência Terapêutica";
+const commonUrl = "https://redesalomao.com.br/materiais";
 const commonImage = "https://redesalomao.com.br/capa-2.jpg";
 const commonImageDetails = {
     url: commonImage,
@@ -50,7 +50,7 @@ export default function SaibaMaisPage() {
     return (
         <>
             <Navbar/>
-            <SaibaMaisPageComponent/>
+            <MateriaisPageComponent/>
             <WhatsAppButton/>
             <Footer/>
         </>

@@ -1,6 +1,6 @@
-import post1 from "@/app/images/post1.jpg";
-import post2 from "@/app/images/post2.jpg";
-import post3 from "@/app/images/post3.jpg";
+import post1 from "@/app/images/home/post1.jpg";
+import post2 from "@/app/images/home/post2.jpg";
+import post3 from "@/app/images/home/post3.jpg";
 import Image from "next/image";
 
 export default function PostSection() {

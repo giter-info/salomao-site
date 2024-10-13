@@ -1,7 +1,6 @@
-import {useState} from "react";
-import {motion, AnimatePresence} from "framer-motion";
+import {motion} from "framer-motion";
 
-const Card = ({title, fullText, isExpanded, onClick}) => {
+const Card = ({title, fullText, onClick}) => {
     // Função para gerar os parágrafos de cada seção do fullText
     const extractParagraph = (obj) => {
         return Object.entries(obj).map(([key, value]) => (
@@ -13,7 +12,7 @@ const Card = ({title, fullText, isExpanded, onClick}) => {
 
     return (
         <div className="bg-rt-info p-4 rounded-lg shadow-md text-white" onClick={onClick}>
-            <h3 className="text-xl font-bold mb-2 text-rt-green">{title}</h3>
+            <h3 className="text-2xl font-bold mb-2 text-rt-green font-cardo py-2 text-center">{title}</h3>
             <motion.div
                 key="content"
                 initial={{opacity: 0, height: 0}}
@@ -29,8 +28,6 @@ const Card = ({title, fullText, isExpanded, onClick}) => {
 };
 
 export default function CardsGrid() {
-    const [expandedCardIndex, setExpandedCardIndex] = useState(null);
-
     const cardsData = [
         {
             title: "Esquizofrenia (F20.-)",

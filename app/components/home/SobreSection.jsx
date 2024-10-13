@@ -1,9 +1,9 @@
 // SobreSection.jsx
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import service1 from "@/app/images/diferencial1.svg";
-import service2 from "@/app/images/diferencial2.svg";
-import service3 from "@/app/images/diferencial3.svg";
+import service1 from "@/app/images/home/diferencial1.svg";
+import service2 from "@/app/images/home/diferencial2.svg";
+import service3 from "@/app/images/home/diferencial3.svg";
 
 export default function SobreSection() {
     return (

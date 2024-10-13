@@ -1,6 +1,6 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import about2 from "@/app/images/about2.jpg";
+import about2 from "@/app/images/home/about2.jpg";
 
 export default function DiferenciaisSection() {
     return (

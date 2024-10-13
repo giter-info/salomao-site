@@ -1,5 +1,5 @@
 import * as motion from "framer-motion/client";
-import CardsConponent from "@/app/components/CardsConponent";
+import CardsConponent from "@/app/components/home/CardsConponent";
 
 export default function EstruturaSection() {
     return (

@@ -1,19 +1,12 @@
 "use client";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import about1 from "@/app/images/about1.jpg";
-import about3 from "@/app/images/about3.jpg";
+import about1 from "@/app/images/home/about1.jpg";
+import about3 from "@/app/images/home/about3.jpg";
 import {FaCamera} from "react-icons/fa";
-import {useState} from "react";
-import {AnimatePresence} from "framer-motion";
-import CarouselComponent from "@/app/components/CarouselComponent";
 import Link from "next/link";
 
 export default function CardsComponent() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const handleOpenModal = () => {
-        setIsModalOpen(!isModalOpen);
-    };
     return (
         <>
             <div className="grid gap-8 grid-cols-1">

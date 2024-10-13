@@ -1,6 +1,6 @@
 // HomeSection.tsx
 import Image from "next/image";
-import logo from "@/app/images/logo.png";
+import logo from "@/app/images/layout/logo.png";
 import * as motion from "framer-motion/client";
 
 export default function HomeSection() {

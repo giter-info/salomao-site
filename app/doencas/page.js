@@ -1,13 +1,13 @@
-import Navbar from "@/app/components/Navbar";
-import AtendidasSection from "@/app/components/AtendidasSection";
-import WhatsAppButton from "@/app/components/WhatsAppButton";
-import Footer from "@/app/components/Footer";
+import Navbar from "@/app/components/layout/Navbar";
+import DoencasPageComponent from "@/app/components/doencas/PageComponent";
+import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
+import Footer from "@/app/components/layout/Footer";
 
 export default function Home() {
     return (
         <>
             <Navbar/>
-            <AtendidasSection />
+            <DoencasPageComponent />
             <WhatsAppButton/>
             <Footer/>
         </>

@@ -51,7 +51,7 @@ export default function Footer() {
                             transition={{duration: 0.5, delay: 0.3}}
                         >
                             <motion.a
-                                href="https://www.instagram.com/residencial.salomao/"
+                                href={"https://www.instagram.com/residencial.salomao/"}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{scale: 1.2, rotate: 10}}
@@ -121,23 +121,23 @@ export default function Footer() {
                                 </span>
                                 <ul className="list-unstyled">
                                     <li>
-                                        <motion.a
-                                            href="#"
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        <motion.div
+                                            onClick = {() =>(router.push("/faq"))}
+                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
                                             Dúvidas Frequentes
-                                        </motion.a>
+                                        </motion.div>
                                     </li>
 
                                     <li>
-                                        <motion.a
-                                            href=""
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        <motion.div
+                                            onClick = {() =>(router.push("/materiais"))}
+                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
                                             Materiais Úteis
-                                        </motion.a>
+                                        </motion.div>
                                     </li>
                                 </ul>
                             </div>

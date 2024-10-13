@@ -1,6 +1,6 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import logo from "@/app/images/logo.png";
+import logo from "@/app/images/layout/logo.png";
 import image1 from "@/app/images/portifólio/port1.jpeg";
 import image2 from "@/app/images/portifólio/port2.jpeg";
 import image3 from "@/app/images/portifólio/port3.jpeg";
@@ -28,7 +28,7 @@ export default function SaibaMaisPageComponent() {
     ];
 
     return (
-        <section id="atendidas" className="py-24 ">
+        <section id="saibamais" className="py-24 ">
             <div className="bg-rt-green">
                 <div className="container mx-auto px-4 text-rt-green">
                     <div className="sm:mb-8 flex justify-center">

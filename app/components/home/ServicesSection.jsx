@@ -1,7 +1,7 @@
 import * as motion from "framer-motion/client";
-import service1 from "@/app/images/service1.svg";
-import service2 from "@/app/images/service2.svg";
-import service3 from "@/app/images/service3.svg";
+import service1 from "@/app/images/home/service1.svg";
+import service2 from "@/app/images/home/service2.svg";
+import service3 from "@/app/images/home/service3.svg";
 import Image from "next/image";
 
 export default function ServicesSection() {
