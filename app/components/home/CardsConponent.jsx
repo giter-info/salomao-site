@@ -33,12 +33,12 @@ export default function CardsComponent() {
                             <p className="text-rt-white text-lg"></p>
                             <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 text-left pl-5">
                                 <ul className="flex flex-col list-disc text-rt-white text-lg">
+                                    <li>coordenação</li>
                                     <li>assistente social</li>
                                     <li>psicólogas</li>
-                                    <li>psiquiatra</li>
                                 </ul>
                                 <ul className="flex flex-col list-disc text-rt-white text-lg ">
-                                    <li>profissionais de enfermagem</li>
+                                    <li>cozinheiro</li>
                                     <li>cuidadores em saúde</li>
                                     <li>musicoterapeuta</li>
                                 </ul>

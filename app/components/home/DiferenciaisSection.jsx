@@ -42,7 +42,7 @@ export default function DiferenciaisSection() {
                                     <ul className="flex flex-col list-disc text-rt-white text-lg">
                                         <li>Acolhimento humanizado</li>
                                         <li>Serviços de Psicologia aos familiares</li>
-                                        <li>Acompanhamento psicológico</li>
+                                        <li>Acompanhamento na Rede de Apoio Psicosocial</li>
                                         <li>Arteterapia</li>
                                     </ul>
                                     <ul className="flex flex-col list-disc text-rt-white text-lg">
