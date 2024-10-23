@@ -30,7 +30,6 @@ export default function CardsComponent() {
                     <div className="md:w-2/3 md:pl-6 text-rt-white">
                         <h3 className="text-2xl font-bold mb-4">Equipe Profissional Interdisciplinar</h3>
                         <div>
-                            <p className="text-rt-white text-lg"></p>
                             <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 text-left pl-5">
                                 <ul className="flex flex-col list-disc text-rt-white text-lg">
                                     <li>coordenação</li>
@@ -43,6 +42,7 @@ export default function CardsComponent() {
                                     <li>musicoterapeuta</li>
                                 </ul>
                             </div>
+                            <p className="text-rt-white text-lg pt-4">→ Acompanhamento na Rede de Apoio Psicosocial</p>
                         </div>
                     </div>
 
