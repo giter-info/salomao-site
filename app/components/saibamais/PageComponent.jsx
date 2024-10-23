@@ -14,6 +14,7 @@ import image10 from "@/app/images/portifólio/port10.jpeg";
 import image11 from "@/app/images/portifólio/port11.jpeg";
 import image12 from "@/app/images/portifólio/port12.jpeg";
 import pin from "@/app/images/portifólio/pin.png";
+import {FaWhatsapp} from "react-icons/fa";
 
 export default function SaibaMaisPageComponent() {
 
@@ -68,6 +69,17 @@ export default function SaibaMaisPageComponent() {
                             {t.text}
                         </motion.p>
                     ))}
+                    <div className="flex justify-center py-2">
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5547988080041&text=Entrei%20em%20contato%20pelo%20novo%20site.%20Gostaria%20de%20conversar%20sobre%20o%20residencial."
+                            target="_blank"
+                            className="mx-auto flex flex-row gap-2 rounded-full bg-rt-primary border-2 border-rt-info p-2"
+                            rel="noopener noreferrer"
+                        >
+                            <FaWhatsapp fill="rgb(27, 64, 43)" size={30} className="mx-1 pt-1"/>
+                            <span className="text-rt-green text-2xl">Contato</span>
+                        </a>
+                    </div>
                     <motion.h3
                         className="font-script text-6xl font-bold text-rt-info text-center mb-8 mt-16"
                         initial={{opacity: 0, y: -20}}
