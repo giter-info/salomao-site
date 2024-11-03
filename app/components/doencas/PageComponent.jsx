@@ -42,7 +42,7 @@ export default function DoencasPageComponent() {
                     do pensamento e da percepção e por afetos inapropriados ou embotados.
                     Usualmente mantém-se clara a consciência e a capacidade intelectual, embora certos déficits
                     cognitivos possam evoluir no curso do tempo. Os principais sintomas incluem o eco do pensamento, a
-                    imposição ou o roubo do pensamento, a divulgação do pensamento, a percepção delirante, ideias
+                    imposição ou o roubo do pensamento, a divagação do pensamento, a percepção delirante, ideias
                     delirantes de controle, de influência ou de passividade, vozes alucinatórias que comentam ou
                     discutem com o paciente na terceira pessoa.
                 </motion.p>
