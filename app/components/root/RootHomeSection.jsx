@@ -6,7 +6,7 @@ import * as motion from "framer-motion/client";
 
 export default function RootHomeSection() {
     return (
-        <section id="home" className="bg-hero bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
+        <section id="home" className="bg-root bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <div className="mx-auto max-w-2xl py-10 sm:py-12">
                     <div className="sm:mb-8 flex justify-center">
@@ -44,7 +44,7 @@ export default function RootHomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text-2xl xl:text-6xl font-bold text-slate-800"
+                            className="text-2xl xl:text-6xl font-bold text-white"
                         >
                             Respeitando o normal
                         </motion.h1>
@@ -52,7 +52,7 @@ export default function RootHomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text24xl xl:text-6xl font-bold text-slate-800 mb-4"
+                            className="text24xl xl:text-6xl font-bold text-white mb-4"
                         >
                             de cada um!
                         </motion.h1>
@@ -61,7 +61,7 @@ export default function RootHomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-lg font-bold text-slate-800 mb-4"
+                            className="text-lg font-bold text-white mb-4"
                         >
                             Bem-vindo à Rede Salomão, criada para oferecer serviços acolhedores inclusivos e qualificados.
                         </motion.h2>
