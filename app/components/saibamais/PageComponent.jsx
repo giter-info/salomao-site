@@ -1,6 +1,6 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import logo from "@/app/images/layout/logo.png";
+import logo from "@/app/images/layout/logo-rt.png";
 import image1 from "@/app/images/portifólio/port1.jpeg";
 import image2 from "@/app/images/portifólio/port2.jpeg";
 import image3 from "@/app/images/portifólio/port3.jpeg";

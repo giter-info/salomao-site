@@ -2,7 +2,7 @@
 import * as motion from "framer-motion/client";
 import CardsGrid from "@/app/components/doencas/CardsGrid";
 import Image from "next/image";
-import logo from "@/app/images/layout/logo.png";
+import logo from "@/app/images/layout/logo-rt.png";
 
 export default function DoencasPageComponent() {
     return (

@@ -1,7 +1,7 @@
 "use client";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import logo from "@/app/images/layout/logo.png";
+import logo from "@/app/images/layout/logo-rt.png";
 import EstruturaGridComponent from "@/app/components/estrutura/EstruturaGridComponent";
 
 export default function EstruturaPageComponent() {
