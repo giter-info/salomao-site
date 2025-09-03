@@ -1,6 +1,6 @@
-import Navbar from "@/app/components/layout/Navbar";
+import Navbar from "@/app/components/rt/Navbar";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import Footer from "@/app/components/layout/Footer";
+import Footer from "@/app/components/rt/Footer";
 import SaibaMaisPageComponent from "@/app/components/saibamais/PageComponent";
 
 const commonTitle = "Saiba Mais - Residencial Terapêutico Salomão";
