@@ -22,7 +22,7 @@ export default function UnitsCards() {
                             alt="logo Rt"
                             className="rounded-full h-12 w-12 mb-4"
                         />
-                        <h4 className="text-lg mb-3 font-semibold">Residencial Terapêutico</h4>
+                        <h4 className="text-lg mb-3 font-semibold">Unidade Belchior Alto</h4>
                         <p className="mb-2 text-sm text-gray-100">A unidade localizada no bairro Belchior Alto, na
                             cidade de Gaspar/SC, dispõe de 10 vagas na modalidade de Residência Terapêutica nível 1.</p>
 
@@ -48,10 +48,10 @@ export default function UnitsCards() {
                             alt="Logo RI"
                             className="rounded-full h-12 w-12 mb-4"
                         />
-                        <h4 className="text-lg mb-3 font-semibold">Residencial Inclusivo</h4>
-                        <p className="mb-2 text-sm text-gray-100">A unidade localizada no bairro XXXXXXX XXXXXXX, na
-                            cidade de XXXXXXXXXXXX/SC, dispõe de 10 vagas na modalidade de Residência Terapêutica PCD
-                            nível 2.</p>
+                        <h4 className="text-lg mb-3 font-semibold">Unidade Blumenau</h4>
+                        <p className="mb-2 text-sm text-gray-100">A unidade localizada no bairro Itoupava Central, na
+                            cidade de Blumenau/SC, dispõe de 10 vagas na modalidade de Residência Terapêutica nivel 1
+                            e 10 vagas PCD nível 2.</p>
 
                         <Image
                             src={rt}

@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-slate-800 text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
+            <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
                         <a href="#" className="text-white">

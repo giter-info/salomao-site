@@ -29,7 +29,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-script text-4xl xl:text-7xl font-bold text-rt-green"
+                            className="font-script text-4xl xl:text-7xl font-bold text-rt-white"
                         >
                             Respeitando o normal
                         </motion.h1>
@@ -37,7 +37,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-script text-4xl xl:text-7xl font-bold text-rt-green mb-4"
+                            className="font-script text-4xl xl:text-7xl font-bold text-rt-white mb-4"
                         >
                             de cada um!
                         </motion.h1>
@@ -46,7 +46,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-lg font-bold text-rt-green mb-4"
+                            className="text-lg font-bold text-rt-white mb-4"
                         >
                             Bem-vindo ao Residencial Terapêutico Salomão, criado para oferecer um ambiente seguro e
                             acolhedor à pacientes com transtornos mentais egressos de internações psiquiátricas e
