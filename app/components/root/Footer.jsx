@@ -32,7 +32,7 @@ export default function Footer() {
         );
     };
     return (
-        <footer id="contato" className="relative bg-slate-800 pt-8 pb-6">
+        <footer id="contato" className="relative bg-green-950 pt-8 pb-6">
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap text-left lg:text-left">
                     <Socials />

@@ -35,7 +35,7 @@ export default function DiferenciaisSection() {
                                 </motion.div>
                             </div>
                             <div className="md:w-3/5 md:pl-6 text-rt-white">
-                                <h3 className="text-md lg:text-xl   font-bold mb-4">O programa de atividades, coordenado pela equipe
+                                <h3 className="text-md lg:text-xl font-bold mb-4">O programa de atividades, coordenado pela equipe
                                     terapêutica é construído após criteriosa avaliação
                                     respeitando as necessidades de cada um.</h3>
                                 <div className="flex flex-wrap gap-3 mt-6 text-left mx-4">

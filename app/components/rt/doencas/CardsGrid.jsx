@@ -11,7 +11,7 @@ const Card = ({title, fullText, onClick}) => {
     };
 
     return (
-        <div className="bg-rt-info p-4 rounded-lg shadow-md text-white" onClick={onClick}>
+        <div className="bg-rt-white p-4 rounded-lg shadow-md text-white" onClick={onClick}>
             <h3 className="text-2xl font-bold mb-2 text-rt-green font-cardo py-2 text-center">{title}</h3>
             <motion.div
                 key="content"
