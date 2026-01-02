@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ServicesSection() {
     return (
-        <section id="servicos" className="py-2 bg-rt-green scroll-mt-12 mb-14">
+        <section id="servicos" className="py-2 bg-rt-green scroll-mt-12 pb-14">
             <div className="container mx-auto px-4 text-rt-green">
                 <motion.h2
                     className="text-4xl font-bold text-rt-info text-center mb-8 mt-16"

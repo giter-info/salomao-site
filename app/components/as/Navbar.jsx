@@ -24,9 +24,9 @@ export default function Navbar() {
 
     const links = [
         { nome: "Início", link: "/" },
-        { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
-        { nome: "Estrutura", link: "/residencia-inclusiva/estrutura" },
-        { nome: "Contato", link: "/residencia-inclusiva/#contato" }
+        { nome: "Sobre Nós", link: "/#sobre" },
+        // { nome: "Estrutura", link: "/residencia-inclusiva/estrutura" },
+        { nome: "Contato", link: "/adestramento-salomao/#contato" }
     ];
 
     const NormalLinks = () => {
@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-ri-primary text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-dark">
+            <nav className="bg-as-gray text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-dark">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
                         <a href="/" className="text-white">

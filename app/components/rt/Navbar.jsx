@@ -4,6 +4,7 @@ import {useRouter} from "next/navigation";
 import {motion, AnimatePresence} from "framer-motion";
 import brand from "@/app/images/layout/brand.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
     const router = useRouter();
@@ -65,9 +66,9 @@ export default function Navbar() {
             <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                        <a href="#" className="text-white">
+                        <Link href="/" className="text-white">
                             <Image src={brand} alt="Brand Logo" width="120" priority/>
-                        </a>
+                        </Link>
                         <button id="mobile-menu-button" className="md:hidden" onClick={toggleMobileMenu}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <title>bars-3-bottom-left</title>

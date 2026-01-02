@@ -7,6 +7,7 @@ export default function WhatsAppButton() {
     const [scrollCount, setScrollCount] = useState(0);
     const [showBalloon, setShowBalloon] = useState(false);
     const [balloonClosed, setBalloonClosed] = useState(false); // Estado para controlar o fechamento
+    const whatsLink = "https://api.whatsapp.com/send?phone=5547991117705&text=Ol%C3%A1,%20gostaria%20de%20atendimento%20e%20informa%C3%A7%C3%B5es.";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -51,7 +52,7 @@ export default function WhatsAppButton() {
                 >
                     <div className="flex justify-between items-center">
                         <a
-                            href="https://api.whatsapp.com/send?phone=5547988080041&text=Entrei%20em%20contato%20pelo%20novo%20site.%20Gostaria%20de%20conversar%20sobre%20o%20residencial."
+                            href={whatsLink}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -70,7 +71,7 @@ export default function WhatsAppButton() {
 
             {/* Botão do WhatsApp */}
             <a
-                href="https://api.whatsapp.com/send?phone=5547988080041&text=Entrei%20em%20contato%20pelo%20novo%20site.%20Gostaria%20de%20conversar%20sobre%20o%20residencial."
+                href={whatsLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed flex items-center justify-center py-1 px-2 rounded-t-full rounded-bl-full shadow-lg bg-green-500

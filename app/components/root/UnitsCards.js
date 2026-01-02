@@ -1,20 +1,21 @@
 import logort from "@/app/images/layout/logo-rt.png";
 import logori from "@/app/images/layout/logo-ri.png";
 import rt from "@/app/images/estrutura/8.jpeg";
+import ri from "@/app/images/estrutura/19.jpeg";
 import Image from "next/image";
 import * as motion from "framer-motion/client";
 
 export default function UnitsCards() {
     return (
         <div className="max-w-screen-xl mx-auto py-16">
-            <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 gap-10">
+            <div className="sm:grid lg:grid-cols-2 sm:grid-cols-1 gap-10 place-items-center">
                 <motion.div
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
-                    className="hover:bg-slate-800 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
+                    className="hover:bg-[#555D4C] hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
                     <div
                         className="py-4 px-8">
                         <Image
@@ -35,52 +36,53 @@ export default function UnitsCards() {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    initial={{opacity: 0, y: -20}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                    whileHover={{scale: 1.2}}
-                    whileTap={{scale: 0.8}}
-                    className="hover:bg-slate-800 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
-                    <div className="py-4 px-8">
-                        <Image
-                            src={logori}
-                            alt="Logo RI"
-                            className="rounded-full h-12 w-12 mb-4"
-                        />
-                        <h4 className="text-lg mb-3 font-semibold">Unidade Blumenau</h4>
-                        <p className="mb-2 text-sm text-gray-100">A unidade localizada no bairro Itoupava Central, na
-                            cidade de Blumenau/SC, dispõe de 10 vagas na modalidade de Residência Terapêutica nivel 1
-                            e 10 vagas PCD nível 2.</p>
+                {/*Blumenau - ativar*/}
+                {/*<motion.div*/}
+                {/*    initial={{opacity: 0, y: -20}}*/}
+                {/*    animate={{opacity: 1, y: 0}}*/}
+                {/*    transition={{duration: 1, delay: 0.2, ease: "easeOut"}}*/}
+                {/*    whileHover={{scale: 1.2}}*/}
+                {/*    whileTap={{scale: 0.8}}*/}
+                {/*    className="hover:bg-[#555D4C] hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">*/}
+                {/*    <div className="py-4 px-8">*/}
+                {/*        <Image*/}
+                {/*            src={logori}*/}
+                {/*            alt="Logo RI"*/}
+                {/*            className="rounded-full h-12 w-12 mb-4"*/}
+                {/*        />*/}
+                {/*        <h4 className="text-lg mb-3 font-semibold">Unidade Blumenau</h4>*/}
+                {/*        <p className="mb-2 text-sm text-gray-100">A unidade localizada no bairro Itoupava Central, na*/}
+                {/*            cidade de Blumenau/SC, dispõe de 10 vagas na modalidade de Residência Terapêutica nivel 1*/}
+                {/*            e 10 vagas PCD nível 2.</p>*/}
 
-                        <Image
-                            src={rt}
-                            alt="Logo RI"
-                            className="w-100"/>
+                {/*        <Image*/}
+                {/*            src={rt}*/}
+                {/*            alt="Logo RI"*/}
+                {/*            className="w-100"/>*/}
 
-                        <hr className="mt-4"/>
-                    </div>
-                </motion.div>
+                {/*        <hr className="mt-4"/>*/}
+                {/*    </div>*/}
+                {/*</motion.div>*/}
 
+                {/*Unidade Inclusivo*/}
                 <motion.div
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
-                    className="hover:bg-slate-800 hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
+                    className="hover:bg-[#555D4C] hover:text-white transition duration-300 max-w-sm rounded overflow-hidden shadow-lg">
                     <div className="py-4 px-8">
                         <Image
-                            src={logort}
-                            alt="Logo RT"
+                            src={logori}
+                            alt="Logo RI"
                             className="rounded-full h-12 w-12 mb-4"
                         />
-                        <h4 className="text-lg mb-3 font-semibold">ILPI (Em breve)</h4>
-                        <p className="mb-2 text-sm text-gray-100">Até 2026 abriremos a nova unidade na modalidade de
-                            Longa Permanência para Idosos, dispondo de 20 vagas.</p>
-
+                        <h4 className="text-lg mb-3 font-semibold">Residencia Inclusiva</h4>
+                        <p className="mb-2 text-sm text-gray-100">Inaugurada em dezembro de 2025, é uma unidade de
+                            residência especializada em pessoas portadoras de deficiências físicas.</p>
                         <Image
-                            src={rt}
+                            src={ri}
                             alt="Logo RT"
                             className="w-100"/>
 

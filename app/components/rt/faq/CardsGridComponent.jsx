@@ -2,8 +2,6 @@ import {motion} from "framer-motion";
 import {useRouter} from "next/navigation";
 
 export default function CardsGridComponent() {
-    const router = useRouter();
-
     const Card = ({title, fullText, onClick}) => {
         const extractParagraph = (obj) => {
             return Object.entries(obj).map(([key, value]) => (
@@ -89,26 +87,6 @@ export default function CardsGridComponent() {
                     fullText={card.fullText}
                 />
             ))}
-            <div className="bg-rt-info p-4 rounded-lg shadow-md text-white">
-                <h3 className="text-2xl font-bold mb-2 text-rt-green font-cardo py-2 text-center">Gostaria de
-                    acessar Materiais Úteis?</h3>
-                <motion.div
-                    initial={{opacity: 0, height: 0}}
-                    animate={{opacity: 1, height: "auto"}}
-                    exit={{opacity: 0, height: 0}}
-                    transition={{duration: 0.5, ease: "easeInOut"}}
-                    className="mt-2 overflow-hidden text-rt-green"
-                >
-                    Visite nossa página para acessar as Portarias e outros materiais sobre o Serviço Residencial
-                    Terapêutico.
-                </motion.div>
-                <div className="text-center pt-8">
-                    <p onClick={() => router.push("/materiais")} className="bg-rt-green p-2 rounded-lg cursor-pointer">
-                        Clique aqui
-                    </p>
-
-                </div>
-            </div>
         </div>
     );
 }

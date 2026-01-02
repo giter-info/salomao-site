@@ -9,9 +9,9 @@ export default function Footer() {
 
     const links = [
         {nome: "Início", link: "/",},
-        {nome: "Sobre Nós", link: "/sobre",},
-        {nome: "Unidades", link: "/unidades",},
-        {nome: "Contato", link: "/#contato",},
+        {nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre",},
+        {nome: "Imagens", link: "/residencia-inclusiva/estrutura",},
+        {nome: "Contato", link: "/residencia-inclusiva/#contato",},
     ];
 
     const FooterLinks = () => {
@@ -32,10 +32,11 @@ export default function Footer() {
         );
     };
     return (
-        <footer id="contato" className="relative bg-green-950 pt-8 pb-6">
+        <footer id="contato" className="relative bg-ri-blue pt-8 pb-6">
             <div className="container mx-auto px-4">
                 <div className="flex flex-wrap text-left lg:text-left">
                     <Socials />
+
                     {/* Outra metade do footer */}
                     <div className="w-full lg:w-6/12 xl:px-4">
                         <div className="flex flex-wrap items-top mb-6">
@@ -62,16 +63,7 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/residencia-inclusiva"))}
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
-                                            whileHover={{scale: 1.1}}
-                                        >
-                                            Residencia Inclusiva
-                                        </motion.div>
-                                    </li>
-                                    <li>
-                                        <motion.div
-                                            onClick = {() =>(router.push("/faq"))}
+                                            onClick = {() =>(router.push("/residencia-inclusiva/faq"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
@@ -81,7 +73,7 @@ export default function Footer() {
 
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/materiais"))}
+                                            onClick = {() =>(router.push("/residencia-inclusiva/materiais"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
@@ -95,6 +87,7 @@ export default function Footer() {
                 </div>
 
                 <hr className="my-6 border-blueGray-300"/>
+
                 <Signature />
             </div>
         </footer>

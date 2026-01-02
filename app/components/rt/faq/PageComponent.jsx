@@ -6,7 +6,7 @@ import CardsGridComponent from "@/app/components/rt/faq/CardsGridComponent";
 
 export default function FaqPageComponent() {
     return (
-        <section id="saibamais" className="py-24 ">
+        <section id="saibamais" className="py-24 bg-rt-green">
             <div className="bg-rt-green">
                 <div className="container mx-auto px-4 text-rt-green">
                     <div className="sm:mb-8 flex justify-center">
@@ -26,7 +26,7 @@ export default function FaqPageComponent() {
                         </div>
                     </div>
                     <motion.h2
-                        className="text-6xl font-bold text-rt-info text-center mb-8 mt-16 font-script"
+                        className="text-6xl font-bold text-rt-info text-center pb-8 mt-16 font-script"
                         initial={{opacity: 0, y: -20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}

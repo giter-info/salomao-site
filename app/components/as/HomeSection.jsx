@@ -1,11 +1,11 @@
 // HomeSection.tsx
 import Image from "next/image";
-import logo from "@/app/images/layout/logo-rt.png";
+import logo from "@/app/images/layout/logo-dog.png";
 import * as motion from "framer-motion/client";
 
 export default function HomeSection() {
     return (
-        <section id="home" className="bg-rtback bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
+        <section id="home" className="bg-asback bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <div className="mx-auto max-w-2xl py-10 sm:py-12">
                     <div className="sm:mb-8 flex justify-center">
@@ -29,28 +29,25 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-script text-4xl xl:text-7xl font-bold text-rt-white"
+                            className="font-cardo text-4xl xl:text-6xl font-bold text-as-gray"
                         >
-                            Respeitando o normal
+                            Adestramento
                         </motion.h1>
                         <motion.h1
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-script text-4xl xl:text-7xl font-bold text-rt-white mb-4"
+                            className="font-cardo text-4xl xl:text-6xl font-bold text-as-gray mb-4"
                         >
-                            de cada um!
+                            Salomão
                         </motion.h1>
                         <motion.h2
-
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-lg font-bold text-rt-white mb-4"
+                            className="text-2xl font-bold text-as-gray mb-4"
                         >
-                            Bem-vindo ao Residencial Terapêutico Salomão, criado para oferecer um ambiente seguro e
-                            acolhedor à pacientes com transtornos mentais egressos de internações psiquiátricas e
-                            hospitais de custódia.
+                            Qualidade de vida para Você e seu PET, para sua Família e para a Sociedade.
                         </motion.h2>
                     </div>
                 </div>

@@ -1,10 +1,6 @@
-import Navbar from "@/app/components/rt/Navbar";
-import HomeSection from "@/app/components/rt/HomeSection";
-import SobreSection from "@/app/components/rt/SobreSection";
-import ServicesSection from "@/app/components/rt/ServicesSection";
-import Footer from "@/app/components/rt/Footer";
-import DiferenciaisSection from "@/app/components/rt/DiferenciaisSection";
-import EstruturaSection from "@/app/components/rt/EstruturaSection";
+import Navbar from "@/app/components/as/Navbar";
+import HomeSection from "@/app/components/as/HomeSection";
+import Footer from "@/app/components/as/Footer";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 
 export default function Home() {
@@ -12,10 +8,6 @@ export default function Home() {
         <>
             <Navbar/>
             <HomeSection/>
-            <SobreSection/>
-            <DiferenciaisSection/>
-            <ServicesSection/>
-            <EstruturaSection/>
             <WhatsAppButton/>
             <Footer/>
         </>

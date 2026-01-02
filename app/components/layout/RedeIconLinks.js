@@ -35,7 +35,7 @@ export default function RedeIconLinks() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 1, ease: "easeOut"}}
                 >
-                    <Link href={"/residencial-inclusivo"}>
+                    <Link href={"/residencia-inclusiva"}>
                         <motion.button
                             whileHover={{scale: 1.2}}
                             whileTap={{scale: 0.8}}
