@@ -4,7 +4,7 @@ import about2 from "@/app/images/home/about2.jpg";
 
 export default function DiferenciaisSection() {
     return (
-        <section id="diferenciais" className=" bg-rt-green pt-16 scroll-mt-20">
+        <section id="diferenciais" className=" bg-rt-green mt-16 scroll-mt-20">
             <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16">
                 <div className="container mx-auto px-4">
                     <motion.h2
@@ -13,7 +13,7 @@ export default function DiferenciaisSection() {
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
                     >
-                        Nossos Diferenciais
+                        Por que adestrar?
                     </motion.h2>
                     <div className="grid gap-8 md:grid-cols-1">
                         {/* Card 1 */}
@@ -35,20 +35,23 @@ export default function DiferenciaisSection() {
                                 </motion.div>
                             </div>
                             <div className="md:w-3/5 md:pl-6 text-rt-white">
-                                <h3 className="text-md lg:text-xl font-bold mb-4">O programa de atividades, coordenado pela equipe
-                                    terapêutica é construído após criteriosa avaliação
-                                    respeitando as necessidades de cada um.</h3>
+                                <h3 className="text-md lg:text-xl font-bold mb-4">
+                                    Alguns benefícios do adestramento
+                                </h3>
                                 <div className="flex flex-wrap gap-3 mt-6 text-left mx-4">
                                     <ul className="flex flex-col list-disc text-rt-white text-lg">
-                                        <li>Acolhimento humanizado</li>
-                                        <li>Serviços de Psicologia aos familiares</li>
-                                        <li>Acompanhamento na Rede de Apoio Psicosocial</li>
-                                        <li>Arteterapia</li>
-                                    </ul>
-                                    <ul className="flex flex-col list-disc text-rt-white text-lg">
-                                        <li>Musicoterapia</li>
-                                        <li>Atualização da rotina da casa com fotos e vídeos em grupo do Whatsapp
-                                        </li>
+                                        <li>Educação e comportamento corrigido</li>
+                                        <li>Agressividade e latido controlados</li>
+                                        <li>Interações melhoradas, social e animal</li>
+                                        <li>Segurança e guarda</li>
+                                        <li>Diminuição da ansiedade e stress</li>
+                                        <li>Terapia de pessoas com traumas, medos e transtornos</li>
+                                        <li>Comportamento em passeios</li>
+                                        <li>Xixi-Dog no local certo, sem mais sujeiras incômodas</li>
+                                        <li>Anti-envenenamento</li>
+                                        <li>Estímulo do raciocínio e memória</li>
+                                        <li>Obediência e confiança</li>
+                                        <li>Vínculo fortalecido</li>
                                     </ul>
                                 </div>
                             </div>

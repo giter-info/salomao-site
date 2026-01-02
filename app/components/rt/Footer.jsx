@@ -9,10 +9,10 @@ export default function Footer() {
 
     const links = [
         {nome: "Início", link: "/",},
-        {nome: "Sobre Nós", link: "/residencial-inclusivo/#sobre",},
-        {nome: "Doenças Atendidas", link: "/residencial-inclusivo/doencas",},
-        {nome: "Imagens", link: "/residencial-inclusivo/estrutura",},
-        {nome: "Contato", link: "/residencial-inclusivo/#contato",},
+        {nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre",},
+        {nome: "Doenças Atendidas", link: "/residencia-inclusiva/doencas",},
+        {nome: "Imagens", link: "/residencia-inclusiva/estrutura",},
+        {nome: "Contato", link: "/residencia-inclusiva/#contato",},
     ];
 
     const FooterLinks = () => {
@@ -55,16 +55,16 @@ export default function Footer() {
                                 <ul className="list-unstyled">
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/residencial-inclusivo"))}
+                                            onClick = {() =>(router.push("/residencia-inclusiva"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
-                                            Residencial Inclusivo
+                                            Residencia Inclusiva
                                         </motion.div>
                                     </li>
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/residencial-inclusivo/faq"))}
+                                            onClick = {() =>(router.push("/residencia-inclusiva/faq"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
@@ -74,7 +74,7 @@ export default function Footer() {
 
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/residencial-inclusivo/materiais"))}
+                                            onClick = {() =>(router.push("/residencia-inclusiva/materiais"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >

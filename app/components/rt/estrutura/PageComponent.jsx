@@ -6,7 +6,7 @@ import EstruturaGridComponent from "@/app/components/rt/estrutura/EstruturaGridC
 
 export default function EstruturaPageComponent() {
     return (
-        <section id="atendidas" className="py-24 bg-rt-green scroll-mt-20 mb-14">
+        <section id="atendidas" className="py-24 bg-rt-green scroll-mt-20 pb-14">
             <div className="container mx-auto px-4 text-rt-green">
                 <div className="sm:mb-8 flex justify-center">
                     <div className="relative px-3 py-1 text-sm leading-6 text-gray-600">

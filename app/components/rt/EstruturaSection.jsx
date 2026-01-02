@@ -3,7 +3,7 @@ import CardsConponent from "@/app/components/rt/CardsComponent";
 
 export default function EstruturaSection() {
     return (
-        <section id="estrutura" className=" bg-rt-green pt-4 mb-12 scroll-mt-20">
+        <section id="estrutura" className=" bg-rt-green pt-4 pb-12 scroll-mt-20">
             <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16 ">
                 <div className="container mx-auto px-4">
                     <motion.h2

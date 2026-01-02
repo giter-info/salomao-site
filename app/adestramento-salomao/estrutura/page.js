@@ -1,7 +1,7 @@
-import Navbar from "@/app/components/rt/Navbar";
+import Navbar from "@/app/components/as/Navbar";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import Footer from "@/app/components/rt/Footer";
-import EstruturaPageComponent from "@/app/components/rt/estrutura/PageComponent";
+import Footer from "@/app/components/as/Footer";
+import EstruturaPageComponent from "@/app/components/as/estrutura/PageComponent";
 
 export default function Home() {
     return (

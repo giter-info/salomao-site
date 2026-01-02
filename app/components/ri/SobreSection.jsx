@@ -7,10 +7,10 @@ import service3 from "@/app/images/home/diferencial3.svg";
 
 export default function SobreSection() {
     return (
-        <section id="sobre" className="bg-rt-green pt-16 pb-12 scroll-mt-14">
+        <section id="sobre" className="bg-ri-greenest pt-16 pb-12 scroll-mt-14">
             <div className="container mx-auto px-4 ">
                 <motion.h2
-                    className="text-4xl font-bold bg-rt-green text-rt-primary text-center pb-8 "
+                    className="text-4xl font-bold text-rt-white text-center pb-8 "
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
@@ -25,9 +25,10 @@ export default function SobreSection() {
                         transition={{duration: 0.5}}
                     >
                         <Image className="h-60 p-10" src={service1} alt="Residência Terapêutica"/>
-                        <p className="text-rt-green text-lg">
-                            O Residencial foi pensado a partir da necessidade que vimos em ter um serviço em nosso
-                            território a fim de complementar a Rede de Atenção Psicossocial.
+                        <p className="text-ri-primary text-lg">
+                            O Residencial nasceu da percepção de que nosso território precisava de um espaço inclusivo,
+                            capaz de acolher pessoas em suas singularidades, fortalecer vínculos e promover autonomia,
+                            em diálogo com a rede de cuidados já existente.
                         </p>
                     </motion.div>
 
@@ -38,10 +39,11 @@ export default function SobreSection() {
                         transition={{duration: 0.5, delay: 0.2}}
                     >
                         <Image className="h-60 p-10" src={service2} alt="Atendimento Individualizado"/>
-                        <p className="text-rt-green text-lg">
-                            Esse trabalho visa fazer parte da luta antimanicomial que busca restabelecer os valores
-                            morais, éticos, comportamentais e espirituais, direcionando-os a reabilitação social e
-                            cultural.
+                        <p className="text-ri-primary text-lg">
+                            Esse trabalho nasce do compromisso com o cuidado em liberdade e com a construção de um
+                            espaço de acolhimento, respeito e pertencimento. Valorizamos princípios éticos, morais,
+                            relacionais e espirituais, apoiando cada pessoa em sua trajetória de autonomia, convivência
+                            social e participação cultural.
                         </p>
                     </motion.div>
 
@@ -53,9 +55,10 @@ export default function SobreSection() {
                     >
                         <Image className="h-60 p-10" src={service3} alt="Acompanhamento"/>
                         <p className="text-rt-green text-lg">
-                            Visa ainda promover dignidade, direito à cidadania, à liberdade e a autonomia desses
-                            sujeitos. O acompanhamento diário com equipe especializada aliado a farmacoterapia são um
-                            importante diferencial para o avanço no tratamento da doença.
+                            Nosso cuidado é orientado pela promoção da dignidade, da cidadania, da liberdade e da
+                            autonomia. O acompanhamento diário, realizado por uma equipe preparada e atenta às
+                            necessidades individuais, aliado aos cuidados em saúde quando indicados, favorece o
+                            bem-estar, a estabilidade e a construção de uma vida mais autônoma e integrada à comunidade.
                         </p>
                     </motion.div>
                 </div>

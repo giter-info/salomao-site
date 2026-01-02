@@ -51,9 +51,7 @@ export default function RootLayout({children}) {
         <html lang="pt">
         <GTagComponent />
             <body className={inter.className}>
-                <div className="bg-rt-green">
-                    {children}
-                </div>
+                {children}
             </body>
         </html>
     );

@@ -6,12 +6,12 @@ import UnitsCards from "@/app/components/root/UnitsCards";
 
 export default function Page() {
     return (
-        <>
+        <div className='bg-rt-green'>
             <RootNavbar/>
             <UnitsHeroSection />
             <UnitsCards />
             <WhatsAppButton/>
             <Footer/>
-        </>
+        </div>
     );
 }

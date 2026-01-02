@@ -14,7 +14,7 @@ export default function HomeSection() {
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                             className="text-2xl xl:text-6xl font-bold text-white"
                         >
-                            Respeitando o normal
+                            Juntos somos
                         </motion.h1>
                         <motion.h1
                             initial={{opacity: 0, y: -20}}
@@ -22,7 +22,7 @@ export default function HomeSection() {
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
                             className="text24xl xl:text-6xl font-bold text-white mb-4"
                         >
-                            de cada um!
+                            mais fortes!
                         </motion.h1>
                         <motion.h2
 
