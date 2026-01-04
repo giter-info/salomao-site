@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
     const [scrollCount, setScrollCount] = useState(0);
     const [showBalloon, setShowBalloon] = useState(false);
     const [balloonClosed, setBalloonClosed] = useState(false); // Estado para controlar o fechamento
-    const whatsLink = "https://api.whatsapp.com/send?phone=5547991117705&text=Ol%C3%A1,%20gostaria%20de%20atendimento%20e%20informa%C3%A7%C3%B5es.";
+    const whatsLink = "https://api.whatsapp.com/send?phone=5547988688790&text=Ol%C3%A1,%20gostaria%20de%20atendimento%20e%20informa%C3%A7%C3%B5es.";
 
     useEffect(() => {
         const handleScroll = () => {
