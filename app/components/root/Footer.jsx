@@ -71,21 +71,20 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/faq"))}
+                                            onClick = {() =>(router.push("/adestramento-salomao"))}
+                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
+                                            whileHover={{scale: 1.1}}
+                                        >
+                                            Adestramento Salomão
+                                        </motion.div>
+                                    </li>
+                                    <li>
+                                        <motion.div
+                                            onClick = {() =>(router.push("/residencial-terapeutico/faq"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
                                             Dúvidas Frequentes
-                                        </motion.div>
-                                    </li>
-
-                                    <li>
-                                        <motion.div
-                                            onClick = {() =>(router.push("/materiais"))}
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
-                                            whileHover={{scale: 1.1}}
-                                        >
-                                            Materiais Úteis
                                         </motion.div>
                                     </li>
                                 </ul>

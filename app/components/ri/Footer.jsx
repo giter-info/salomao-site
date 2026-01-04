@@ -1,7 +1,7 @@
 "use client";
 import * as motion from "framer-motion/client";
 import {useRouter} from "next/navigation";
-import Socials from "@/app/components/layout/Socials";
+import Socials from "@/app/components/ri/Socials";
 import Signature from "@/app/components/layout/Signature";
 
 export default function Footer() {
@@ -63,21 +63,11 @@ export default function Footer() {
                                     </li>
                                     <li>
                                         <motion.div
-                                            onClick = {() =>(router.push("/residencia-inclusiva/faq"))}
+                                            onClick = {() =>(router.push("/adestramento-salomao"))}
                                             className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
                                             whileHover={{scale: 1.1}}
                                         >
-                                            Dúvidas Frequentes
-                                        </motion.div>
-                                    </li>
-
-                                    <li>
-                                        <motion.div
-                                            onClick = {() =>(router.push("/residencia-inclusiva/materiais"))}
-                                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
-                                            whileHover={{scale: 1.1}}
-                                        >
-                                            Materiais Úteis
+                                            Adestramento Salomão
                                         </motion.div>
                                     </li>
                                 </ul>
