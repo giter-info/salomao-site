@@ -1,24 +1,24 @@
 "use client";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
-import image1 from "@/app/images/estrutura/1.jpeg";
-import image2 from "@/app/images/estrutura/2.jpeg";
-import image3 from "@/app/images/estrutura/3.jpeg";
-import image4 from "@/app/images/estrutura/4.jpeg";
-import image5 from "@/app/images/estrutura/5.jpeg";
-import image6 from "@/app/images/estrutura/6.jpeg";
-import image7 from "@/app/images/estrutura/7.jpeg";
-import image8 from "@/app/images/estrutura/8.jpeg";
-import image9 from "@/app/images/estrutura/9.jpeg";
-import image10 from "@/app/images/estrutura/10.jpeg";
-import image11 from "@/app/images/estrutura/11.jpeg";
-import image12 from "@/app/images/estrutura/12.jpeg";
-import image13 from "@/app/images/estrutura/13.jpeg";
-import image14 from "@/app/images/estrutura/14.jpeg";
-import image15 from "@/app/images/estrutura/15.jpeg";
-import image16 from "@/app/images/estrutura/16.jpeg";
-import image17 from "@/app/images/estrutura/17.jpeg";
-import image18 from "@/app/images/estrutura/18.jpeg";
+import image1 from "@/app/images/rt/estrutura/1.jpeg";
+import image2 from "@/app/images/rt/estrutura/2.jpeg";
+import image3 from "@/app/images/rt/estrutura/3.jpeg";
+import image4 from "@/app/images/rt/estrutura/4.jpeg";
+import image5 from "@/app/images/rt/estrutura/5.jpeg";
+import image6 from "@/app/images/rt/estrutura/6.jpeg";
+import image7 from "@/app/images/rt/estrutura/7.jpeg";
+import image8 from "@/app/images/rt/estrutura/8.jpeg";
+import image9 from "@/app/images/rt/estrutura/9.jpeg";
+import image10 from "@/app/images/rt/estrutura/10.jpeg";
+import image11 from "@/app/images/rt/estrutura/11.jpeg";
+import image12 from "@/app/images/rt/estrutura/12.jpeg";
+import image13 from "@/app/images/rt/estrutura/13.jpeg";
+import image14 from "@/app/images/rt/estrutura/14.jpeg";
+import image15 from "@/app/images/rt/estrutura/15.jpeg";
+import image16 from "@/app/images/rt/estrutura/16.jpeg";
+import image17 from "@/app/images/rt/estrutura/17.jpeg";
+import image18 from "@/app/images/rt/estrutura/18.jpeg";
 
 // Exemplo de array de imagens apenas com src e alt
 const images = [
@@ -48,10 +48,11 @@ export default function EstruturaGridComponent() {
             {images.map((image, index) => (
                 <motion.div
                     className="px-2"
-                    key={index}
-                    initial={{opacity: 0, scale: 0.9}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{duration: 0.5, ease: "easeOut"}}
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
+                    whileHover={{scale: 1.2}}
+                    whileTap={{scale: 0.8}}
                 >
                     <Image
                         className="mb-8 rounded-lg shadow-lg shadow-rt-dark border-2 border-rt-primary"

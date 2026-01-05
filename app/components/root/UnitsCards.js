@@ -1,7 +1,7 @@
 import logort from "@/app/images/layout/logo-rt.png";
 import logori from "@/app/images/layout/logo-ri.png";
-import rt from "@/app/images/estrutura/8.jpeg";
-import ri from "@/app/images/estrutura/19.jpeg";
+import rt from "@/app/images/rt/estrutura/8.jpeg";
+import ri from "@/app/images/ri/estrutura/1.jpeg";
 import Image from "next/image";
 import * as motion from "framer-motion/client";
 

@@ -24,8 +24,8 @@ export default function Navbar() {
 
     const links = [
         { nome: "Início", link: "/" },
-        { nome: "Sobre Nós", link: "/#sobre" },
-        // { nome: "Estrutura", link: "/residencia-inclusiva/estrutura" },
+        // { nome: "Sobre Nós", link: "/#sobre" },
+        { nome: "Estrutura", link: "/adestramento-salomao/estrutura" },
         { nome: "Contato", link: "/adestramento-salomao/#contato" }
     ];
 
