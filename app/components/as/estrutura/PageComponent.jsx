@@ -2,11 +2,11 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 import logo from "@/app/images/layout/logo-rt.png";
-import EstruturaGridComponent from "@/app/components/rt/estrutura/EstruturaGridComponent";
+import EstruturaGridComponent from "@/app/components/as/estrutura/EstruturaGridComponent";
 
 export default function EstruturaPageComponent() {
     return (
-        <section id="atendidas" className="py-24 bg-teal-200 scroll-mt-20 pb-14">
+        <section id="estrutura" className="py-24 bg-asback bg-fixed scroll-mt-20 pb-14">
             <div className="container mx-auto px-4 text-rt-green">
                 <div className="sm:mb-8 flex justify-center">
                     <div className="relative px-3 py-1 text-sm leading-6 text-gray-600">
@@ -30,7 +30,7 @@ export default function EstruturaPageComponent() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
                 >
-                    Imagens da Residencia Inclusiva Salomão
+                    Imagens do Adestramento Salomão
                 </motion.h2>
             </div>
             <div className="container mx-auto px-4">
