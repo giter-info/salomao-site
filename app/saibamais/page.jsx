@@ -1,5 +1,7 @@
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 import SaibaMaisPageComponent from "@/app/components/saibamais/PageComponent";
+import Navbar from "@/app/components/root/Navbar";
+import Footer from "@/app/components/root/Footer";
 
 const commonTitle = "Saiba Mais - Residencial Terapêutico Salomão";
 const commonDescription =

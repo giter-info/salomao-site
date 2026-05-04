@@ -10,6 +10,7 @@ export const asConfig = {
         textAccent: "text-rt-dark",
         shadowAccent: "hover:shadow-rt-dark",
         homeBg: "bg-asback",
+        homeBgImage: "/bg-as.png",
         sobreBg: "bg-as-gray",
         sobreText: "text-rt-white"
     },

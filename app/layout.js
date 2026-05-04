@@ -1,8 +1,38 @@
-import {Inter} from "next/font/google";
+import {Inter, Nunito_Sans, Roboto_Slab, Montserrat, Delius, Yatra_One} from "next/font/google";
 import "./globals.css";
 import GTagComponent from "@/app/components/layout/GTagComponent";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-inter",
+});
+
+const nunito = Nunito_Sans({
+    subsets: ["latin"],
+    variable: "--font-nunito",
+});
+
+const robotoSlab = Roboto_Slab({
+    subsets: ["latin"],
+    variable: "--font-roboto-slab",
+});
+
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    variable: "--font-montserrat",
+});
+
+const delius = Delius({
+    weight: "400",
+    subsets: ["latin"],
+    variable: "--font-delius",
+});
+
+const yatraOne = Yatra_One({
+    weight: "400",
+    subsets: ["latin"],
+    variable: "--font-yatra-one",
+});
 
 const commonTitle = "Residencial Terapêutico Salomão";
 const commonDescription =
@@ -50,7 +80,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="pt">
         <GTagComponent />
-            <body className={inter.className}>
+            <body className={`${inter.variable} ${nunito.variable} ${robotoSlab.variable} ${montserrat.variable} ${delius.variable} ${yatraOne.variable} ${inter.className}`}>
                 {children}
             </body>
         </html>

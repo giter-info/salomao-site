@@ -5,7 +5,16 @@ export default function SharedHomeSection({ config }) {
     const { home, theme } = config;
 
     return (
-        <section id="home" className={`${theme.homeBg} bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white`}>
+        <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+            {theme.homeBgImage && (
+                <Image
+                    src={theme.homeBgImage}
+                    alt={home.titleLine1}
+                    fill
+                    priority
+                    className="object-cover -z-10"
+                />
+            )}
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <div className="mx-auto max-w-2xl py-10 sm:py-12">
                     <div className="sm:mb-8 flex justify-center">

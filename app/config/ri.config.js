@@ -13,6 +13,7 @@ export const riConfig = {
         textAccent: "text-rt-dark", // No menu mobile do RI, o texto é escuro
         shadowAccent: "hover:shadow-rt-dark",
         homeBg: "bg-riback",
+        homeBgImage: "/bg-ri.png",
         sobreBg: "bg-ri-greenest",
         sobreText: "text-ri-primary"
     },

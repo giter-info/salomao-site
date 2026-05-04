@@ -1,9 +1,17 @@
 import * as motion from "framer-motion/client";
+import Image from "next/image";
 import RedeIconLinks from "@/app/components/layout/RedeIconLinks";
 
 export default function HomeSection() {
     return (
-        <section id="home" className="bg-root bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
+        <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+            <Image
+                src="/bg-root.png"
+                alt="Rede Salomão - Juntos somos mais fortes"
+                fill
+                priority
+                className="object-cover -z-10"
+            />
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <div className="mx-auto max-w-2xl py-10 sm:py-12">
                     <RedeIconLinks />
@@ -20,7 +28,7 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="text24xl xl:text-6xl font-bold text-white mb-4"
+                            className="text-4xl xl:text-6xl font-bold text-white mb-4"
                         >
                             mais fortes!
                         </motion.h1>

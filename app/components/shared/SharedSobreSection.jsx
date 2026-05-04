@@ -26,7 +26,12 @@ export default function SharedSobreSection({ config }) {
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: index * 0.2}}
                         >
-                            <Image className="h-60 p-10 mx-auto" src={card.image} alt={card.alt}/>
+                            <Image
+                                className="h-60 p-10 mx-auto object-contain"
+                                src={card.image}
+                                alt={card.alt}
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                            />
                             <p className={`${theme.sobreText || theme.primaryBg.replace('bg-', 'text-')} text-lg`}>
                                 {card.text}
                             </p>

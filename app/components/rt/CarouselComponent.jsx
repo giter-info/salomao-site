@@ -34,9 +34,10 @@ export default function CarouselComponent() {
                         <Image
                             src={images[currentIndex]}
                             alt={`Slide ${currentIndex + 1}`}
-                            layout="fill"
-                            objectFit="cover"
-                            className="rounded-lg"
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            priority={currentIndex === 0}
+                            className="object-cover rounded-lg"
                         />
                     </motion.div>
                 </AnimatePresence>

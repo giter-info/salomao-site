@@ -13,6 +13,7 @@ export const rtConfig = {
         textAccent: "text-rt-primary",
         shadowAccent: "hover:shadow-rt-primary",
         homeBg: "bg-rtback",
+        homeBgImage: "/bg-rt.png",
         sobreBg: "bg-rt-green",
     },
     navbar: {
