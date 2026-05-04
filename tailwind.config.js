@@ -29,7 +29,7 @@ module.exports = {
                 "ri-greenest": '#259289',
                 "ri-bluest": '#71C8A0',
                 "ri-soft-green": '#3EFEC9',
-                'as-gray': '#252525',
+                "as-gray": '#252525',
             },
             fontFamily: {
                 script: ["Lucien Schoenschriftv CAT", "cursive"],
@@ -42,4 +42,20 @@ module.exports = {
         },
     },
     plugins: [],
+    safelist: [
+        'bg-as-gray',
+        'text-as-gray',
+        'bg-rt-green',
+        'text-rt-green',
+        'bg-ri-primary',
+        'text-ri-primary',
+        'bg-ri-blue',
+        'text-ri-blue',
+        'hover:text-rt-dark',
+        'hover:text-rt-primary',
+        'hover:text-rt-info',
+        'hover:shadow-rt-dark',
+        'hover:shadow-rt-primary',
+        'hover:shadow-as-gray',
+    ]
 };

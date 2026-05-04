@@ -5,9 +5,9 @@ export const asConfig = {
     theme: {
         primaryBg: "bg-as-gray",
         secondaryBg: "bg-as-gray",
-        mobileMenuBg: "bg-ri-blue",
+        mobileMenuBg: "bg-as-gray",
         textPrimary: "text-rt-white",
-        textAccent: "text-rt-dark",
+        textAccent: "text-rt-white",
         shadowAccent: "hover:shadow-rt-dark",
         homeBg: "bg-asback",
         homeBgImage: "/bg-as.png",

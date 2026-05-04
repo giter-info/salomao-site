@@ -22,7 +22,8 @@ export default function RedeIconLinks() {
                             <Image
                                 src={logort}
                                 alt="Logo"
-                                className="w-40 md:w-48 xl-60 h-auto mx-auto"
+                                className="w-40 md:w-48 xl:w-60 h-auto mx-auto"
+                                sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px, 240px"
                                 priority
                             />
                         </motion.button>
@@ -43,7 +44,8 @@ export default function RedeIconLinks() {
                             <Image
                                 src={logori}
                                 alt="Logo"
-                                className="w-40 md:w-48 xl-60 h-auto mx-auto"
+                                className="w-40 md:w-48 xl:w-60 h-auto mx-auto"
+                                sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px, 240px"
                                 priority
                             />
                         </motion.button>
@@ -64,7 +66,8 @@ export default function RedeIconLinks() {
                             <Image
                                 src={logodog}
                                 alt="Logo"
-                                className="w-40 md:w-48 xl-60 h-auto mx-auto"
+                                className="w-40 md:w-48 xl:w-60 h-auto mx-auto"
+                                sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px, 240px"
                                 priority
                             />
                         </motion.button>

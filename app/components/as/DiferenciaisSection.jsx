@@ -4,11 +4,11 @@ import about2 from "@/app/images/home/about2.jpg";
 
 export default function DiferenciaisSection() {
     return (
-        <section id="diferenciais" className=" bg-rt-green mt-16 scroll-mt-20">
-            <div className="rounded-3xl bg-rt-info py-16 mx-4 lg:mx-16">
+        <section id="diferenciais" className=" bg-as-gray pt-16 scroll-mt-20">
+            <div className="rounded-3xl bg-rt-white py-16 mx-4 lg:mx-16">
                 <div className="container mx-auto px-4">
                     <motion.h2
-                        className="text-4xl font-bold text-rt-green text-center mb-8"
+                        className="text-4xl font-bold text-as-gray text-center mb-8"
                         initial={{opacity: 0, y: -20}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.5}}
@@ -18,7 +18,7 @@ export default function DiferenciaisSection() {
                     <div className="grid gap-8 md:grid-cols-1">
                         {/* Card 1 */}
                         <motion.div
-                            className="flex flex-col md:flex-row bg-rt-green p-6 shadow-lg rounded-lg  hover:shadow hover:shadow-rt-green "
+                            className="flex flex-col md:flex-row bg-as-gray p-6 shadow-lg rounded-lg  hover:shadow hover:shadow-as-gray "
                             initial={{opacity: 0, y: 20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.5, delay: 0.4}}
