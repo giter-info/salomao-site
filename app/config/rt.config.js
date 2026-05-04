@@ -120,9 +120,9 @@ export const rtConfig = {
         whatsappMessage: "Entrei em contato pelo novo site.",
         email: "contato@redesalomao.com.br",
         address: [
-            "Rua Pedro Léo Menscheim, n. 210",
-            "CEP 89117-805",
-            "Belchior Alto - Gaspar - Santa Catarina"
+            "Rua Doutor Pedro Zimmermann, n. 2391",
+            "CEP 89066-001",
+            "Itoupavazinha - Blumenau - Santa Catarina"
         ]
     },
     footer: {

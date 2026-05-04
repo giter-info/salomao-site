@@ -67,9 +67,7 @@ export default function Socials() {
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5, delay: 0.4}}
             >
-                Rua Pedro Léo Menscheim, n. 210<br/>
-                CEP 89117-805<br/>
-                Belchior Alto - Gaspar - Santa Catarina<br/>
+                Blumenau | Chapecó | Santa Catarina
             </motion.p>
         </div>
     )
