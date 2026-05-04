@@ -1,16 +1,7 @@
-import SharedNavbar from "@/app/components/shared/SharedNavbar";
-import SharedFooter from "@/app/components/shared/SharedFooter";
-import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import EstruturaPageComponent from "@/app/components/ri/estrutura/PageComponent";
+import { redirect } from "next/navigation";
 import { riConfig } from "@/app/config/ri.config";
 
-export default function Home() {
-    return (
-        <>
-            <SharedNavbar config={riConfig} />
-            <EstruturaPageComponent />
-            <WhatsAppButton/>
-            <SharedFooter config={riConfig} />
-        </>
-    );
+export default function EstruturaRedirect() {
+    const firstUnitId = riConfig.unidades[0].id;
+    redirect(`/residencia-inclusiva/estrutura/${firstUnitId}`);
 }

@@ -38,50 +38,68 @@ export default function WhatsAppButton() {
 
     return (
         <motion.div
-            initial={{opacity: 0, y: 20}}
-            animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.5, delay: 0.2}}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="fixed bottom-6 left-6 z-50 flex flex-col items-start"
         >
             {/* Balão de diálogo */}
             {showBalloon && (
                 <motion.div
-                    initial={{opacity: 0, y: 10}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.5}}
-                    className="fixed bottom-16 left-5 bg-white p-3 rounded-t-xl rounded-br-xl shadow-lg z-50 pl-12"
+                    initial={{ opacity: 0, y: 10, scale: 0.9 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.9 }}
+                    className="mb-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/20 relative"
                 >
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-start gap-4">
                         <a
                             href={whatsLink}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="block"
                         >
-                            <p className="text-gray-800 ">Posso ajudar?</p>
-                            <p className="text-gray-800 ">Qualquer dúvida clique aqui.</p>
+                            <p className="text-rt-green font-bold text-sm">Olá! 👋</p>
+                            <p className="text-gray-600 text-xs mt-1">Como podemos ajudar hoje?</p>
                         </a>
                         <button
                             onClick={closeBalloon}
-                            className="ml-4 hover:bg-red-600 hover:text-rt-green border-2 border-red-600 text-red-600 rounded-full px-1.5"
+                            className="text-gray-400 hover:text-gray-600 transition-colors"
                         >
-                            &times;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </button>
                     </div>
+                    {/* Seta do balão */}
+                    <div className="absolute -bottom-2 left-4 w-4 h-4 bg-white/90 backdrop-blur-md border-r border-b border-white/20 rotate-45"></div>
                 </motion.div>
             )}
 
             {/* Botão do WhatsApp */}
-            <a
+            <motion.a
                 href={whatsLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed flex items-center justify-center py-1 px-2 rounded-t-full rounded-bl-full shadow-lg bg-green-500
-                transition-all duration-300 bottom-0 left-5 z-50 shadow-rt-green border border-rt-info text-rt-info
-                hover:shadow-[2px_2px_15px_2px] hover:shadow-amber-200"
-                style={{transform: "translateY(-50%)"}}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                animate={{
+                    boxShadow: [
+                        "0 0 0 0px rgba(34, 197, 94, 0.4)",
+                        "0 0 0 15px rgba(34, 197, 94, 0)"
+                    ]
+                }}
+                transition={{
+                    boxShadow: {
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                    }
+                }}
+                className="flex items-center gap-2 py-3 px-5 rounded-full shadow-2xl bg-green-500 text-white transition-all duration-300"
             >
-                <FaWhatsapp fill="#bdf2d8" size={26} className="mx-1"/>
-                <span className="font-light text-sm">Contato</span>
-            </a>
+                <FaWhatsapp size={24} />
+                <span className="font-bold text-sm tracking-wide">Contato</span>
+            </motion.a>
         </motion.div>
     );
 }

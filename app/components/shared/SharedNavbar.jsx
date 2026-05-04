@@ -50,12 +50,15 @@ export default function SharedNavbar({ config }) {
         );
     };
 
+    const navBgClass = theme.navbarBg || theme.primaryBg;
+    const isDarkBg = navBgClass.includes('dark') || navBgClass.includes('gray') || navBgClass.includes('green') || navBgClass.includes('primary');
+
     return (
         <>
-            <nav className={`${theme.primaryBg} ${theme.textPrimary} fixed w-full top-0 left-0 z-50 hover:shadow-lg ${theme.shadowAccent}`}>
+            <nav className={`${navBgClass} ${theme.textPrimary} fixed w-full top-0 left-0 z-50 border-b ${isDarkBg ? 'border-white/10' : 'border-black/5'} shadow-md transition-all duration-300`}>
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                        <Link href="/" className="text-white">
+                        <Link href="/" className={`${isDarkBg ? 'brightness-110' : 'brightness-100'} transition-all`}>
                             <Image src={navbar.logo} alt="Brand Logo" width="120" priority/>
                         </Link>
                         <button id="mobile-menu-button" className="md:hidden" onClick={toggleMobileMenu}>
@@ -84,7 +87,7 @@ export default function SharedNavbar({ config }) {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             transition={{ duration: 0.3 }}
-                            className={`fixed inset-0 ${theme.mobileMenuBg} ${theme.textAccent} flex flex-col items-center justify-center space-y-6`}
+                            className={`fixed inset-0 ${theme.mobileMenuBg || navBgClass} ${theme.textAccent} flex flex-col items-center justify-center space-y-6`}
                         >
                             <button id="mobile-menu-close" className="absolute top-4 right-4" onClick={() => setIsMobileMenuOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

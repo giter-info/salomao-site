@@ -3,8 +3,11 @@ import logoRi from "@/app/images/layout/logo-ri.png";
 import service1 from "@/app/images/home/diferencial1.svg";
 import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
+import unidadeBlumenau from "@/app/images/ri/estrutura/1.jpeg";
+import riImg1 from "@/app/images/ri/estrutura/1.jpeg";
 
 export const riConfig = {
+    basePath: "/residencia-inclusiva",
     theme: {
         primaryBg: "bg-ri-primary",
         secondaryBg: "bg-ri-primary",
@@ -12,20 +15,33 @@ export const riConfig = {
         textPrimary: "text-rt-white",
         textAccent: "text-rt-dark", // No menu mobile do RI, o texto é escuro
         shadowAccent: "hover:shadow-rt-dark",
+        navbarBg: "bg-ri-primary",
         homeBg: "bg-riback",
         homeBgImage: "/bg-ri.png",
-        sobreBg: "bg-ri-greenest",
-        sobreText: "text-ri-primary"
+        sobreBg: "bg-ri-primary",
+        sobreText: "text-rt-dark"
     },
     navbar: {
         logo: brand,
         links: [
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
+            { nome: "Unidades", link: "/residencia-inclusiva/unidades" },
             { nome: "Estrutura", link: "/residencia-inclusiva/estrutura" },
             { nome: "Contato", link: "/residencia-inclusiva/#contato" }
         ]
     },
+    unidades: [
+        {
+            id: "blumenau",
+            nome: "Unidade Blumenau",
+            descricao: "Nossa unidade em Blumenau especializada no acolhimento de pessoas com deficiência, promovendo autonomia e dignidade.",
+            imagem: unidadeBlumenau,
+            imagens: [
+                { src: riImg1, alt: "Estrutura RI Blumenau 1" }
+            ]
+        }
+    ],
     home: {
         logo: logoRi,
         titleLine1: "Acolhimento digno",

@@ -12,11 +12,11 @@ export default function SharedFooter({ config }) {
         return (
             <ul className="list-unstyled pb-4">
                 {footer.links.map((link, index) => (
-                    <li key={index}>
+                    <li key={index} className="overflow-hidden">
                         <motion.a
                             onClick={() => router.push(link.link)}
-                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
-                            whileHover={{scale: 1.1}}
+                            className={`${theme.textPrimary} opacity-70 hover:opacity-100 transition-opacity font-medium block pb-2 text-sm cursor-pointer`}
+                            whileHover={{ x: 5 }}
                         >
                             {link.nome}
                         </motion.a>
@@ -27,30 +27,30 @@ export default function SharedFooter({ config }) {
     };
 
     return (
-        <footer id="contato" className={`relative ${theme.secondaryBg} pt-8 pb-6`}>
+        <footer id="contato" className={`relative ${theme.secondaryBg} pt-16 pb-8 border-t border-white/5`}>
             <div className="container mx-auto px-4">
-                <div className="flex flex-wrap text-left lg:text-left">
+                <div className="flex flex-wrap text-left lg:text-left gap-y-10">
                     <SharedSocials config={config} />
 
                     <div className="w-full lg:w-6/12 xl:px-4">
                         <div className="flex flex-wrap items-top mb-6">
                             <div className="w-full lg:w-4/12 px-4 ml-auto">
-                                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                                <span className={`block uppercase ${theme.textAccent} text-xs font-bold mb-4 tracking-widest`}>
                                     Mapa do Site
                                 </span>
                                 <FooterLinks/>
                             </div>
                             <div className="w-full lg:w-4/12 px-4">
-                                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                                <span className={`block uppercase ${theme.textAccent} text-xs font-bold mb-4 tracking-widest`}>
                                     Informações Adicionais
                                 </span>
                                 <ul className="list-unstyled">
                                     {footer.additionalLinks.map((link, index) => (
-                                        <li key={index}>
+                                        <li key={index} className="overflow-hidden">
                                             <motion.div
                                                 onClick={() => router.push(link.link)}
-                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm cursor-pointer"
-                                                whileHover={{scale: 1.1}}
+                                                className={`${theme.textPrimary} opacity-70 hover:opacity-100 transition-opacity font-medium block pb-2 text-sm cursor-pointer`}
+                                                whileHover={{ x: 5 }}
                                             >
                                                 {link.nome}
                                             </motion.div>
@@ -62,7 +62,7 @@ export default function SharedFooter({ config }) {
                     </div>
                 </div>
 
-                <hr className="my-6 border-blueGray-300"/>
+                <hr className="my-10 border-white/10"/>
 
                 <Signature />
             </div>

@@ -1,16 +1,7 @@
-import SharedNavbar from "@/app/components/shared/SharedNavbar";
-import SharedFooter from "@/app/components/shared/SharedFooter";
-import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import EstruturaPageComponent from "@/app/components/as/estrutura/PageComponent";
+import { redirect } from "next/navigation";
 import { asConfig } from "@/app/config/as.config";
 
-export default function Home() {
-    return (
-        <>
-            <SharedNavbar config={asConfig} />
-            <EstruturaPageComponent />
-            <WhatsAppButton/>
-            <SharedFooter config={asConfig} />
-        </>
-    );
+export default function EstruturaRedirect() {
+    const firstUnitId = asConfig.unidades[0].id;
+    redirect(`/adestramento-salomao/estrutura/${firstUnitId}`);
 }

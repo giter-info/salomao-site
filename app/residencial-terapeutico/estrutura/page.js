@@ -1,16 +1,8 @@
-import SharedNavbar from "@/app/components/shared/SharedNavbar";
-import SharedFooter from "@/app/components/shared/SharedFooter";
-import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import EstruturaPageComponent from "@/app/components/rt/estrutura/PageComponent";
+import { redirect } from "next/navigation";
 import { rtConfig } from "@/app/config/rt.config";
 
-export default function Home() {
-    return (
-        <>
-            <SharedNavbar config={rtConfig} />
-            <EstruturaPageComponent />
-            <WhatsAppButton/>
-            <SharedFooter config={rtConfig} />
-        </>
-    );
+export default function EstruturaRedirect() {
+    // Redireciona para a primeira unidade configurada
+    const firstUnitId = rtConfig.unidades[0].id;
+    redirect(`/residencial-terapeutico/estrutura/${firstUnitId}`);
 }

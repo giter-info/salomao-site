@@ -29,7 +29,7 @@ module.exports = {
                 "ri-greenest": '#259289',
                 "ri-bluest": '#71C8A0',
                 "ri-soft-green": '#3EFEC9',
-                "as-gray": '#252525',
+                "as-gray": '#1A1A1A',
             },
             fontFamily: {
                 script: ["Lucien Schoenschriftv CAT", "cursive"],

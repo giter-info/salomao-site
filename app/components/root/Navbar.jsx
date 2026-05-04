@@ -25,7 +25,6 @@ export default function Navbar() {
     const links = [
         { nome: "Início", link: "/" },
         { nome: "Sobre Nós", link: "/sobre" },
-        { nome: "Unidades", link: "/unidades" },
         { nome: "Contato", link: "/#contato" }
     ];
 
@@ -60,10 +59,10 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-primary">
+            <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 border-b border-white/10 shadow-md transition-all duration-300">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                        <a href="#" className="text-white">
+                        <a href="#" className="brightness-110 transition-all">
                             <Image src={brand} alt="Brand Logo" width="120" priority/>
                         </a>
                         <button id="mobile-menu-button" className="md:hidden" onClick={toggleMobileMenu}>
@@ -93,7 +92,7 @@ export default function Navbar() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             transition={{ duration: 0.3 }}
-                            className="fixed inset-0 bg-slate-800 text-white flex flex-col items-center justify-center space-y-6"
+                            className="fixed inset-0 bg-rt-green text-rt-white flex flex-col items-center justify-center space-y-6"
                         >
                             <button id="mobile-menu-close" className="absolute top-4 right-4" onClick={() => setIsMobileMenuOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
