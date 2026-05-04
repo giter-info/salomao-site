@@ -1,22 +1,22 @@
-// HomeSection.tsx
 import Image from "next/image";
-import logo from "@/app/images/layout/logo-dog.png";
 import * as motion from "framer-motion/client";
 
-export default function HomeSection() {
+export default function SharedHomeSection({ config }) {
+    const { home, theme } = config;
+
     return (
-        <section id="home" className="bg-asback bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white">
+        <section id="home" className={`${theme.homeBg} bg-cover bg-no-repeat bg-center min-h-screen flex items-center bg-white`}>
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <div className="mx-auto max-w-2xl py-10 sm:py-12">
                     <div className="sm:mb-8 flex justify-center">
-                        <div className="relative px-3 py-1 text-sm leading-6 text-gray-600">
+                        <div className={`relative px-3 py-1 text-sm leading-6 ${theme.textAccent}`}>
                             <motion.div
                                 initial={{opacity: 0, y: -20}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 1, ease: "easeOut"}}
                             >
                                 <Image
-                                    src={logo}
+                                    src={home.logo}
                                     alt="Logo"
                                     className="w-40 md:w-48 xl-60 h-auto mx-auto"
                                     priority
@@ -29,25 +29,25 @@ export default function HomeSection() {
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-cardo text-4xl xl:text-6xl font-bold text-as-gray"
+                            className={`${home.fontFamily} text-4xl xl:text-7xl font-bold ${theme.primaryBg === 'bg-rt-green' ? theme.textPrimary : theme.primaryBg.replace('bg-', 'text-')}`}
                         >
-                            Adestramento
+                            {home.titleLine1}
                         </motion.h1>
                         <motion.h1
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.2, ease: "easeOut"}}
-                            className="font-cardo text-4xl xl:text-6xl font-bold text-as-gray mb-4"
+                            className={`${home.fontFamily} text-4xl xl:text-7xl font-bold ${theme.primaryBg === 'bg-rt-green' ? theme.textPrimary : theme.primaryBg.replace('bg-', 'text-')} mb-4`}
                         >
-                            Salomão
+                            {home.titleLine2}
                         </motion.h1>
                         <motion.h2
                             initial={{opacity: 0, y: -20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 1, delay: 0.4, ease: "easeOut"}}
-                            className="text-2xl font-bold text-as-gray mb-4"
+                            className={`text-lg font-bold ${theme.primaryBg === 'bg-rt-green' ? theme.textPrimary : theme.primaryBg.replace('bg-', 'text-')} mb-4`}
                         >
-                            Qualidade de vida para Você e seu PET, para sua Família e para a Sociedade.
+                            {home.subtitle}
                         </motion.h2>
                     </div>
                 </div>

@@ -1,15 +1,16 @@
-import Navbar from "@/app/components/rt/Navbar";
+import SharedNavbar from "@/app/components/shared/SharedNavbar";
+import SharedFooter from "@/app/components/shared/SharedFooter";
 import DoencasPageComponent from "@/app/components/rt/doencas/PageComponent";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import Footer from "@/app/components/rt/Footer";
+import { rtConfig } from "@/app/config/rt.config";
 
 export default function Home() {
     return (
         <>
-            <Navbar/>
+            <SharedNavbar config={rtConfig} />
             <DoencasPageComponent />
             <WhatsAppButton/>
-            <Footer/>
+            <SharedFooter config={rtConfig} />
         </>
     );
 }

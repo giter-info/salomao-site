@@ -2,19 +2,19 @@
 import {useTransition, useState} from "react";
 import {useRouter} from "next/navigation";
 import {motion, AnimatePresence} from "framer-motion";
-import brand from "@/app/images/layout/brand.png";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Navbar() {
+export default function SharedNavbar({ config }) {
+    const { navbar, theme } = config;
     const router = useRouter();
     const [isLoading, startTransition] = useTransition();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const handleNavigation = (url) => {
-        // Usa `startTransition` para gerenciar a transição da rota
         startTransition(() => {
-            router.push(url); // Navega para a nova rota
-            setIsMobileMenuOpen(false)
+            router.push(url);
+            setIsMobileMenuOpen(false);
         });
     };
 
@@ -22,20 +22,13 @@ export default function Navbar() {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const links = [
-        { nome: "Início", link: "/" },
-        { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
-        { nome: "Estrutura", link: "/residencia-inclusiva/estrutura" },
-        { nome: "Contato", link: "/residencia-inclusiva/#contato" }
-    ];
-
     const NormalLinks = () => {
         return (
-            links.map((link, index) => (
+            navbar.links.map((link, index) => (
                 <div
                     key={index}
-                    className="py-2 px-3 block hover:text-rt-primary cursor-pointer font-cardo font-semibold"
-                    onClick={() => handleNavigation(link.link)} // Navega para a rota clicada
+                    className={`py-2 px-3 block hover:${theme.textAccent} cursor-pointer font-cardo font-semibold`}
+                    onClick={() => handleNavigation(link.link)}
                 >
                     {link.nome}
                 </div>
@@ -45,11 +38,11 @@ export default function Navbar() {
 
     const MobileLinks = () => {
         return (
-            links.map((link, index) => (
+            navbar.links.map((link, index) => (
                 <div
                     key={index}
-                    className="text-2xl hover:text-rt-primary cursor-pointer font-cardo font-semibold"
-                    onClick={() => handleNavigation(link.link)} // Navega para a rota clicada
+                    className={`text-2xl hover:${theme.textAccent} cursor-pointer font-cardo font-semibold`}
+                    onClick={() => handleNavigation(link.link)}
                 >
                     {link.nome}
                 </div>
@@ -59,13 +52,12 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Navbar */}
-            <nav className="bg-ri-primary text-rt-white fixed w-full top-0 left-0 z-50 hover:shadow-lg hover:shadow-rt-dark">
+            <nav className={`${theme.primaryBg} ${theme.textPrimary} fixed w-full top-0 left-0 z-50 hover:shadow-lg ${theme.shadowAccent}`}>
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                        <a href="/" className="text-white">
-                            <Image src={brand} alt="Brand Logo" width="120" priority/>
-                        </a>
+                        <Link href="/" className="text-white">
+                            <Image src={navbar.logo} alt="Brand Logo" width="120" priority/>
+                        </Link>
                         <button id="mobile-menu-button" className="md:hidden" onClick={toggleMobileMenu}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <title>bars-3-bottom-left</title>
@@ -84,7 +76,6 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                {/* Animação do Menu Mobile */}
                 <AnimatePresence>
                     {isMobileMenuOpen && (
                         <motion.div
@@ -93,7 +84,7 @@ export default function Navbar() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             transition={{ duration: 0.3 }}
-                            className="fixed inset-0 bg-ri-blue text-rt-dark flex flex-col items-center justify-center space-y-6"
+                            className={`fixed inset-0 ${theme.mobileMenuBg} ${theme.textAccent} flex flex-col items-center justify-center space-y-6`}
                         >
                             <button id="mobile-menu-close" className="absolute top-4 right-4" onClick={() => setIsMobileMenuOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -113,7 +104,6 @@ export default function Navbar() {
                 </AnimatePresence>
             </nav>
 
-            {/* Loading Spinner */}
             {isLoading && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>

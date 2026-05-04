@@ -1,15 +1,16 @@
-import Navbar from "@/app/components/ri/Navbar";
+import SharedNavbar from "@/app/components/shared/SharedNavbar";
+import SharedFooter from "@/app/components/shared/SharedFooter";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import Footer from "@/app/components/ri/Footer";
 import EstruturaPageComponent from "@/app/components/ri/estrutura/PageComponent";
+import { riConfig } from "@/app/config/ri.config";
 
 export default function Home() {
     return (
         <>
-            <Navbar/>
+            <SharedNavbar config={riConfig} />
             <EstruturaPageComponent />
             <WhatsAppButton/>
-            <Footer/>
+            <SharedFooter config={riConfig} />
         </>
     );
 }

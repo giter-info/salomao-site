@@ -1,7 +1,8 @@
-import Navbar from "@/app/components/rt/Navbar";
+import SharedNavbar from "@/app/components/shared/SharedNavbar";
+import SharedFooter from "@/app/components/shared/SharedFooter";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
-import Footer from "@/app/components/rt/Footer";
 import FaqPageComponent from "@/app/components/rt/faq/PageComponent";
+import { rtConfig } from "@/app/config/rt.config";
 
 const commonTitle = "Dúvidas Frequentes - Residencial Terapêutico Salomão";
 const commonDescription =
@@ -49,10 +50,10 @@ export const metadata = {
 export default function SaibaMaisPage() {
     return (
         <>
-            <Navbar/>
+            <SharedNavbar config={rtConfig} />
             <FaqPageComponent/>
             <WhatsAppButton/>
-            <Footer/>
+            <SharedFooter config={rtConfig} />
         </>
 
     );
