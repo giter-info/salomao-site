@@ -47,6 +47,7 @@ export default function EstruturaGridComponent() {
         <div className="columns-1 md:columns-2 lg:columns-4">
             {images.map((image, index) => (
                 <motion.div
+                    key={index}
                     className="px-2"
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
