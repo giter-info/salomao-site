@@ -1,37 +1,30 @@
-import {Inter, Nunito_Sans, Roboto_Slab, Montserrat, Delius, Yatra_One} from "next/font/google";
+import {Inter, Nunito_Sans, Montserrat, Delius} from "next/font/google";
 import "./globals.css";
 import GTagComponent from "@/app/components/layout/GTagComponent";
 
 const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
+    display: 'swap',
 });
 
 const nunito = Nunito_Sans({
     subsets: ["latin"],
     variable: "--font-nunito",
-});
-
-const robotoSlab = Roboto_Slab({
-    subsets: ["latin"],
-    variable: "--font-roboto-slab",
+    display: 'swap',
 });
 
 const montserrat = Montserrat({
     subsets: ["latin"],
     variable: "--font-montserrat",
+    display: 'swap',
 });
 
 const delius = Delius({
     weight: "400",
     subsets: ["latin"],
     variable: "--font-delius",
-});
-
-const yatraOne = Yatra_One({
-    weight: "400",
-    subsets: ["latin"],
-    variable: "--font-yatra-one",
+    display: 'swap',
 });
 
 const commonTitle = "Residencial Terapêutico Salomão";
@@ -79,8 +72,8 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="pt">
-        <GTagComponent />
-            <body className={`${inter.variable} ${nunito.variable} ${robotoSlab.variable} ${montserrat.variable} ${delius.variable} ${yatraOne.variable} ${inter.className}`}>
+            <body className={`${inter.variable} ${nunito.variable} ${montserrat.variable} ${delius.variable} ${inter.className}`}>
+                <GTagComponent />
                 {children}
             </body>
         </html>

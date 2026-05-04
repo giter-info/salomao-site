@@ -36,8 +36,6 @@ module.exports = {
                 nunito: ["var(--font-nunito)", "sans-serif"],
                 mont: ["var(--font-montserrat)", "sans-serif"],
                 cardo: ["var(--font-delius)", "sans-serif"],
-                roboto: ["var(--font-roboto-slab)", "serif"],
-                yatra: ["var(--font-yatra-one)", "display"],
             },
         },
     },
