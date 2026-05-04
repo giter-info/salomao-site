@@ -46,7 +46,6 @@ export const rtConfig = {
             { nome: "Sobre Nós", link: "/residencial-terapeutico/#sobre" },
             { nome: "Unidades", link: "/residencial-terapeutico/unidades" },
             { nome: "Doenças Atendidas", link: "/residencial-terapeutico/doencas" },
-            { nome: "Estrutura", link: "/residencial-terapeutico/estrutura" },
             { nome: "Dúvidas Frequentes", link: "/residencial-terapeutico/faq" },
             { nome: "Contato", link: "/#contato" }
         ]
@@ -131,7 +130,6 @@ export const rtConfig = {
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencial-terapeutico/#sobre" },
             { nome: "Doenças Atendidas", link: "/residencial-terapeutico/doencas" },
-            { nome: "Imagens", link: "/residencial-terapeutico/estrutura" },
             { nome: "Contato", link: "/residencial-terapeutico/#contato" }
         ],
         additionalLinks: [

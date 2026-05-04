@@ -81,7 +81,7 @@ export const asConfig = {
         links: [
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
-            { nome: "Imagens", link: "/residencia-inclusiva/estrutura" },
+            { nome: "Imagens", link: "/adestramento-salomao/estrutura" },
             { nome: "Contato", link: "/residencia-inclusiva/#contato" }
         ],
         additionalLinks: [

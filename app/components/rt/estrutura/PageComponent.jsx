@@ -34,7 +34,24 @@ export default function EstruturaPageComponent({ config, unidade }) {
     };
 
     return (
-        <section id="atendidas" className={`relative min-h-[70vh] flex items-center ${theme.primaryBg} overflow-hidden pt-20`}>
+        <section id="atendidas" className={`relative min-h-[70vh] flex items-center overflow-hidden pt-20 ${theme.homeBg}`}>
+            {theme.homeBgImage && (
+                <motion.div
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5, ease: "easeOut" }}
+                    className="absolute inset-0 -z-10"
+                >
+                    <Image
+                        src={theme.homeBgImage}
+                        alt="Background"
+                        fill
+                        priority
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-white/10" />
+                </motion.div>
+            )}
             <div className="container mx-auto px-4 z-10">
                 <motion.div
                     variants={containerVariants}
@@ -72,7 +89,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
                 </motion.div>
             </div>
             
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-10 -z-10">
                 <div className={`absolute inset-0 bg-gradient-to-b from-transparent to-black/20`}></div>
             </div>
         </section>

@@ -3,7 +3,7 @@ import * as motion from "framer-motion/client";
 import Image from "next/image";
 import about1 from "@/app/images/home/about1.jpg";
 import about3 from "@/app/images/home/about3.jpg";
-import {FaCamera} from "react-icons/fa";
+import {FaArrowRight} from "react-icons/fa";
 import Link from "next/link";
 
 export default function CardsComponent() {
@@ -79,9 +79,9 @@ export default function CardsComponent() {
                                     animate={{opacity: 1, y: 0}}
                                     transition={{duration: 0.5, delay: 0.6}}
                                 >
-                                    <Link className="flex flex-row gap-2 mx-auto" href="/residencial-terapeutico/estrutura">
-                                        <FaCamera className="mt-1"/>
-                                        Imagens da Estrutura
+                                    <Link className="flex flex-row gap-2 mx-auto" href="/residencial-terapeutico/unidades">
+                                        <FaArrowRight className="mt-1"/>
+                                        Conheça nossas unidades
                                     </Link>
                                 </motion.div>
                             </div>
