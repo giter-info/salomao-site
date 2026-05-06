@@ -5,6 +5,14 @@ import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
 import unidadeBlumenau from "@/app/images/ri/estrutura/1.jpeg";
 import riImg1 from "@/app/images/ri/estrutura/1.jpeg";
+import riImg2 from "@/app/images/ri/estrutura/2.jpeg";
+import riImg3 from "@/app/images/ri/estrutura/3.jpeg";
+import riImg4 from "@/app/images/ri/estrutura/4.jpeg";
+import riImg5 from "@/app/images/ri/estrutura/5.jpeg";
+import riImg6 from "@/app/images/ri/estrutura/6.jpeg";
+// import riImg7 from "@/app/images/ri/estrutura/7.jpeg";
+import riImg8 from "@/app/images/ri/estrutura/8.jpeg";
+import riImg9 from "@/app/images/ri/estrutura/9.jpeg";
 
 export const riConfig = {
     basePath: "/residencia-inclusiva",
@@ -37,7 +45,15 @@ export const riConfig = {
             descricao: "Nossa unidade em Blumenau especializada no acolhimento de pessoas com deficiência, promovendo autonomia e dignidade.",
             imagem: unidadeBlumenau,
             imagens: [
-                { src: riImg1, alt: "Estrutura RI Blumenau 1" }
+                { src: riImg1, alt: "Estrutura RI Blumenau 1" },
+                { src: riImg4, alt: "Estrutura RI Blumenau 4" },
+                { src: riImg3, alt: "Estrutura RI Blumenau 3" },
+                { src: riImg5, alt: "Estrutura RI Blumenau 5" },
+                { src: riImg6, alt: "Estrutura RI Blumenau 6" },
+                { src: riImg8, alt: "Estrutura RI Blumenau 8" },
+                // { src: riImg7, alt: "Estrutura RI Blumenau 7" },
+                { src: riImg2, alt: "Estrutura RI Blumenau 2" },
+                { src: riImg9, alt: "Estrutura RI Blumenau 9" }
             ]
         }
     ],
