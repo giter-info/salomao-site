@@ -3,17 +3,15 @@ import logoRt from "@/app/images/layout/logo-rt.png";
 import service1 from "@/app/images/home/diferencial1.svg";
 import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
-import unidadeBlumenau from "@/app/images/rt/estrutura/1.jpeg";
 import unidadeChapeco from "@/app/images/rt/estrutura/2.jpeg";
-import rtImg1 from "@/app/images/rt/estrutura/1.jpeg";
-import rtImg2 from "@/app/images/rt/estrutura/2.jpeg";
-import rtImg3 from "@/app/images/rt/estrutura/3.jpeg";
-import rtImg4 from "@/app/images/rt/estrutura/4.jpeg";
-import rtImg5 from "@/app/images/rt/estrutura/5.jpeg";
-import rtImg6 from "@/app/images/rt/estrutura/6.jpeg";
-import rtImg7 from "@/app/images/rt/estrutura/7.jpeg";
-import rtImg8 from "@/app/images/rt/estrutura/8.jpeg";
-import rtImg9 from "@/app/images/rt/estrutura/9.jpeg";
+import rtImg1 from "@/app/images/rt/estrutura/1.webp";
+import rtImg2 from "@/app/images/rt/estrutura/2.webp";
+import rtImg3 from "@/app/images/rt/estrutura/3.webp";
+import rtImg4 from "@/app/images/rt/estrutura/4.webp";
+import rtImg5 from "@/app/images/rt/estrutura/5.webp";
+import rtImg6 from "@/app/images/rt/estrutura/6.webp";
+import rtImg7 from "@/app/images/rt/estrutura/7.webp";
+import rtImg8 from "@/app/images/rt/estrutura/8.webp";
 import rtImg10 from "@/app/images/rt/estrutura/10.jpeg";
 import rtImg11 from "@/app/images/rt/estrutura/11.jpeg";
 import rtImg12 from "@/app/images/rt/estrutura/12.jpeg";
@@ -55,7 +53,7 @@ export const rtConfig = {
             id: "blumenau",
             nome: "Unidade Blumenau",
             descricao: "Nova unidade em Blumenau, oferecendo suporte especializado em um ambiente acolhedor e seguro.",
-            imagem: unidadeBlumenau,
+            imagem: rtImg1,
             imagens: [
                 { src: rtImg1, alt: "Estrutura Blumenau 1" },
                 { src: rtImg2, alt: "Estrutura Blumenau 2" },
@@ -65,7 +63,6 @@ export const rtConfig = {
                 { src: rtImg6, alt: "Estrutura Blumenau 6" },
                 { src: rtImg7, alt: "Estrutura Blumenau 7" },
                 { src: rtImg8, alt: "Estrutura Blumenau 8" },
-                { src: rtImg9, alt: "Estrutura Blumenau 9" },
             ]
         },
         {
