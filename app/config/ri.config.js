@@ -10,9 +10,9 @@ import riImg3 from "@/app/images/ri/estrutura/3.jpeg";
 import riImg4 from "@/app/images/ri/estrutura/4.jpeg";
 import riImg5 from "@/app/images/ri/estrutura/5.jpeg";
 import riImg6 from "@/app/images/ri/estrutura/6.jpeg";
-// import riImg7 from "@/app/images/ri/estrutura/7.jpeg";
 import riImg8 from "@/app/images/ri/estrutura/8.jpeg";
 import riImg9 from "@/app/images/ri/estrutura/9.jpeg";
+
 
 export const riConfig = {
     basePath: "/residencia-inclusiva",
@@ -51,7 +51,6 @@ export const riConfig = {
                 { src: riImg5, alt: "Estrutura RI Blumenau 5" },
                 { src: riImg6, alt: "Estrutura RI Blumenau 6" },
                 { src: riImg8, alt: "Estrutura RI Blumenau 8" },
-                // { src: riImg7, alt: "Estrutura RI Blumenau 7" },
                 { src: riImg2, alt: "Estrutura RI Blumenau 2" },
                 { src: riImg9, alt: "Estrutura RI Blumenau 9" }
             ]

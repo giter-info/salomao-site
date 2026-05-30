@@ -111,28 +111,29 @@ export default function SharedUnidadesSection({ config }) {
                                 whileHover={{ y: -10 }}
                                 className="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-2rem)]"
                             >
-                                <div className="h-64 relative">
-                                    <Image
-                                        src={unidade.imagem}
-                                        alt={unidade.nome}
-                                        fill
-                                        className="object-cover transition-transform duration-500 hover:scale-105"
-                                    />
-                                </div>
-                                <div className="p-8">
-                                    <h4 className="text-2xl font-bold text-slate-800 mb-4">{unidade.nome}</h4>
-                                    <p className="text-slate-600 leading-relaxed mb-6">{unidade.descricao}</p>
-                                    
-                                    <Link 
-                                        href={`${basePath}/estrutura/${unidade.id}`}
-                                        className={`inline-flex items-center gap-2 font-bold transition-all duration-300 group ${
-                                            theme.textAccent === 'text-rt-primary' ? 'text-rt-primary hover:text-green-700' : 'text-slate-800 hover:text-slate-600'
-                                        }`}
-                                    >
-                                        Conheça a estrutura 
-                                        <FaArrowRight className="text-sm transition-transform duration-300 group-hover:translate-x-2" />
-                                    </Link>
-                                </div>
+                                <Link href={`${basePath}/estrutura/${unidade.id}`} >
+                                    <div className="h-64 relative">
+                                        <Image
+                                            src={unidade.imagem}
+                                            alt={unidade.nome}
+                                            fill
+                                            className="object-cover transition-transform duration-500 hover:scale-105"
+                                        />
+                                    </div>
+                                    <div className="p-8">
+                                        <h4 className="text-2xl font-bold text-slate-800 mb-4">{unidade.nome}</h4>
+                                        <p className="text-slate-600 leading-relaxed mb-6">{unidade.descricao}</p>
+
+                                        <div
+                                            className={`inline-flex items-center gap-2 font-bold transition-all duration-300 group ${
+                                                theme.textAccent === 'text-rt-primary' ? 'text-rt-primary hover:text-green-700' : 'text-slate-800 hover:text-slate-600'
+                                            }`}
+                                        >
+                                            Conheça a estrutura
+                                            <FaArrowRight className="text-sm transition-transform duration-300 group-hover:translate-x-2" />
+                                        </div>
+                                    </div>
+                                </Link>
                             </motion.div>
                         ))}
                     </div>

@@ -3,24 +3,20 @@ import logoRt from "@/app/images/layout/logo-rt.png";
 import service1 from "@/app/images/home/diferencial1.svg";
 import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
-import unidadeChapeco from "@/app/images/rt/estrutura/2.jpeg";
-import rtImg1 from "@/app/images/rt/estrutura/1.webp";
-import rtImg2 from "@/app/images/rt/estrutura/2.webp";
-import rtImg3 from "@/app/images/rt/estrutura/3.webp";
-import rtImg4 from "@/app/images/rt/estrutura/4.webp";
-import rtImg5 from "@/app/images/rt/estrutura/5.webp";
-import rtImg6 from "@/app/images/rt/estrutura/6.webp";
-import rtImg7 from "@/app/images/rt/estrutura/7.webp";
-import rtImg8 from "@/app/images/rt/estrutura/8.webp";
-import rtImg10 from "@/app/images/rt/estrutura/10.jpeg";
-import rtImg11 from "@/app/images/rt/estrutura/11.jpeg";
-import rtImg12 from "@/app/images/rt/estrutura/12.jpeg";
-import rtImg13 from "@/app/images/rt/estrutura/13.jpeg";
-import rtImg14 from "@/app/images/rt/estrutura/14.jpeg";
-import rtImg15 from "@/app/images/rt/estrutura/15.jpeg";
-import rtImg16 from "@/app/images/rt/estrutura/16.jpeg";
-import rtImg17 from "@/app/images/rt/estrutura/17.jpeg";
-import rtImg18 from "@/app/images/rt/estrutura/18.jpeg";
+import rt2Capa from "../images/rt/estrutura/rtchape/2.jpeg";
+import rt1Capa from "../images/rt/estrutura/rtbnu/1.webp";
+import rt1Img2 from "../images/rt/estrutura/rtbnu/2.webp";
+import rt1Img3 from "../images/rt/estrutura/rtbnu/3.webp";
+import rt1Img4 from "../images/rt/estrutura/rtbnu/4.webp";
+import rt1Img5 from "../images/rt/estrutura/rtbnu/5.webp";
+import rt1Img6 from "../images/rt/estrutura/rtbnu/6.webp";
+import rt1Img7 from "../images/rt/estrutura/rtbnu/7.webp";
+import rt1Img8 from "../images/rt/estrutura/rtbnu/8.webp";
+import rt1Img9 from "../images/rt/estrutura/rtbnu/9.webp";
+import rt1Img10 from "../images/rt/estrutura/rtbnu/10.webp";
+import rt1Img11 from "../images/rt/estrutura/rtbnu/11.webp";
+import rt1Img12 from "../images/rt/estrutura/rtbnu/12.webp";
+import rt2Img1 from "../images/rt/estrutura/rtchape/soon.jpg";
 
 export const rtConfig = {
     basePath: "/residencial-terapeutico",
@@ -53,33 +49,32 @@ export const rtConfig = {
             id: "blumenau",
             nome: "Unidade Blumenau",
             descricao: "Nova unidade em Blumenau, oferecendo suporte especializado em um ambiente acolhedor e seguro.",
-            imagem: rtImg1,
+            imagem: rt1Capa,
             imagens: [
-                { src: rtImg1, alt: "Estrutura Blumenau 1" },
-                { src: rtImg2, alt: "Estrutura Blumenau 2" },
-                { src: rtImg3, alt: "Estrutura Blumenau 3" },
-                { src: rtImg4, alt: "Estrutura Blumenau 4" },
-                { src: rtImg5, alt: "Estrutura Blumenau 5" },
-                { src: rtImg6, alt: "Estrutura Blumenau 6" },
-                { src: rtImg7, alt: "Estrutura Blumenau 7" },
-                { src: rtImg8, alt: "Estrutura Blumenau 8" },
+                { src: rt1Capa, alt: "Estrutura Blumenau 1" },
+                { src: rt1Img2, alt: "Estrutura Blumenau 2" },
+                { src: rt1Img9, alt: "Estrutura Blumenau 8" },
+                { src: rt1Img3, alt: "Estrutura Blumenau 3" },
+                { src: rt1Img4, alt: "Estrutura Blumenau 4" },
+                { src: rt1Img10, alt: "Estrutura Blumenau 8" },
+                { src: rt1Img5, alt: "Estrutura Blumenau 5" },
+                { src: rt1Img6, alt: "Estrutura Blumenau 6" },
+                { src: rt1Img11, alt: "Estrutura Blumenau 8" },
+                { src: rt1Img7, alt: "Estrutura Blumenau 7" },
+                { src: rt1Img8, alt: "Estrutura Blumenau 8" },
+                { src: rt1Img12, alt: "Estrutura Blumenau 8" },
             ]
         },
         {
             id: "chapeco",
             nome: "Unidade Chapecó",
             descricao: "Nova unidade em Chapecó, expandindo nossa rede de cuidado para o grande oeste catarinense.",
-            imagem: unidadeChapeco,
+            imagem: rt2Capa,
             imagens: [
-                { src: rtImg10, alt: "Estrutura Chapecó 1" },
-                { src: rtImg11, alt: "Estrutura Chapecó 2" },
-                { src: rtImg12, alt: "Estrutura Chapecó 3" },
-                { src: rtImg13, alt: "Estrutura Chapecó 4" },
-                { src: rtImg14, alt: "Estrutura Chapecó 5" },
-                { src: rtImg15, alt: "Estrutura Chapecó 6" },
-                { src: rtImg16, alt: "Estrutura Chapecó 7" },
-                { src: rtImg17, alt: "Estrutura Chapecó 8" },
-                { src: rtImg18, alt: "Estrutura Chapecó 9" },
+                { src: rt2Img1, alt: "Estrutura Chapecó 2" },
+                { src: rt2Img1, alt: "Estrutura Chapecó 2" },
+                { src: rt2Img1, alt: "Estrutura Chapecó 2" },
+                { src: rt2Img1, alt: "Estrutura Chapecó 2" },
             ]
         }
     ],
