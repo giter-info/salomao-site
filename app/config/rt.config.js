@@ -3,7 +3,7 @@ import logoRt from "@/app/images/layout/logo-rt.png";
 import service1 from "@/app/images/home/diferencial1.svg";
 import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
-import rt2Capa from "../images/rt/estrutura/rtchape/2.jpeg";
+// Bnu
 import rt1Capa from "../images/rt/estrutura/rtbnu/1.webp";
 import rt1Img2 from "../images/rt/estrutura/rtbnu/2.webp";
 import rt1Img3 from "../images/rt/estrutura/rtbnu/3.webp";
@@ -16,6 +16,8 @@ import rt1Img9 from "../images/rt/estrutura/rtbnu/9.webp";
 import rt1Img10 from "../images/rt/estrutura/rtbnu/10.webp";
 import rt1Img11 from "../images/rt/estrutura/rtbnu/11.webp";
 import rt1Img12 from "../images/rt/estrutura/rtbnu/12.webp";
+// Chape
+import rt2Capa from "../images/rt/estrutura/rtchape/rtchapecapa.webp";
 import rt2Img1 from "../images/rt/estrutura/rtchape/soon.jpg";
 
 export const rtConfig = {
