@@ -6,6 +6,23 @@ import EstruturaGridComponent from "@/app/components/rt/estrutura/EstruturaGridC
 import { riConfig } from "@/app/config/ri.config";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+    const { unidade: unidadeId } = await params;
+    const unidade = riConfig.unidades.find(u => u.id === unidadeId);
+
+    if (!unidade) {
+        return {
+            title: "Estrutura da Residência Inclusiva",
+        };
+    }
+
+    return {
+        title: `Estrutura - ${unidade.nome}`,
+        description: `Explore a estrutura física e as instalações adaptadas da ${unidade.nome} da Residência Inclusiva Salomão em Blumenau.`,
+        keywords: [unidade.nome, "Estrutura Residência Inclusiva", "Acessibilidade Blumenau", "Rede Salomão"]
+    };
+}
+
 export default async function UnidadeEstruturaPage({ params }) {
     const { unidade: unidadeId } = await params;
     const unidade = riConfig.unidades.find(u => u.id === unidadeId);

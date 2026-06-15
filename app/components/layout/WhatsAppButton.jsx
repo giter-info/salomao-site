@@ -1,25 +1,46 @@
 "use client";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import * as motion from "framer-motion/client";
-import {FaWhatsapp} from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { rtConfig } from "@/app/config/rt.config";
+import { riConfig } from "@/app/config/ri.config";
+import { asConfig } from "@/app/config/as.config";
 
 export default function WhatsAppButton() {
+    const pathname = usePathname();
     const [scrollCount, setScrollCount] = useState(0);
     const [showBalloon, setShowBalloon] = useState(false);
     const [balloonClosed, setBalloonClosed] = useState(false); // Estado para controlar o fechamento
-    const whatsLink = "https://api.whatsapp.com/send?phone=5547988688790&text=Ol%C3%A1,%20gostaria%20de%20atendimento%20e%20informa%C3%A7%C3%B5es.";
+
+    // Carrega a configuração dinâmica com base no pathname
+    let socials = rtConfig.socials; // Default
+    let balloonTitle = "Olá! 👋";
+    let balloonText = "Como podemos ajudar hoje?";
+
+    if (pathname?.startsWith("/residencia-inclusiva")) {
+        socials = riConfig.socials;
+        balloonText = "Dúvidas sobre Residência Inclusiva? Fale conosco!";
+    } else if (pathname?.startsWith("/adestramento-salomao")) {
+        socials = asConfig.socials;
+        balloonText = "Dúvidas sobre adestramento? Fale conosco!";
+    } else if (pathname?.startsWith("/residencial-terapeutico")) {
+        socials = rtConfig.socials;
+        balloonText = "Dúvidas sobre Residencial Terapêutico? Fale conosco!";
+    }
+
+    const phone = socials.whatsapp || "5547988080041";
+    const msg = socials.whatsappMessage || "Entrei em contato pelo novo site.";
+    const whatsLink = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(msg)}`;
 
     useEffect(() => {
         const handleScroll = () => {
-            // Aumenta o contador de rolagem a cada rolagem
             setScrollCount(prevCount => prevCount + 1);
         };
 
-        // Adiciona o evento de rolagem
         window.addEventListener("scroll", handleScroll);
 
         return () => {
-            // Remove o evento de rolagem quando o componente é desmontado
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -58,8 +79,8 @@ export default function WhatsAppButton() {
                             rel="noopener noreferrer"
                             className="block"
                         >
-                            <p className="text-rt-green font-bold text-sm">Olá! 👋</p>
-                            <p className="text-gray-600 text-xs mt-1">Como podemos ajudar hoje?</p>
+                            <p className="text-rt-green font-bold text-sm">{balloonTitle}</p>
+                            <p className="text-gray-600 text-xs mt-1">{balloonText}</p>
                         </a>
                         <button
                             onClick={closeBalloon}

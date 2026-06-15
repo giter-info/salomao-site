@@ -7,7 +7,7 @@ export default function SharedSocials({ config }) {
     return (
         <div className="w-full lg:w-6/12 px-4">
             <motion.h4
-                className="text-3xl font-semibold text-blueGray-700"
+                className="text-3xl font-semibold text-white mb-2"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5, delay: 0.1}}
@@ -26,7 +26,7 @@ export default function SharedSocials({ config }) {
                     rel="noopener noreferrer"
                     whileHover={{scale: 1.2, rotate: 10}}
                     whileTap={{scale: 0.9}}
-                    className={`hover:${theme.textAccent}`}
+                    className={`hover:${theme.textAccent} text-slate-300 transition-colors`}
                 >
                     <FaInstagram size={42}/>
                 </motion.a>
@@ -35,7 +35,7 @@ export default function SharedSocials({ config }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{scale: 1.2, rotate: -10}}
-                    className={`hover:${theme.textAccent}`}
+                    className={`hover:${theme.textAccent} text-slate-300 transition-colors`}
                     whileTap={{scale: 0.9}}
                 >
                     <FaFacebook size={42}/>
@@ -46,7 +46,7 @@ export default function SharedSocials({ config }) {
                     rel="noopener noreferrer"
                     whileHover={{scale: 1.2, rotate: 10}}
                     whileTap={{scale: 0.9}}
-                    className={`hover:${theme.textAccent}`}
+                    className={`hover:${theme.textAccent} text-slate-300 transition-colors`}
                 >
                     <FaEnvelope size={42}/>
                 </motion.a>
@@ -55,14 +55,14 @@ export default function SharedSocials({ config }) {
                     target="_blank"
                     whileHover={{scale: 1.2, rotate: -10}}
                     whileTap={{scale: 0.9}}
-                    className={`hover:${theme.textAccent}`}
+                    className={`hover:${theme.textAccent} text-slate-300 transition-colors`}
                 >
                     <FaWhatsapp size={42}/>
                 </motion.a>
             </motion.div>
 
             <motion.p
-                className="text-blueGray-info mx-auto text-left mt-5  pb-4"
+                className="text-slate-300 mx-auto text-left mt-5 pb-4 text-sm"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5, delay: 0.4}}

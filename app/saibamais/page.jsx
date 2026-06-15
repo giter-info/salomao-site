@@ -3,46 +3,16 @@ import SaibaMaisPageComponent from "@/app/components/saibamais/PageComponent";
 import Navbar from "@/app/components/root/Navbar";
 import Footer from "@/app/components/root/Footer";
 
-const commonTitle = "Saiba Mais - Residencial Terapêutico Salomão";
-const commonDescription =
-    "Os transtornos podem ser controlados e organizados!";
-const commonUrl = "https://redesalomao.com.br/saibamais";
-const commonImage = "https://redesalomao.com.br/capa-2.jpg";
-const commonImageDetails = {
-    url: commonImage,
-    width: 1200,
-    height: 630,
-    alt: "Imagem de prévia do site.",
-};
-
 export const metadata = {
-    title: commonTitle,
-    description: commonDescription,
-    openGraph: {
-        type: "website",
-        title: commonTitle,
-        description: commonDescription,
-        url: commonUrl,
-        images: [commonImageDetails],
-        locale: "pt_BR",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: commonTitle,
-        description: commonDescription,
-        images: [commonImage],
-        image_alt: "Imagem de prévia do site no Twitter",
-    },
-    author: "Je4nPw",
+    title: "Saiba Mais",
+    description: "Informações completas sobre como os transtornos mentais podem ser acompanhados, organizados e reabilitados com suporte profissional.",
     keywords: [
-        "Residencial Terapêutico",
+        "Saúde Mental",
         "Transtornos Mentais",
-        "Residencial",
-        "desospitalização",
-        "antimanicomial",
-        "raps",
-        "rede de atenção psicossocial",
-        "contato"
+        "Reabilitação Psicossocial",
+        "Desospitalização",
+        "Apoio Psicológico",
+        "Rede Salomão"
     ],
 };
 

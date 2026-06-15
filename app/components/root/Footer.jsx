@@ -10,7 +10,8 @@ export default function Footer() {
     const links = [
         {nome: "Início", link: "/",},
         {nome: "Sobre Nós", link: "/sobre",},
-        {nome: "Contato", link: "/#contato",},
+        {nome: "Apresentação", link: "/apresentacao",},
+        {nome: "Contato", link: "/contato",},
     ];
 
     const FooterLinks = () => {

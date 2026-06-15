@@ -6,6 +6,18 @@ import DiferenciaisSection from "@/app/components/as/DiferenciaisSection";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 import { asConfig } from "@/app/config/as.config";
 
+export const metadata = {
+    title: "Adestramento",
+    description: "Centro de Treinamento e Adestramento de Cães em Blumenau. Especializados em comportamento canino, obediência e socialização para garantir a harmonia com o seu pet.",
+    keywords: [
+        "Adestramento de cães Blumenau",
+        "Centro de Treinamento Canino",
+        "Comportamento de Cães",
+        "Escola para cães",
+        "Rede Salomão"
+    ],
+};
+
 export default function Home() {
     return (
         <div>

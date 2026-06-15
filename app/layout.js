@@ -27,46 +27,61 @@ const delius = Delius({
     display: 'swap',
 });
 
-const commonTitle = "Residencial Terapêutico Salomão";
+const commonTitle = "Rede Salomão | Cuidado, Inclusão e Acolhimento";
 const commonDescription =
-    "Respeitando o normal de cada um.";
+    "A Rede Salomão oferece Residencial Terapêutico, Residência Inclusiva e Centro de Adestramento em Blumenau e Chapecó, focando no acolhimento de excelência e dignidade.";
 const commonUrl = "https://redesalomao.com.br/";
-const commonImage = "https://redesalomao.com.br/capa-2.jpg";
+const commonImage = "/capa-2.jpg";
 const commonImageDetails = {
     url: commonImage,
     width: 1200,
     height: 630,
-    alt: "Imagem de prévia do site.",
+    alt: "Rede Salomão - Juntos somos mais fortes",
 };
 
 export const metadata = {
-    title: commonTitle,
+    metadataBase: new URL("https://redesalomao.com.br"),
+    title: {
+        default: commonTitle,
+        template: "%s | Rede Salomão"
+    },
     description: commonDescription,
     openGraph: {
         type: "website",
         title: commonTitle,
         description: commonDescription,
-        url: commonUrl, // Pode não ser necessário para OpenGraph
+        url: commonUrl,
         images: [commonImageDetails],
         locale: "pt_BR",
+        siteName: "Rede Salomão",
     },
     twitter: {
         card: "summary_large_image",
         title: commonTitle,
         description: commonDescription,
-        images: [commonImage], // Corrigido para plural
-        image_alt: "Imagem de prévia do site no Twitter", // Adicionado alt
+        images: [commonImage],
+        image_alt: "Rede Salomão - Juntos somos mais fortes",
     },
-    author: "Je4nPw",
+    author: "Rede Salomão",
     keywords: [
+        "Rede Salomão",
         "Residencial Terapêutico",
+        "Residência Inclusiva",
+        "Adestramento Salomão",
+        "Saúde Mental",
         "Transtornos Mentais",
-        "Residencial",
+        "Acolhimento de deficientes",
+        "Adestramento de cães Blumenau",
         "desospitalização",
         "antimanicomial",
-        "raps",
-        "rede de atenção psicossocial"
+        "Blumenau",
+        "Chapecó",
+        "Santa Catarina"
     ],
+    robots: {
+        index: true,
+        follow: true,
+    }
 };
 
 export default function RootLayout({children}) {

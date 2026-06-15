@@ -8,6 +8,20 @@ import EstruturaSection from "@/app/components/rt/EstruturaSection";
 import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 import { rtConfig } from "@/app/config/rt.config";
 
+export const metadata = {
+    title: "Residencial Terapêutico",
+    description: "Moradia assistida com suporte 24h para portadores de transtornos mentais egressos de internações psiquiátricas. Estrutura acolhedora em Blumenau e Chapecó.",
+    keywords: [
+        "Residencial Terapêutico",
+        "Saúde Mental",
+        "Moradia Assistida",
+        "Reabilitação Psicossocial",
+        "Blumenau",
+        "Chapecó",
+        "Santa Catarina"
+    ],
+};
+
 export default function Home() {
     return (
         <>

@@ -6,6 +6,23 @@ import EstruturaGridComponent from "@/app/components/rt/estrutura/EstruturaGridC
 import { asConfig } from "@/app/config/as.config";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+    const { unidade: unidadeId } = await params;
+    const unidade = asConfig.unidades.find(u => u.id === unidadeId);
+
+    if (!unidade) {
+        return {
+            title: "Estrutura do Centro de Treinamento",
+        };
+    }
+
+    return {
+        title: `Estrutura - ${unidade.nome}`,
+        description: `Explore as instalações do ${unidade.nome} da Rede Salomão. Espaços dedicados para o treino, bem-estar e diversão do seu cão.`,
+        keywords: [unidade.nome, "Adestramento Blumenau", "Centro de Treinamento Canino", "Galeria de Fotos"]
+    };
+}
+
 export default async function UnidadeEstruturaPage({ params }) {
     const { unidade: unidadeId } = await params;
     const unidade = asConfig.unidades.find(u => u.id === unidadeId);

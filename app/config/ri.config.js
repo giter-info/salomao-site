@@ -35,7 +35,7 @@ export const riConfig = {
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
             { nome: "Unidades", link: "/residencia-inclusiva/unidades" },
-            { nome: "Contato", link: "/residencia-inclusiva/#contato" }
+            { nome: "Contato", link: "/contato" }
         ]
     },
     unidades: [
@@ -100,7 +100,7 @@ export const riConfig = {
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
             { nome: "Imagens", link: "/residencia-inclusiva/estrutura" },
-            { nome: "Contato", link: "/residencia-inclusiva/#contato" }
+            { nome: "Contato", link: "/contato" }
         ],
         additionalLinks: [
             { nome: "Residencial Terapêutico", link: "/residencial-terapeutico" },

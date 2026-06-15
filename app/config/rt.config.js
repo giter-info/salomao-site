@@ -40,10 +40,11 @@ export const rtConfig = {
         links: [
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencial-terapeutico/#sobre" },
+            { nome: "Apresentação", link: "/apresentacao" },
             { nome: "Unidades", link: "/residencial-terapeutico/unidades" },
             { nome: "Doenças Atendidas", link: "/residencial-terapeutico/doencas" },
             { nome: "Dúvidas Frequentes", link: "/residencial-terapeutico/faq" },
-            { nome: "Contato", link: "/#contato" }
+            { nome: "Contato", link: "/contato" }
         ]
     },
     unidades: [
@@ -123,8 +124,9 @@ export const rtConfig = {
         links: [
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencial-terapeutico/#sobre" },
+            { nome: "Apresentação", link: "/apresentacao" },
             { nome: "Doenças Atendidas", link: "/residencial-terapeutico/doencas" },
-            { nome: "Contato", link: "/residencial-terapeutico/#contato" }
+            { nome: "Contato", link: "/contato" }
         ],
         additionalLinks: [
             { nome: "Residência Inclusiva", link: "/residencia-inclusiva" },

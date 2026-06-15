@@ -6,6 +6,23 @@ import EstruturaGridComponent from "@/app/components/rt/estrutura/EstruturaGridC
 import { rtConfig } from "@/app/config/rt.config";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+    const { unidade: unidadeId } = await params;
+    const unidade = rtConfig.unidades.find(u => u.id === unidadeId);
+
+    if (!unidade) {
+        return {
+            title: "Estrutura do Residencial Terapêutico",
+        };
+    }
+
+    return {
+        title: `Estrutura - ${unidade.nome}`,
+        description: `Conheça as instalações e a estrutura física da ${unidade.nome} do Residencial Terapêutico Salomão. Ambientes acolhedores, limpos e seguros.`,
+        keywords: [unidade.nome, "Estrutura Residencial Terapêutico", "Galeria de Fotos", "Rede Salomão"]
+    };
+}
+
 export default async function UnidadeEstruturaPage({ params }) {
     const { unidade: unidadeId } = await params;
     const unidade = rtConfig.unidades.find(u => u.id === unidadeId);

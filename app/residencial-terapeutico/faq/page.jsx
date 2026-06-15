@@ -4,46 +4,16 @@ import WhatsAppButton from "@/app/components/layout/WhatsAppButton";
 import FaqPageComponent from "@/app/components/rt/faq/PageComponent";
 import { rtConfig } from "@/app/config/rt.config";
 
-const commonTitle = "Dúvidas Frequentes - Residencial Terapêutico Salomão";
-const commonDescription =
-    "Respostas para suas perguntas.";
-const commonUrl = "https://redesalomao.com.br/faq";
-const commonImage = "https://redesalomao.com.br/capa-2.jpg";
-const commonImageDetails = {
-    url: commonImage,
-    width: 1200,
-    height: 630,
-    alt: "Imagem de prévia do site.",
-};
-
 export const metadata = {
-    title: commonTitle,
-    description: commonDescription,
-    openGraph: {
-        type: "website",
-        title: commonTitle,
-        description: commonDescription,
-        url: commonUrl,
-        images: [commonImageDetails],
-        locale: "pt_BR",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: commonTitle,
-        description: commonDescription,
-        images: [commonImage],
-        image_alt: "Imagem de prévia do site no Twitter",
-    },
-    author: "Je4nPw",
+    title: "Perguntas Frequentes",
+    description: "Tire suas dúvidas sobre o Residencial Terapêutico Salomão. Entenda a diferença de clínicas psiquiátricas, lares de idosos e comunidades terapêuticas.",
     keywords: [
-        "Residencial Terapêutico",
-        "Transtornos Mentais",
-        "Residencial",
-        "desospitalização",
-        "antimanicomial",
-        "raps",
-        "rede de atenção psicossocial",
-        "contato"
+        "Perguntas Frequentes",
+        "Dúvidas Residencial Terapêutico",
+        "Saúde Mental FAQ",
+        "Internação Psiquiátrica",
+        "Moradia Assistida",
+        "Rede Salomão"
     ],
 };
 

@@ -33,7 +33,7 @@ export const asConfig = {
         links: [
             { nome: "Início", link: "/" },
             { nome: "Estrutura", link: "/adestramento-salomao/estrutura" },
-            { nome: "Contato", link: "/adestramento-salomao/#contato" }
+            { nome: "Contato", link: "/contato" }
         ]
     },
     unidades: [
@@ -82,7 +82,7 @@ export const asConfig = {
             { nome: "Início", link: "/" },
             { nome: "Sobre Nós", link: "/residencia-inclusiva/#sobre" },
             { nome: "Imagens", link: "/adestramento-salomao/estrutura" },
-            { nome: "Contato", link: "/residencia-inclusiva/#contato" }
+            { nome: "Contato", link: "/contato" }
         ],
         additionalLinks: [
             { nome: "Residencial Terapêutico", link: "/residencial-terapeutico" },
