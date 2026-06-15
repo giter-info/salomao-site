@@ -75,6 +75,28 @@ export default function ApresentacaoClient() {
                     />
                 </div>
 
+                {/* Badges e Resumo da Proposta */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.35 }}
+                    className="flex flex-col items-center justify-center text-center space-y-6 max-w-4xl mx-auto py-6"
+                >
+                    <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+                        {["Liberdade", "Dignidade", "Direitos", "Autonomia"].map((badge, idx) => (
+                            <span
+                                key={idx}
+                                className="px-5 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-rt-primary/10 text-rt-primary border border-rt-primary/25 rounded-full shadow-lg backdrop-blur-md hover:bg-rt-primary hover:text-rt-dark hover:border-rt-primary transition-all duration-300 cursor-default"
+                            >
+                                {badge}
+                            </span>
+                        ))}
+                    </div>
+                    <p className="text-slate-200 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-3xl px-4">
+                        Uma estratégia central de desospitalização para pessoas com transtornos mentais graves, egressas de internações psiquiátricas de longa permanência.
+                    </p>
+                </motion.div>
+
                 {/* 1. O Serviço de Residência Terapêutica (SRT) */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -87,10 +109,10 @@ export default function ApresentacaoClient() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                         <p className="text-slate-300 leading-relaxed text-sm md:text-base md:col-span-7">
-                            Estratégia central de desospitalização para pessoas com transtornos mentais graves, egressas de internações psiquiátricas de longa permanência. Focamos no acolhimento de indivíduos que buscam um novo caminho para a desinstitucionalização e a reinserção na sociedade.
+                            O Serviço de Residência Terapêutica (SRT) Salomão é um componente estratégico da RAPS (Rede de Atenção Psicossocial), trabalhando em articulação com o CAPS-II. Nosso propósito é acolher indivíduos com transtornos mentais que, após longos períodos de internação, buscam um novo caminho para a desinstitucionalização e a reinserção na sociedade.
                         </p>
                         <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-rt-primary italic text-sm md:text-base text-rt-info md:col-span-5">
-                            "Nosso propósito é restabelecer os valores morais, éticos e a autonomia dos sujeitos egressos de internações psiquiátricas."
+                            "Nosso compromisso vai além do cuidado; é com a equipe de projetos de vida e o fortalecimento da cidadania. Atendemos pessoas acompanhadas pelos CAPS, egressos de hospitais psiquiátricos e indivíduos provenientes de Hospitais de Custódia e Tratamento Psiquiátrico."
                         </div>
                     </div>
                 </motion.div>
