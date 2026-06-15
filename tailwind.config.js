@@ -30,6 +30,7 @@ module.exports = {
                 "ri-bluest": '#71C8A0',
                 "ri-soft-green": '#3EFEC9',
                 "as-gray": '#1A1A1A',
+                "main-primary": "#0D4C53",
             },
             fontFamily: {
                 script: ["Lucien Schoenschriftv CAT", "cursive"],

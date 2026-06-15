@@ -60,7 +60,7 @@ export default function Navbar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-rt-green text-rt-white fixed w-full top-0 left-0 z-50 border-b border-white/10 shadow-md transition-all duration-300">
+            <nav className="bg-main-primary text-rt-white fixed w-full top-0 left-0 z-50 border-b border-white/10 shadow-md transition-all duration-300">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div className="flex items-center justify-between w-full md:w-auto">
                         <a href="#" className="brightness-110 transition-all">

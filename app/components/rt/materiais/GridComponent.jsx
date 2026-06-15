@@ -1,67 +1,55 @@
-import {motion} from "framer-motion";
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaFileAlt, FaArrowRight } from "react-icons/fa";
 
 export default function MateriaisGridComponent() {
-
-    const Card = ({title, fullText, link, onClick}) => {
-        const extractParagraph = (obj) => {
-            return Object.entries(obj).map(([key, value]) => (
-                <p className="mt-2 text-rt-green" key={key}>
-                    {value}
-                </p>
-            ));
-        };
-
-        return (
-            <div className="bg-rt-info p-4 rounded-lg shadow-md text-white" onClick={onClick}>
-                <h3 className="text-2xl font-bold mb-2 text-rt-green font-cardo py-2 text-center">{title}</h3>
-                <motion.div
-                    key="content"
-                    initial={{opacity: 0, height: 0}}
-                    animate={{opacity: 1, height: "auto"}}
-                    exit={{opacity: 0, height: 0}}
-                    transition={{duration: 0.5, ease: "easeInOut"}}
-                    className="mt-2 overflow-hidden"
-                >
-                    {extractParagraph(fullText)}
-                </motion.div>
-                <div className="text-center pt-8">
-                    <Link href={link} className="bg-rt-green p-2 rounded-lg cursor-pointer" target="_blank">
-                        Acesse aqui o material
-                    </Link>
-                </div>
-            </div>
-        );
-    };
-
     const cardsData = [
         {
             title: "PORTARIA Nº 106, DE 11 DE FEVEREIRO DE 2000",
-            fullText: {
-                1: "Emitido pelo Ministério da Saúde, essa portaria cria o Serviço Residencial Terapêutico e norteia" +
-                    " seu funcionamento.",
-            },
+            description: "Emitido pelo Ministério da Saúde, esta portaria cria o Serviço Residencial Terapêutico (SRT) e norteia todas as diretrizes básicas para o seu funcionamento.",
             link: "https://cetadobserva.ufba.br/sites/cetadobserva.ufba.br/files/106_0.pdf"
-        },{
+        },
+        {
             title: "PORTARIA Nº 3.090, DE 23 DE DEZEMBRO DE 2011",
-            fullText: {
-                1: "Altera a Portaria nº 106/GM/MS, de 11 de fevereiro de 2000, e dispõe, no âmbito da Rede de" +
-                    " Atenção Psicossocial, sobre o repasse de recursos de incentivo de custeio e custeio mensal" +
-                    " para implantação e/ou implementação e funcionamento dos Serviços Residenciais Terapêuticos (SRT).",
-            },
+            description: "Altera a Portaria nº 106/GM/MS e dispõe, no âmbito da Rede de Atenção Psicossocial, sobre o repasse de recursos de incentivo de custeio e custeio mensal para implantação e funcionamento dos SRTs.",
             link: "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3090_23_12_2011_rep.html"
         },
     ];
 
     return (
-        <div className="grid grid-cols-1 gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
             {cardsData.map((card, index) => (
-                <Card
+                <motion.div
                     key={index}
-                    title={card.title}
-                    fullText={card.fullText}
-                    link={card.link}
-                />
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    whileHover={{ y: -6 }}
+                    className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between h-full"
+                >
+                    <div>
+                        <div className="p-3 rounded-2xl bg-rt-primary/10 text-rt-green w-fit mb-6">
+                            <FaFileAlt size={24} />
+                        </div>
+                        <h3 className="text-lg md:text-xl font-bold text-rt-green font-cardo mb-3 leading-snug">
+                            {card.title}
+                        </h3>
+                        <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+                            {card.description}
+                        </p>
+                    </div>
+                    <div>
+                        <Link
+                            href={card.link}
+                            className="inline-flex items-center justify-center gap-2 w-full bg-rt-green hover:bg-green-950 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-rt-green/20 text-sm"
+                            target="_blank"
+                        >
+                            Acessar o material <FaArrowRight className="text-xs" />
+                        </Link>
+                    </div>
+                </motion.div>
             ))}
         </div>
     );

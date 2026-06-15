@@ -25,9 +25,7 @@ export default function SharedHomeSection({ config }) {
         },
     };
 
-    const textStyle = theme.primaryBg === 'bg-rt-green'
-        ? theme.textPrimary
-        : theme.primaryBg.replace('bg-', 'text-');
+    const textStyle = theme.textPrimary || 'text-white';
 
     return (
         <section id="home" className={`relative min-h-[90vh] flex items-center overflow-hidden ${theme.homeBg}`}>

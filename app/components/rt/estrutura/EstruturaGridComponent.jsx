@@ -15,6 +15,12 @@ export default function EstruturaGridComponent({ images = [], theme = {} }) {
         setIsOpen(true);
     };
 
+    const hoverBorderClass = theme.textAccent === 'text-rt-primary'
+        ? 'hover:border-rt-primary/50'
+        : theme.textAccent === 'text-ri-blue'
+        ? 'hover:border-ri-blue/50'
+        : 'hover:border-white/50';
+
     return (
         <>
             <div className="columns-1 md:columns-2 lg:columns-4 gap-6">
@@ -31,7 +37,7 @@ export default function EstruturaGridComponent({ images = [], theme = {} }) {
                         id={`gallery-item-${index}`}
                     >
                         <Image
-                            className={`rounded-2xl shadow-md ${theme.shadowAccent || 'shadow-rt-dark'} border border-white/10 hover:border-rt-primary/50 transition-colors duration-300 w-full h-auto`}
+                            className={`rounded-2xl shadow-md ${theme.shadowAccent || 'shadow-rt-dark'} border border-white/10 ${hoverBorderClass} transition-colors duration-300 w-full h-auto`}
                             src={image.src}
                             alt={image.alt || `Imagem ${index + 1}`}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

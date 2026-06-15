@@ -19,15 +19,16 @@ export const riConfig = {
     theme: {
         primaryBg: "bg-ri-primary",
         secondaryBg: "bg-ri-primary",
-        mobileMenuBg: "bg-ri-blue",
+        mobileMenuBg: "bg-ri-primary",
         textPrimary: "text-rt-white",
-        textAccent: "text-rt-dark", // No menu mobile do RI, o texto é escuro
-        shadowAccent: "hover:shadow-rt-dark",
+        textAccent: "text-ri-blue",
+        shadowAccent: "hover:shadow-ri-blue/20",
         navbarBg: "bg-ri-primary",
         homeBg: "bg-riback",
         homeBgImage: "/bg-ri.png",
         sobreBg: "bg-ri-primary",
-        sobreText: "text-rt-dark"
+        sobreText: "text-rt-white",
+        useGlass: true
     },
     navbar: {
         logo: brand,

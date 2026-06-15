@@ -61,7 +61,7 @@ export default function HomeSection() {
             bgColor: "bg-as-gray/90",
             borderColor: "border-white/20",
             hoverShadow: "hover:shadow-white/10",
-            btnText: "Ver Centro de Treinamento",
+            btnText: "Ver Adestramento",
             themeColor: "text-white",
             bgImage: "/bg-as.png"
         }

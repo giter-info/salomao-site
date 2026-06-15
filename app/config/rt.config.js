@@ -33,7 +33,8 @@ export const rtConfig = {
         homeBg: "bg-rtback",
         homeBgImage: "/bg-rt.png",
         sobreBg: "bg-rt-green",
-        sobreText: "text-rt-dark"
+        sobreText: "text-rt-dark",
+        useGlass: true
     },
     navbar: {
         logo: brand,
@@ -93,18 +94,21 @@ export const rtConfig = {
         cards: [
             {
                 image: service1,
+                icon: "FaHome",
                 alt: "Residência Terapêutica",
                 text: "O Residencial foi pensado a partir da necessidade que vimos em ter um serviço em nosso território a fim de complementar a Rede de Atenção Psicossocial."
             },
             {
                 image: service2,
+                icon: "FaUserCheck",
                 alt: "Atendimento Individualizado",
                 text: "Esse trabalho visa fazer parte da luta antimanicomial que busca restabelecer os valores morais, éticos, comportamentais e espirituais, direcionando-os a reabilitação social e cultural."
             },
             {
                 image: service3,
+                icon: "FaHandsHelping",
                 alt: "Acompanhamento",
-                text: "Visa ainda promover dignidade, direito à cidadania, à liberdade e a autonomia desses sujeitos. O acompanhamento diário com equipe especializada aliado a farmacoterapia são um importante diferencial para o avanço no tratamento da doença."
+                text: "Visa ainda promover dignidade, direito à cidadania, à liberdade e a autonomia desses sujeitos. O acompanhamento diário com equipe especializada aliado a farmacoterapia são um importantíssimo diferencial para o avanço no tratamento da doença."
             }
         ]
     },

@@ -27,7 +27,7 @@ export default function SharedNavbar({ config }) {
             navbar.links.map((link, index) => (
                 <div
                     key={index}
-                    className={`py-2 px-3 block hover:${theme.textAccent} cursor-pointer font-cardo font-semibold`}
+                    className={`py-2 px-3 block ${theme.textMenu} hover:${theme.textAccent} cursor-pointer font-cardo font-semibold`}
                     onClick={() => handleNavigation(link.link)}
                 >
                     {link.nome}
