@@ -182,7 +182,7 @@ export default function ApresentacaoClient() {
                             rel="noopener noreferrer"
                             className="w-full md:max-w-md bg-rt-primary text-slate-950 font-bold py-4 rounded-2xl hover:bg-rt-info transition-all shadow-lg hover:shadow-rt-primary/20 flex items-center justify-center gap-2 text-base"
                         >
-                            Falar com a Equipe no WhatsApp <MessageCircle size={20} />
+                            Falar conosco <MessageCircle size={20} />
                         </a>
                     </div>
                 </motion.div>
