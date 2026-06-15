@@ -1,34 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
-import { Stethoscope, UserCheck, Users, Scale, MessageCircle } from "lucide-react";
+import { FaStethoscope, FaUserCheck, FaUsers, FaBalanceScale, FaWhatsapp } from "react-icons/fa";
 
 export default function ApresentacaoClient() {
     const eixos = [
         {
             title: "Eixo Clínico-Terapêutico",
             description: "Acompanhamento multiprofissional contínuo, gestão responsável da medicação e cuidado integral à saúde física e mental.",
-            icon: Stethoscope,
+            icon: FaStethoscope,
             color: "text-emerald-400",
             bg: "bg-emerald-500/10 border-emerald-500/20"
         },
         {
             title: "Eixo de Autonomia",
             description: "Desenvolvimento de habilidades essenciais para a vida cotidiana, autocuidado, organização pessoal e gestão de recursos.",
-            icon: UserCheck,
+            icon: FaUserCheck,
             color: "text-teal-400",
             bg: "bg-teal-500/10 border-teal-500/20"
         },
         {
             title: "Eixo de Sociabilidade e Lazer",
             description: "Participação em atividades comunitárias, recreativas e culturais, combatendo o isolamento e promovendo novas relações.",
-            icon: Users,
+            icon: FaUsers,
             color: "text-indigo-400",
             bg: "bg-indigo-500/10 border-indigo-500/20"
         },
         {
             title: "Eixo de Cidadania",
             description: "Regularização de documentos, acesso a benefícios sociais e exercício pleno dos direitos civis para a reinserção social.",
-            icon: Scale,
+            icon: FaBalanceScale,
             color: "text-cyan-400",
             bg: "bg-cyan-500/10 border-cyan-500/20"
         }
@@ -87,10 +87,10 @@ export default function ApresentacaoClient() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                         <p className="text-slate-300 leading-relaxed text-sm md:text-base md:col-span-7">
-                            O Serviço de Residência Terapêutica (SRT) Salomão é um componente estratégico da RAPS (Rede de Atenção Psicossocial), trabalhando em articulação com o CAPS-II. Nosso propósito é acolher indivíduos com transtornos mentais que, após longos períodos de internação, buscam um novo caminho para a desinstitucionalização e a reinserção na sociedade.
+                            Estratégia central de desospitalização para pessoas com transtornos mentais graves, egressas de internações psiquiátricas de longa permanência. Focamos no acolhimento de indivíduos que buscam um novo caminho para a desinstitucionalização e a reinserção na sociedade.
                         </p>
                         <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-rt-primary italic text-sm md:text-base text-rt-info md:col-span-5">
-                            "Nosso compromisso vai além do cuidado; é com a equipe de projetos de vida e o fortalecimento da cidadania. Atendemos pessoas acompanhadas pelos CAPS, egressos de hospitais psiquiátricos e indivíduos provenientes de Hospitais de Custódia e Tratamento Psiquiátrico."
+                            "Nosso propósito é restabelecer os valores morais, éticos e a autonomia dos sujeitos egressos de internações psiquiátricas."
                         </div>
                     </div>
                 </motion.div>
@@ -182,7 +182,7 @@ export default function ApresentacaoClient() {
                             rel="noopener noreferrer"
                             className="w-full md:max-w-md bg-rt-primary text-slate-950 font-bold py-4 rounded-2xl hover:bg-rt-info transition-all shadow-lg hover:shadow-rt-primary/20 flex items-center justify-center gap-2 text-base"
                         >
-                            Falar conosco <MessageCircle size={20} />
+                            Falar com a Equipe no WhatsApp <FaWhatsapp size={20} />
                         </a>
                     </div>
                 </motion.div>
