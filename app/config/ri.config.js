@@ -20,6 +20,10 @@ import riImg13 from "@/app/images/ri/estrutura/13.webp";
 import riImg14 from "@/app/images/ri/estrutura/14.webp";
 import riImg15 from "@/app/images/ri/estrutura/15.webp";
 import riImg16 from "@/app/images/ri/estrutura/16.webp";
+import riImg17 from "@/app/images/ri/estrutura/17.webp";
+import riImg18 from "@/app/images/ri/estrutura/18.webp";
+import riImg19 from "@/app/images/ri/estrutura/19.webp";
+import riImg20 from "@/app/images/ri/estrutura/20.webp";
 
 export const riConfig = {
     basePath: "/residencia-inclusiva",
@@ -69,7 +73,11 @@ export const riConfig = {
                 {src: riImg13, alt: "Estrutura RI Blumenau 13"},
                 {src: riImg14, alt: "Estrutura RI Blumenau 14"},
                 {src: riImg15, alt: "Estrutura RI Blumenau 15"},
-                {src: riImg16, alt: "Estrutura RI Blumenau 16"}
+                {src: riImg16, alt: "Estrutura RI Blumenau 16"},
+                {src: riImg17, alt: "Estrutura RI Blumenau 17"},
+                {src: riImg18, alt: "Estrutura RI Blumenau 18"},
+                {src: riImg19, alt: "Estrutura RI Blumenau 19"},
+                {src: riImg20, alt: "Estrutura RI Blumenau 20"}
             ]
         }
     ],
