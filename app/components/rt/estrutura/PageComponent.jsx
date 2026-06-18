@@ -72,7 +72,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
                     
                     <motion.h2
                         variants={itemVariants}
-                        className={`text-4xl md:text-6xl font-bold ${theme.textAccent === 'text-rt-primary' ? 'text-rt-info' : theme.textAccent} mb-10 drop-shadow-sm`}
+                        className={`text-4xl md:text-6xl font-bold text-white mb-10 drop-shadow-sm`}
                     >
                         Imagens da {unidade?.nome || "Estrutura"}
                     </motion.h2>

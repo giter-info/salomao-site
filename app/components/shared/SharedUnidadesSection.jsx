@@ -75,7 +75,7 @@ export default function SharedUnidadesSection({ config }) {
                         
                         <motion.h2
                             variants={itemVariants}
-                            className={`text-4xl md:text-6xl font-bold ${theme.textAccent} mb-10 drop-shadow-sm`}
+                            className={`text-4xl md:text-6xl font-bold text-white mb-10 drop-shadow-sm`}
                         >
                             Nossas Unidades
                         </motion.h2>

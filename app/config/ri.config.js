@@ -3,16 +3,23 @@ import logoRi from "@/app/images/layout/logo-ri.png";
 import service1 from "@/app/images/home/diferencial1.svg";
 import service2 from "@/app/images/home/diferencial2.svg";
 import service3 from "@/app/images/home/diferencial3.svg";
-import unidadeBlumenau from "@/app/images/ri/estrutura/1.jpeg";
-import riImg1 from "@/app/images/ri/estrutura/1.jpeg";
-import riImg2 from "@/app/images/ri/estrutura/2.jpeg";
-import riImg3 from "@/app/images/ri/estrutura/3.jpeg";
-import riImg4 from "@/app/images/ri/estrutura/4.jpeg";
-import riImg5 from "@/app/images/ri/estrutura/5.jpeg";
-import riImg6 from "@/app/images/ri/estrutura/6.jpeg";
-import riImg8 from "@/app/images/ri/estrutura/8.jpeg";
-import riImg9 from "@/app/images/ri/estrutura/9.jpeg";
-
+import unidadeBlumenau from "@/app/images/ri/estrutura/unidadeblumenau.webp";
+import riImg1 from "@/app/images/ri/estrutura/1.webp";
+import riImg2 from "@/app/images/ri/estrutura/2.webp";
+import riImg3 from "@/app/images/ri/estrutura/3.webp";
+import riImg4 from "@/app/images/ri/estrutura/4.webp";
+import riImg5 from "@/app/images/ri/estrutura/5.webp";
+import riImg6 from "@/app/images/ri/estrutura/6.webp";
+import riImg7 from "@/app/images/ri/estrutura/7.webp";
+import riImg8 from "@/app/images/ri/estrutura/8.webp";
+import riImg9 from "@/app/images/ri/estrutura/9.webp";
+import riImg10 from "@/app/images/ri/estrutura/10.webp";
+import riImg11 from "@/app/images/ri/estrutura/11.webp";
+import riImg12 from "@/app/images/ri/estrutura/12.webp";
+import riImg13 from "@/app/images/ri/estrutura/13.webp";
+import riImg14 from "@/app/images/ri/estrutura/14.webp";
+import riImg15 from "@/app/images/ri/estrutura/15.webp";
+import riImg16 from "@/app/images/ri/estrutura/16.webp";
 
 export const riConfig = {
     basePath: "/residencia-inclusiva",
@@ -21,7 +28,7 @@ export const riConfig = {
         secondaryBg: "bg-ri-primary",
         mobileMenuBg: "bg-ri-primary",
         textPrimary: "text-rt-white",
-        textAccent: "text-ri-blue",
+        textAccent: "text-rt-dark",
         shadowAccent: "hover:shadow-ri-blue/20",
         navbarBg: "bg-ri-primary",
         homeBg: "bg-riback",
@@ -47,14 +54,22 @@ export const riConfig = {
             descricao: "Nossa unidade em Blumenau especializada no acolhimento de pessoas com deficiência, promovendo autonomia e dignidade.",
             imagem: unidadeBlumenau,
             imagens: [
-                { src: riImg1, alt: "Estrutura RI Blumenau 1" },
-                { src: riImg4, alt: "Estrutura RI Blumenau 4" },
-                { src: riImg3, alt: "Estrutura RI Blumenau 3" },
-                { src: riImg5, alt: "Estrutura RI Blumenau 5" },
-                { src: riImg6, alt: "Estrutura RI Blumenau 6" },
-                { src: riImg8, alt: "Estrutura RI Blumenau 8" },
-                { src: riImg2, alt: "Estrutura RI Blumenau 2" },
-                { src: riImg9, alt: "Estrutura RI Blumenau 9" }
+                {src: riImg1, alt: "Estrutura RI Blumenau 1"},
+                {src: riImg4, alt: "Estrutura RI Blumenau 4"},
+                {src: riImg3, alt: "Estrutura RI Blumenau 3"},
+                {src: riImg5, alt: "Estrutura RI Blumenau 5"},
+                {src: riImg6, alt: "Estrutura RI Blumenau 6"},
+                {src: riImg8, alt: "Estrutura RI Blumenau 8"},
+                {src: riImg2, alt: "Estrutura RI Blumenau 2"},
+                {src: riImg9, alt: "Estrutura RI Blumenau 9"},
+                {src: riImg7, alt: "Estrutura RI Blumenau 7"},
+                {src: riImg10, alt: "Estrutura RI Blumenau 10"},
+                {src: riImg11, alt: "Estrutura RI Blumenau 11"},
+                {src: riImg12, alt: "Estrutura RI Blumenau 12"},
+                {src: riImg13, alt: "Estrutura RI Blumenau 13"},
+                {src: riImg14, alt: "Estrutura RI Blumenau 14"},
+                {src: riImg15, alt: "Estrutura RI Blumenau 15"},
+                {src: riImg16, alt: "Estrutura RI Blumenau 16"}
             ]
         }
     ],

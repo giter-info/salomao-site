@@ -31,7 +31,7 @@ const commonTitle = "Rede Salomão | Cuidado, Inclusão e Acolhimento";
 const commonDescription =
     "A Rede Salomão oferece Residencial Terapêutico, Residência Inclusiva e Centro de Adestramento em Blumenau e Chapecó, focando no acolhimento de excelência e dignidade.";
 const commonUrl = "https://redesalomao.com.br/";
-const commonImage = "/capa-2.jpg";
+const commonImage = "/capa-2.jpeg";
 const commonImageDetails = {
     url: commonImage,
     width: 1200,
