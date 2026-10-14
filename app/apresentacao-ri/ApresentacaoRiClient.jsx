@@ -28,29 +28,29 @@ export default function ApresentacaoRiClient() {
             title: "Moradia Digna",
             description: "Ambiente residencial adaptado e acolhedor, seguindo rigorosamente as normas de acessibilidade (NBR 9050).",
             icon: FaHome,
-            color: "text-ri-bluest",
-            bg: "bg-ri-bluest/10 border-ri-bluest/20"
+            color: "text-brand-gold-light",
+            bg: "bg-brand-gold-light/10 border-brand-gold/20"
         },
         {
             title: "Autonomia",
             description: "Desenvolvimento de habilidades para a vida diária e participação ativa nas decisões da casa.",
             icon: FaUserCheck,
-            color: "text-ri-blue",
-            bg: "bg-ri-blue/10 border-ri-blue/20"
+            color: "text-brand-gold",
+            bg: "bg-brand-gold/10 border-brand-gold/20"
         },
         {
             title: "Inclusão",
             description: "Participação ativa na vida comunitária com articulação com Saúde (SUS) e Educação.",
             icon: FaUsers,
-            color: "text-ri-soft-green",
-            bg: "bg-ri-soft-green/10 border-ri-soft-green/20"
+            color: "text-brand-gold-light",
+            bg: "bg-brand-gold-light/10 border-brand-gold/20"
         },
         {
             title: "Vínculos",
             description: "Fortalecimento dos laços familiares e sociais com foco constante em evitar a desinstitucionalização.",
             icon: FaHeart,
-            color: "text-red-400",
-            bg: "bg-red-400/10 border-red-400/20"
+            color: "text-brand-gold-dark",
+            bg: "bg-brand-gold-dark/10 border-brand-gold-dark/20"
         }
     ];
 
@@ -82,11 +82,11 @@ export default function ApresentacaoRiClient() {
     ];
 
     return (
-        <section className="relative min-h-screen bg-ri-primary text-white pt-28 pb-20 flex flex-col justify-center overflow-hidden">
+        <section className="relative min-h-screen bg-brand-green text-white pt-28 pb-20 flex flex-col justify-center overflow-hidden">
             {/* Background Image Overlay */}
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-ri.webp')" }} />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-[#004148]/95 to-slate-950" />
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark via-brand-green/95 to-brand-green-dark" />
             </div>
 
             <div className="container mx-auto px-4 z-10 w-full max-w-6xl space-y-12">
@@ -96,7 +96,7 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4"
+                        className="text-4xl sm:text-6xl font-serif font-extrabold text-white tracking-tight mb-4"
                     >
                         Proposta Técnica
                     </motion.h1>
@@ -104,7 +104,7 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-ri-blue text-lg sm:text-xl font-medium tracking-wide"
+                        className="text-brand-gold text-lg sm:text-xl font-medium tracking-wide"
                     >
                         Residencial Inclusivo Salomão — "Respeitando o normal de cada um"
                     </motion.p>
@@ -112,7 +112,7 @@ export default function ApresentacaoRiClient() {
                         initial={{ scaleX: 0 }}
                         animate={{ scaleX: 1 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className="w-24 h-1 bg-ri-blue rounded-full mx-auto mt-6 origin-center"
+                        className="w-24 h-1 bg-brand-gold rounded-full mx-auto mt-6 origin-center"
                     />
                 </div>
 
@@ -127,13 +127,13 @@ export default function ApresentacaoRiClient() {
                         {["Moradia Digna", "Autonomia", "Inclusão", "Vínculos"].map((badge, idx) => (
                             <span
                                 key={idx}
-                                className="px-5 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-ri-blue/10 text-ri-blue border border-ri-blue/25 rounded-full shadow-lg backdrop-blur-md hover:bg-ri-blue hover:text-slate-950 hover:border-ri-blue transition-all duration-300 cursor-default"
+                                className="px-5 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-brand-gold/10 text-brand-gold border border-brand-gold/25 rounded-full shadow-lg backdrop-blur-md hover:bg-brand-gold hover:text-brand-green hover:border-brand-gold transition-all duration-300 cursor-default"
                             >
                                 {badge}
                             </span>
                         ))}
                     </div>
-                    <p className="text-slate-200 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-3xl px-4">
+                    <p className="text-brand-offwhite/90 text-base sm:text-lg md:text-xl font-light leading-relaxed max-w-3xl px-4">
                         A Residência Inclusiva é o compromisso do Estado brasileiro com a proteção integral de jovens e adultos com deficiência. Reafirmamos que a deficiência não é barreira para uma vida plena e comunitária.
                     </p>
                 </motion.div>
@@ -143,16 +143,16 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <h2 className="text-2xl font-bold text-white tracking-wide border-b border-white/10 pb-3">
+                    <h2 className="text-2xl font-serif font-bold text-white tracking-wide border-b border-brand-gold/20 pb-3">
                         O Serviço de Residência Inclusiva (RI)
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                        <p className="text-slate-300 leading-relaxed text-sm md:text-base md:col-span-7">
+                        <p className="text-brand-offwhite/80 leading-relaxed text-sm md:text-base md:col-span-7">
                             A Residência Inclusiva (RI) Salomão é uma unidade de acolhimento institucional que funciona 24 horas por dia, inserida na comunidade. Destinada a jovens e adultos com deficiência (18 a 59 anos) em situação de dependência, oferecemos um ambiente residencial adaptado, acolhedor e seguro.
                         </p>
-                        <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-ri-blue italic text-sm md:text-base text-slate-200 md:col-span-5">
+                        <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-brand-gold italic text-sm md:text-base text-brand-offwhite/90 md:col-span-5">
                             "Nossa missão é garantir moradia digna, desenvolvimento de autonomia, participação ativa na vida comunitária e fortalecimento dos laços familiares e sociais. Cada residente é protagonista das decisões da casa, com atendimento multiprofissional e personalizado."
                         </div>
                     </div>
@@ -163,13 +163,13 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.45 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <h2 className="text-2xl font-bold text-white tracking-wide border-b border-white/10 pb-3">
+                    <h2 className="text-2xl font-serif font-bold text-white tracking-wide border-b border-brand-gold/20 pb-3">
                         Articulação com CAPS-AD: Uma Parceria Estratégica
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-                        <div className="md:col-span-7 space-y-4 text-slate-300 text-sm md:text-base leading-relaxed">
+                        <div className="md:col-span-7 space-y-4 text-brand-offwhite/80 text-sm md:text-base leading-relaxed">
                             <p>
                                 O Residencial Inclusivo Salomão trabalha em estreita articulação com o <strong>CAPS-AD (Centro de Atenção Psicossocial - Álcool e Drogas)</strong> de Blumenau, formando uma rede integrada de cuidado que transforma vidas e fortalece a comunidade.
                             </p>
@@ -177,7 +177,7 @@ export default function ApresentacaoRiClient() {
                                 Esta articulação é fundamental para garantir a continuidade do cuidado a pessoas com deficiência e transtornos decorrentes do uso de substâncias, rompendo o ciclo de desinstitucionalização inadequada.
                             </p>
                         </div>
-                        <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-ri-bluest italic text-sm md:text-base text-slate-200 md:col-span-5">
+                        <div className="p-6 bg-white/5 rounded-2xl border-l-4 border-brand-gold italic text-sm md:text-base text-brand-offwhite/90 md:col-span-5">
                             "Juntos, CAPS-AD e Residencial Inclusivo Salomão oferecem um caminho estruturado de reabilitação psicossocial que respeita a dignidade, promove a autonomia e reconecta o indivíduo com a sociedade."
                         </div>
                     </div>
@@ -190,15 +190,15 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 hover:border-ri-blue/30 transition-all duration-300"
+                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 hover:border-brand-gold/40 transition-all duration-300"
                     >
-                        <h3 className="text-xl font-bold text-ri-bluest flex items-center gap-2 border-b border-white/10 pb-3">
+                        <h3 className="text-xl font-serif font-bold text-brand-gold-light flex items-center gap-2 border-b border-brand-gold/20 pb-3">
                             <FaUser /> Benefícios para o Residente
                         </h3>
                         <ul className="space-y-3">
                             {beneficiosResidente.map((beneficio, i) => (
-                                <li key={i} className="flex items-start gap-3 text-slate-300 text-sm">
-                                    <FaCheck className="text-ri-bluest mt-1 shrink-0" size={14} />
+                                <li key={i} className="flex items-start gap-3 text-brand-offwhite/80 text-sm">
+                                    <FaCheck className="text-brand-gold-light mt-1 shrink-0" size={14} />
                                     <span>{beneficio}</span>
                                 </li>
                             ))}
@@ -210,15 +210,15 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 hover:border-ri-blue/30 transition-all duration-300"
+                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 hover:border-brand-gold/40 transition-all duration-300"
                     >
-                        <h3 className="text-xl font-bold text-ri-blue flex items-center gap-2 border-b border-white/10 pb-3">
+                        <h3 className="text-xl font-serif font-bold text-brand-gold flex items-center gap-2 border-b border-brand-gold/20 pb-3">
                             <FaUsers /> Benefícios para a Família
                         </h3>
                         <ul className="space-y-3">
                             {beneficiosFamilia.map((beneficio, i) => (
-                                <li key={i} className="flex items-start gap-3 text-slate-300 text-sm">
-                                    <FaCheck className="text-ri-blue mt-1 shrink-0" size={14} />
+                                <li key={i} className="flex items-start gap-3 text-brand-offwhite/80 text-sm">
+                                    <FaCheck className="text-brand-gold mt-1 shrink-0" size={14} />
                                     <span>{beneficio}</span>
                                 </li>
                             ))}
@@ -231,10 +231,10 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.55 }}
-                    className="bg-ri-blue/10 border border-ri-blue/20 p-6 rounded-2xl shadow-xl text-center space-y-3"
+                    className="bg-brand-gold/10 border border-brand-gold/20 p-6 rounded-2xl shadow-xl text-center space-y-3"
                 >
-                    <h4 className="text-lg font-bold text-ri-blue">Impacto Social</h4>
-                    <p className="text-slate-200 text-sm md:text-base font-light leading-relaxed max-w-4xl mx-auto">
+                    <h4 className="text-lg font-bold text-brand-gold">Impacto Social</h4>
+                    <p className="text-brand-offwhite/90 text-sm md:text-base font-light leading-relaxed max-w-4xl mx-auto">
                         Esta parceria contribui para reduzir reinternações hospitalares, fortalecer a RAPS (Rede de Atenção Psicossocial) e demonstrar que a desinstitucionalização é possível e eficaz. Cada residente que se reabilita é uma vitória para a comunidade, um exemplo de que a deficiência não é barreira para uma vida plena e comunitária.
                     </p>
                 </motion.div>
@@ -244,22 +244,22 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <h2 className="text-2xl font-bold text-white tracking-wide border-b border-white/10 pb-3">
+                    <h2 className="text-2xl font-serif font-bold text-white tracking-wide border-b border-brand-gold/20 pb-3">
                         Objetivos Principais
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {objetivos.map((obj, i) => {
                             const Icon = obj.icon;
                             return (
-                                <div key={i} className="flex flex-col gap-4 p-5 rounded-2xl bg-white/5 border border-white/5 items-start justify-between min-h-[190px] hover:bg-white/10 transition-colors duration-300">
+                                <div key={i} className="flex flex-col gap-4 p-5 rounded-2xl bg-white/5 border border-brand-gold/10 items-start justify-between min-h-[190px] hover:bg-white/10 transition-colors duration-300">
                                     <div className={`p-3 rounded-xl ${obj.bg} ${obj.color} shrink-0`}>
                                         <Icon size={24} />
                                     </div>
                                     <div>
                                         <h4 className="text-base font-bold text-white mb-2">{obj.title}</h4>
-                                        <p className="text-xs text-slate-300 leading-relaxed">{obj.description}</p>
+                                        <p className="text-xs text-brand-offwhite/80 leading-relaxed">{obj.description}</p>
                                     </div>
                                 </div>
                             );
@@ -274,38 +274,38 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.65 }}
-                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 hover:border-ri-blue/30 transition-all duration-300"
+                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 hover:border-brand-gold/40 transition-all duration-300"
                     >
-                        <div className="border-b border-white/10 pb-3">
-                            <h3 className="text-xl font-bold text-white">Casa (Espaço Físico)</h3>
-                            <p className="text-slate-400 text-xs mt-1">Ambiente adaptado para convivência e segurança</p>
+                        <div className="border-b border-brand-gold/20 pb-3">
+                            <h3 className="text-xl font-serif font-bold text-white">Casa (Espaço Físico)</h3>
+                            <p className="text-brand-offwhite/60 text-xs mt-1">Ambiente adaptado para convivência e segurança</p>
                         </div>
                         <div className="space-y-4">
-                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 items-center">
-                                <div className="p-3 rounded-xl bg-ri-blue/10 text-ri-blue shrink-0">
+                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-brand-gold/10 items-center">
+                                <div className="p-3 rounded-xl bg-brand-gold/10 text-brand-gold shrink-0">
                                     <FaHome size={20} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-sm text-white">Capacidade</h4>
-                                    <p className="text-xs text-slate-300">Máximo de 10 residentes por unidade.</p>
+                                    <p className="text-xs text-brand-offwhite/80">Máximo de 10 residentes por unidade.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 items-center">
-                                <div className="p-3 rounded-xl bg-ri-bluest/10 text-ri-bluest shrink-0">
+                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-brand-gold/10 items-center">
+                                <div className="p-3 rounded-xl bg-brand-gold-light/10 text-brand-gold-light shrink-0">
                                     <FaWheelchair size={20} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-sm text-white">Acessibilidade Total</h4>
-                                    <p className="text-xs text-slate-300">Rampas, barras de apoio e rotas livres seguindo a NBR 9050.</p>
+                                    <p className="text-xs text-brand-offwhite/80">Rampas, barras de apoio e rotas livres seguindo a NBR 9050.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 items-center">
-                                <div className="p-3 rounded-xl bg-ri-soft-green/10 text-ri-soft-green shrink-0">
+                            <div className="flex gap-4 p-4 rounded-2xl bg-white/5 border border-brand-gold/10 items-center">
+                                <div className="p-3 rounded-xl bg-brand-gold-light/10 text-brand-gold-light shrink-0">
                                     <FaUserShield size={20} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-sm text-white">Privacidade</h4>
-                                    <p className="text-xs text-slate-300">Quartos configurados para no máximo 2 ou 3 pessoas.</p>
+                                    <p className="text-xs text-brand-offwhite/80">Quartos configurados para no máximo 2 ou 3 pessoas.</p>
                                 </div>
                             </div>
                         </div>
@@ -316,31 +316,31 @@ export default function ApresentacaoRiClient() {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.65 }}
-                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 hover:border-ri-blue/30 transition-all duration-300"
+                        className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 hover:border-brand-gold/40 transition-all duration-300"
                     >
-                        <div className="border-b border-white/10 pb-3">
-                            <h3 className="text-xl font-bold text-white">Equipe de Referência</h3>
-                            <p className="text-slate-400 text-xs mt-1">Acompanhamento multiprofissional contínuo</p>
+                        <div className="border-b border-brand-gold/20 pb-3">
+                            <h3 className="text-xl font-serif font-bold text-white">Equipe de Referência</h3>
+                            <p className="text-brand-offwhite/60 text-xs mt-1">Acompanhamento multiprofissional contínuo</p>
                         </div>
-                        <p className="text-slate-300 text-xs leading-relaxed">
+                        <p className="text-brand-offwhite/80 text-xs leading-relaxed">
                             O cuidado é multiprofissional e personalizado, com profissionais fixos por turno para fortalecer o vínculo e a confiança com os residentes.
                         </p>
                         <div className="grid grid-cols-2 gap-3">
-                            <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-                                <h4 className="font-bold text-xs text-ri-bluest">Coordenação</h4>
-                                <p className="text-[10px] text-slate-400 mt-1">Gestão técnica e administrativa da unidade.</p>
+                            <div className="p-3 rounded-xl bg-white/5 border border-brand-gold/10">
+                                <h4 className="font-bold text-xs text-brand-gold-light">Coordenação</h4>
+                                <p className="text-[10px] text-brand-offwhite/60 mt-1">Gestão técnica e administrativa da unidade.</p>
                             </div>
-                            <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-                                <h4 className="font-bold text-xs text-ri-blue">Técnicos</h4>
-                                <p className="text-[10px] text-slate-400 mt-1">Assistente Social e Psicólogo (nível superior).</p>
+                            <div className="p-3 rounded-xl bg-white/5 border border-brand-gold/10">
+                                <h4 className="font-bold text-xs text-brand-gold">Técnicos</h4>
+                                <p className="text-[10px] text-brand-offwhite/60 mt-1">Assistente Social e Psicólogo (nível superior).</p>
                             </div>
-                            <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-                                <h4 className="font-bold text-xs text-ri-soft-green">Cuidadores</h4>
-                                <p className="text-[10px] text-slate-400 mt-1">Atendimento direto e cuidados diários (escala 24h).</p>
+                            <div className="p-3 rounded-xl bg-white/5 border border-brand-gold/10">
+                                <h4 className="font-bold text-xs text-brand-gold-light">Cuidadores</h4>
+                                <p className="text-[10px] text-brand-offwhite/60 mt-1">Atendimento direto e cuidados diários (escala 24h).</p>
                             </div>
-                            <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-                                <h4 className="font-bold text-xs text-slate-200">Auxiliares</h4>
-                                <p className="text-[10px] text-slate-400 mt-1">Suporte nas atividades domésticas e cuidados básicos.</p>
+                            <div className="p-3 rounded-xl bg-white/5 border border-brand-gold/10">
+                                <h4 className="font-bold text-xs text-brand-offwhite/90">Auxiliares</h4>
+                                <p className="text-[10px] text-brand-offwhite/60 mt-1">Suporte nas atividades domésticas e cuidados básicos.</p>
                             </div>
                         </div>
                     </motion.div>
@@ -351,25 +351,25 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.7 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <div className="border-b border-white/10 pb-3">
-                        <h2 className="text-2xl font-bold text-white tracking-wide">Plano de Atendimento Personalizado</h2>
-                        <p className="text-slate-400 text-sm mt-1">Estrutura metodológica para desenvolvimento individual</p>
+                    <div className="border-b border-brand-gold/20 pb-3">
+                        <h2 className="text-2xl font-serif font-bold text-white tracking-wide">Plano de Atendimento Personalizado</h2>
+                        <p className="text-brand-offwhite/60 text-sm mt-1">Estrutura metodológica para desenvolvimento individual</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {steps.map((item, i) => {
                             const iconMap = [FaFileAlt, FaClipboardList, FaCalendarCheck];
                             const StepIcon = iconMap[i];
                             return (
-                                <div key={i} className="flex gap-4 p-5 rounded-2xl bg-white/5 border border-white/5 items-start hover:bg-white/10 transition-colors duration-300">
-                                    <div className="text-xl font-black text-ri-blue bg-ri-blue/20 border border-ri-blue/20 w-12 h-12 rounded-xl flex flex-col items-center justify-center shrink-0">
-                                        <StepIcon size={18} className="mb-0.5 text-ri-bluest" />
+                                <div key={i} className="flex gap-4 p-5 rounded-2xl bg-white/5 border border-brand-gold/10 items-start hover:bg-white/10 transition-colors duration-300">
+                                    <div className="text-xl font-black text-brand-gold bg-brand-gold/15 border border-brand-gold/20 w-12 h-12 rounded-xl flex flex-col items-center justify-center shrink-0">
+                                        <StepIcon size={18} className="mb-0.5 text-brand-gold-light" />
                                         <span className="text-[10px] -mt-1 leading-none">{item.step}</span>
                                     </div>
                                     <div>
                                         <h4 className="text-base font-bold text-white mb-1">{item.title}</h4>
-                                        <p className="text-xs text-slate-300 leading-relaxed">{item.desc}</p>
+                                        <p className="text-xs text-brand-offwhite/80 leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>
                             );
@@ -382,22 +382,22 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.75 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <h2 className="text-2xl font-bold text-white tracking-wide border-b border-white/10 pb-3">
+                    <h2 className="text-2xl font-serif font-bold text-white tracking-wide border-b border-brand-gold/20 pb-3">
                         Diretrizes de Atuação
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {diretrizes.map((dir, i) => {
                             const DirIcon = dir.icon;
                             return (
-                                <div key={i} className="p-5 rounded-2xl bg-white/5 border border-white/5 flex gap-4 items-start">
-                                    <div className="p-3 rounded-xl bg-ri-bluest/10 text-ri-bluest shrink-0">
+                                <div key={i} className="p-5 rounded-2xl bg-white/5 border border-brand-gold/10 flex gap-4 items-start">
+                                    <div className="p-3 rounded-xl bg-brand-gold-light/10 text-brand-gold-light shrink-0">
                                         <DirIcon size={20} />
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-sm text-white mb-1">{dir.title}</h4>
-                                        <p className="text-xs text-slate-300 leading-relaxed">{dir.desc}</p>
+                                        <p className="text-xs text-brand-offwhite/80 leading-relaxed">{dir.desc}</p>
                                     </div>
                                 </div>
                             );
@@ -410,39 +410,39 @@ export default function ApresentacaoRiClient() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl space-y-6 w-full hover:border-ri-blue/30 transition-all duration-300"
+                    className="bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-brand-gold/20 shadow-2xl space-y-6 w-full hover:border-brand-gold/40 transition-all duration-300"
                 >
-                    <h2 className="text-2xl font-bold text-white tracking-wide border-b border-white/10 pb-3">
+                    <h2 className="text-2xl font-serif font-bold text-white tracking-wide border-b border-brand-gold/20 pb-3">
                         Contato e Localização
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                        <div className="p-5 rounded-2xl bg-white/5 border border-white/5 flex flex-col justify-between min-h-[140px] md:col-span-8">
+                        <div className="p-5 rounded-2xl bg-white/5 border border-brand-gold/10 flex flex-col justify-between min-h-[140px] md:col-span-8">
                             <div className="space-y-3">
-                                <h4 className="font-bold text-ri-blue text-base flex items-center gap-2">
+                                <h4 className="font-bold text-brand-gold text-base flex items-center gap-2">
                                     <FaMapMarkerAlt /> Blumenau / SC
                                 </h4>
-                                <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
+                                <p className="text-xs md:text-sm text-brand-offwhite/80 leading-relaxed">
                                     Rua Guilherme Lueders, 285 - Bairro Tribess (CEP 89055-470)
                                 </p>
                             </div>
-                            <div className="flex flex-wrap gap-4 mt-4 text-xs md:text-sm text-slate-400 font-semibold">
+                            <div className="flex flex-wrap gap-4 mt-4 text-xs md:text-sm text-brand-offwhite/60 font-semibold">
                                 <span className="flex items-center gap-2">
-                                    <FaPhoneAlt className="text-ri-bluest" /> (47) 99960-4301
+                                    <FaPhoneAlt className="text-brand-gold-light" /> (47) 99960-4301
                                 </span>
                                 <span className="flex items-center gap-2">
-                                    <FaPhoneAlt className="text-ri-bluest" /> (47) 99225-4397
+                                    <FaPhoneAlt className="text-brand-gold-light" /> (47) 99225-4397
                                 </span>
                             </div>
                         </div>
 
-                        <div className="p-5 rounded-2xl bg-white/5 border border-white/5 flex flex-col justify-center items-center text-center min-h-[140px] md:col-span-4">
-                            <FaInstagram className="text-ri-bluest mb-3 text-3xl" />
+                        <div className="p-5 rounded-2xl bg-white/5 border border-brand-gold/10 flex flex-col justify-center items-center text-center min-h-[140px] md:col-span-4">
+                            <FaInstagram className="text-brand-gold-light mb-3 text-3xl" />
                             <h4 className="font-bold text-white text-sm">Siga no Instagram</h4>
                             <a
                                 href="https://www.instagram.com/inclusiva.salomao/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-ri-blue hover:underline mt-2 block font-semibold"
+                                className="text-xs text-brand-gold hover:underline mt-2 block font-semibold"
                             >
                                 @inclusiva.salomao
                             </a>
@@ -454,11 +454,11 @@ export default function ApresentacaoRiClient() {
                             href={buildWhatsappUrl("Olá, gostaria de conversar sobre a proposta técnica da Residência Inclusiva.")}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full md:max-w-md bg-ri-blue text-slate-950 font-bold py-4 rounded-2xl hover:bg-ri-bluest transition-all shadow-lg hover:shadow-ri-blue/20 flex items-center justify-center gap-2 text-base"
+                            className="w-full md:max-w-md bg-brand-gold text-brand-green font-bold py-4 rounded-2xl hover:bg-brand-gold-light transition-all shadow-lg hover:shadow-brand-gold/20 flex items-center justify-center gap-2 text-base"
                         >
                             Falar com a Equipe no WhatsApp <FaWhatsapp size={20} />
                         </a>
-                        <p className="text-slate-400 text-xs tracking-wider uppercase font-semibold">
+                        <p className="text-brand-offwhite/60 text-xs tracking-wider uppercase font-semibold">
                             Juntos somos mais fortes!
                         </p>
                     </div>

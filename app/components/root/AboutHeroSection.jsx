@@ -39,7 +39,7 @@ export default function AboutHeroSection() {
                 transition={{ duration: 2, ease: "easeOut" }}
                 className="absolute inset-0 -z-10 bg-hands bg-cover bg-no-repeat bg-center"
             >
-                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 bg-brand-green-dark/70" />
             </motion.div>
 
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
@@ -55,7 +55,7 @@ export default function AboutHeroSection() {
                     <div className="text-center">
                         <motion.h1
                             variants={itemVariants}
-                            className="my-6 text-4xl xl:text-7xl font-bold text-white drop-shadow-md"
+                            className="font-serif my-6 text-4xl xl:text-7xl font-bold text-white drop-shadow-md"
                         >
                             Quem somos
                         </motion.h1>
@@ -71,7 +71,7 @@ export default function AboutHeroSection() {
                             onClick={scrollToContent}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-white/30"
+                            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-brand-gold/50 text-white px-8 py-4 rounded-full font-bold transition-all hover:bg-brand-gold/20"
                         >
                             Conheça mais <FaChevronDown className="text-sm" />
                         </motion.button>

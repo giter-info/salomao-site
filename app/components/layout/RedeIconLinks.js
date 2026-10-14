@@ -11,9 +11,9 @@ export default function RedeIconLinks() {
     const isRoot = pathname === "/";
 
     const Tooltip = () => isRoot ? (
-        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-rt-dark text-white text-[10px] md:text-xs py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none shadow-xl border border-white/10 z-20">
+        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-brand-green-dark text-white text-[10px] md:text-xs py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none shadow-xl border border-white/10 z-20">
             Clique para conhecer mais
-            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-rt-dark rotate-45 border-l border-t border-white/10"></div>
+            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-brand-green-dark rotate-45 border-l border-t border-white/10"></div>
         </div>
     ) : null;
 
