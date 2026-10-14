@@ -86,9 +86,12 @@ body {
   color: var(--color-gold-light);
 }
 
-/* Botões dourados: manter o texto verde nos dois temas para contraste com o dourado.
-   Especificidade maior que `.dark .text-brand-green` (mesmo elemento). */
-.dark .bg-brand-gold.text-brand-green {
+/* Botões/áreas com fundo dourado: manter o texto verde independente do tema,
+   para contraste com o dourado. Cobre o próprio elemento e os descendentes
+   com `text-brand-green` (ícones, spans), vencendo `.dark .text-brand-green`. */
+.dark .bg-brand-gold,
+.dark .bg-brand-gold.text-brand-green,
+.dark .bg-brand-gold .text-brand-green {
   color: var(--color-green);
 }
 
