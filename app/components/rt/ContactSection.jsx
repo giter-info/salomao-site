@@ -48,9 +48,9 @@ export default function ContactSection() {
     };
 
     return (
-        <section id="contato" className="py-16 bg-rt-green">
+        <section id="contato" className="py-16 bg-brand-offwhite dark:bg-brand-green-dark">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Contato</h2>
+                <h2 className="font-serif text-3xl font-bold text-brand-green dark:text-brand-gold text-center mb-8">Contato</h2>
                 <motion.form
                     className="max-w-xl mx-auto"
                     initial={{ opacity: 0, y: 20 }}
@@ -59,32 +59,32 @@ export default function ContactSection() {
                     onSubmit={handleSubmit} // Ação ao enviar o formulário
                 >
                     <div className="mb-4">
-                        <label htmlFor="name" className="block text-rt-white font-semibold">Nome</label>
+                        <label htmlFor="name" className="block text-brand-ink dark:text-brand-offwhite font-semibold">Nome</label>
                         <input
                             type="text"
                             id="name"
-                            className="w-full text-rt-green px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full text-brand-ink dark:text-brand-offwhite bg-white dark:bg-brand-green-light px-4 py-2 border border-slate-200 dark:border-brand-gold/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold"
                             value={formData.name}
                             onChange={handleChange}
                             required
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="email" className="block text-rt-white font-semibold">Email</label>
+                        <label htmlFor="email" className="block text-brand-ink dark:text-brand-offwhite font-semibold">Email</label>
                         <input
                             type="email"
                             id="email"
-                            className="w-full text-rt-green px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full text-brand-ink dark:text-brand-offwhite bg-white dark:bg-brand-green-light px-4 py-2 border border-slate-200 dark:border-brand-gold/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold"
                             value={formData.email}
                             onChange={handleChange}
                             required
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="message" className="block text-rt-white font-semibold">Mensagem</label>
+                        <label htmlFor="message" className="block text-brand-ink dark:text-brand-offwhite font-semibold">Mensagem</label>
                         <textarea
                             id="message"
-                            className="w-full px-4 text-rt-green py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 text-brand-ink dark:text-brand-offwhite bg-white dark:bg-brand-green-light py-2 border border-slate-200 dark:border-brand-gold/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold"
                             rows="4"
                             value={formData.message}
                             onChange={handleChange}
@@ -93,7 +93,7 @@ export default function ContactSection() {
                     </div>
                     <button
                         type="submit"
-                        className={`w-full bg-rt-primary text-rt-green px-4 py-2 rounded-lg font-semibold hover:bg-rt-info transition ${
+                        className={`w-full bg-brand-gold text-brand-green px-4 py-2 rounded-lg font-semibold hover:bg-brand-gold-light transition ${
                             loading ? 'opacity-50 cursor-not-allowed' : ''
                         }`}
                         disabled={loading} // Desabilita o botão enquanto estiver carregando

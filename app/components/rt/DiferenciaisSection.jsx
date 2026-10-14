@@ -18,10 +18,10 @@ export default function DiferenciaisSection() {
     ];
 
     return (
-        <section id="diferenciais" className="bg-rt-green py-20 scroll-mt-20 overflow-hidden">
+        <section id="diferenciais" className="bg-brand-green py-20 scroll-mt-20 overflow-hidden">
             <div className="container mx-auto px-4 max-w-6xl">
                 <motion.h2
-                    className="text-4xl md:text-5xl font-bold text-rt-info text-center mb-12"
+                    className="font-serif text-4xl md:text-5xl font-bold text-brand-gold text-center mb-12"
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -31,7 +31,7 @@ export default function DiferenciaisSection() {
                 </motion.h2>
                 
                 <motion.div
-                    className="flex flex-col lg:flex-row bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl rounded-3xl overflow-hidden p-6 md:p-8 lg:p-10 gap-8 items-center"
+                    className="flex flex-col lg:flex-row bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl rounded-3xl overflow-hidden p-6 md:p-8 lg:p-10 gap-8 items-center hover:border-brand-gold/30 transition-all duration-300"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -55,23 +55,23 @@ export default function DiferenciaisSection() {
                     </div>
 
                     {/* Conteúdo */}
-                    <div className="w-full lg:w-3/5 text-rt-white">
-                        <h3 className="text-xl md:text-2xl font-bold text-white font-cardo mb-6 leading-snug">
+                    <div className="w-full lg:w-3/5 text-brand-offwhite">
+                        <h3 className="font-serif text-xl md:text-2xl font-bold text-white mb-6 leading-snug">
                             O programa de atividades, coordenado pela equipe terapêutica, é construído após criteriosa avaliação respeitando as necessidades de cada um.
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                            <ul className="flex flex-col gap-4 text-slate-300 text-base md:text-lg">
+                            <ul className="flex flex-col gap-4 text-brand-offwhite/80 text-base md:text-lg">
                                 {differentialsLeft.map((item, index) => (
                                     <li key={index} className="flex items-start gap-3">
-                                        <FaCheckCircle className="text-rt-primary shrink-0 mt-1.5 text-lg" />
+                                        <FaCheckCircle className="text-brand-gold shrink-0 mt-1.5 text-lg" />
                                         <span>{item}</span>
                                     </li>
                                 ))}
                             </ul>
-                            <ul className="flex flex-col gap-4 text-slate-300 text-base md:text-lg">
+                            <ul className="flex flex-col gap-4 text-brand-offwhite/80 text-base md:text-lg">
                                 {differentialsRight.map((item, index) => (
                                     <li key={index} className="flex items-start gap-3">
-                                        <FaCheckCircle className="text-rt-primary shrink-0 mt-1.5 text-lg" />
+                                        <FaCheckCircle className="text-brand-gold shrink-0 mt-1.5 text-lg" />
                                         <span>{item}</span>
                                     </li>
                                 ))}

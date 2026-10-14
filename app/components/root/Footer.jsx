@@ -42,7 +42,7 @@ export default function Footer() {
 
     const Column = ({title, items}) => (
         <div className="w-full lg:w-auto">
-            <span className="block uppercase text-brand-gold text-xs font-semibold tracking-wider mb-4">{title}</span>
+            <span className="block uppercase text-brand-green dark:text-brand-gold text-xs font-semibold tracking-wider mb-4">{title}</span>
             <ul className="space-y-2">
                 {items.map((item, i) => (
                     <li key={i}>
@@ -51,7 +51,7 @@ export default function Footer() {
                             tabIndex={0}
                             onClick={go(item.link)}
                             onKeyDown={(e) => e.key === "Enter" && go(item.link)()}
-                            className="text-brand-offwhite/85 hover:text-brand-gold text-sm font-medium cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
+                            className="text-brand-ink/70 dark:text-brand-offwhite/85 hover:text-brand-green dark:hover:text-brand-gold text-sm font-medium cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
                         >
                             {item.nome}
                         </div>
@@ -62,12 +62,13 @@ export default function Footer() {
     );
 
     return (
-        <footer id="footer" className="relative bg-brand-green pt-12 pb-6 border-t border-brand-gold/25">
+        <footer id="footer" className="relative bg-brand-offwhite dark:bg-brand-green pt-12 pb-6 border-t border-brand-green/10 dark:border-brand-gold/25">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     <div>
-                        <Image src={logoLight} alt="Rede Salomão" height={44} className="h-11 w-auto mb-4"/>
-                        <p className="text-brand-offwhite/80 text-sm leading-relaxed">
+                        <Image src="/brand-menu.png" alt="Rede Salomão" width={180} height={70} className="h-10 w-auto mb-4 dark:hidden"/>
+                        <Image src={logoLight} alt="Rede Salomão" height={44} className="hidden dark:block h-11 w-auto mb-4"/>
+                        <p className="text-brand-ink/70 dark:text-brand-offwhite/80 text-sm leading-relaxed">
                             Respeitando o normal de cada um. Cuidado, inclusão e acolhimento em Blumenau e Chapecó.
                         </p>
                         <div className="flex gap-4 mt-5">
@@ -78,7 +79,7 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={label}
-                                    className="text-brand-offwhite/70 hover:text-brand-gold text-2xl transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
+                                    className="text-brand-green/70 dark:text-brand-offwhite/70 hover:text-brand-gold text-2xl transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
                                 >
                                     <Icon/>
                                 </a>
@@ -91,9 +92,9 @@ export default function Footer() {
                     <Column title="Serviços" items={SERVICOS}/>
                 </div>
 
-                <hr className="my-8 border-brand-gold/25"/>
+                <hr className="my-8 border-brand-green/10 dark:border-brand-gold/25"/>
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-brand-offwhite/70 text-xs text-center md:text-left">
+                    <p className="text-brand-ink/60 dark:text-brand-offwhite/70 text-xs text-center md:text-left">
                         Copyright © {new Date().getFullYear()} Rede Salomão — Blumenau | Chapecó | Santa Catarina.
                     </p>
                     <div className="flex gap-5">
@@ -104,7 +105,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={label}
-                                className="text-brand-offwhite/70 hover:text-brand-gold text-xl transition-colors"
+                                className="text-brand-green/70 dark:text-brand-offwhite/70 hover:text-brand-gold text-xl transition-colors"
                             >
                                 <Icon/>
                             </a>

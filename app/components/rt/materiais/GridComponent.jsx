@@ -27,23 +27,23 @@ export default function MateriaisGridComponent() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     whileHover={{ y: -6 }}
-                    className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between h-full"
+                    className="bg-white dark:bg-brand-green-light rounded-3xl border border-slate-200 dark:border-brand-gold/15 shadow-sm hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between h-full"
                 >
                     <div>
-                        <div className="p-3 rounded-2xl bg-rt-primary/10 text-rt-green w-fit mb-6">
+                        <div className="p-3 rounded-2xl bg-brand-green/10 dark:bg-brand-gold/15 text-brand-green dark:text-brand-gold-light w-fit mb-6">
                             <FaFileAlt size={24} />
                         </div>
-                        <h3 className="text-lg md:text-xl font-bold text-rt-green font-cardo mb-3 leading-snug">
+                        <h3 className="font-serif text-lg md:text-xl font-bold text-brand-green dark:text-brand-gold mb-3 leading-snug">
                             {card.title}
                         </h3>
-                        <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+                        <p className="text-brand-ink/75 dark:text-brand-offwhite/80 text-sm md:text-base leading-relaxed mb-8">
                             {card.description}
                         </p>
                     </div>
                     <div>
                         <Link
                             href={card.link}
-                            className="inline-flex items-center justify-center gap-2 w-full bg-rt-green hover:bg-green-950 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-rt-green/20 text-sm"
+                            className="inline-flex items-center justify-center gap-2 w-full bg-brand-green hover:bg-brand-green-dark text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-brand-green/20 text-sm dark:bg-brand-gold dark:text-brand-green dark:hover:bg-brand-gold-light"
                             target="_blank"
                         >
                             Acessar o material <FaArrowRight className="text-xs" />

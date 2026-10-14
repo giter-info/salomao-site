@@ -43,7 +43,7 @@ export default function Navbar() {
             <a
                 key={index}
                 href={link.link}
-                className="py-2 px-2 block text-brand-offwhite/90 hover:text-brand-gold cursor-pointer font-sans font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
+                className="py-2 px-2 block text-brand-green/90 dark:text-brand-offwhite/90 hover:text-brand-gold dark:hover:text-brand-gold cursor-pointer font-sans font-medium text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
                 onClick={(e) => {
                     e.preventDefault();
                     handleNavigation(link.link);
@@ -58,7 +58,7 @@ export default function Navbar() {
             <a
                 key={index}
                 href={link.link}
-                className="text-2xl text-brand-offwhite hover:text-brand-gold cursor-pointer font-serif font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
+                className="text-2xl text-brand-green dark:text-brand-offwhite hover:text-brand-gold dark:hover:text-brand-gold cursor-pointer font-serif font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
                 onClick={(e) => {
                     e.preventDefault();
                     handleNavigation(link.link);
@@ -70,7 +70,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="bg-brand-green text-brand-offwhite fixed w-full top-0 left-0 z-50 border-b border-brand-gold/20 shadow-md transition-all duration-300">
+            <nav className="bg-brand-offwhite/95 dark:bg-brand-green text-brand-green dark:text-brand-offwhite fixed w-full top-0 left-0 z-50 border-b border-brand-green/10 dark:border-brand-gold/20 shadow-md backdrop-blur transition-all duration-300">
                 <div className="container mx-auto px-4 flex justify-between items-center py-1">
                     <div className="flex items-center justify-between w-full md:w-auto">
                         <a
@@ -81,9 +81,23 @@ export default function Navbar() {
                                 handleNavigation("/");
                             }}
                         >
-                            <Image src={logoLight} alt="Rede Salomão" height={44} priority className="h-11 w-auto"/>
+                            <Image
+                                src="/brand-menu.png"
+                                alt="Rede Salomão"
+                                width={180}
+                                height={59}
+                                priority
+                                className="h-9 w-auto dark:hidden"
+                            />
+                            <Image
+                                src={logoLight}
+                                alt="Rede Salomão"
+                                height={44}
+                                priority
+                                className="hidden dark:block h-11 w-auto"
+                            />
                         </a>
-                        <button className="md:hidden text-brand-offwhite" onClick={toggleMobileMenu} aria-label="Abrir menu">
+                        <button className="md:hidden" onClick={toggleMobileMenu} aria-label="Abrir menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none">
                                 <title>abrir menu</title>
                                 <path
@@ -121,10 +135,10 @@ export default function Navbar() {
                             animate={{opacity: 1, y: 0}}
                             exit={{opacity: 0, y: -50}}
                             transition={{duration: 0.3}}
-                            className="fixed inset-0 bg-brand-green text-brand-offwhite flex flex-col items-center justify-center space-y-6 z-50"
+                            className="fixed inset-0 bg-brand-offwhite dark:bg-brand-green text-brand-green dark:text-brand-offwhite flex flex-col items-center justify-center space-y-6 z-50"
                         >
                             <button
-                                className="absolute top-4 right-4 text-brand-offwhite"
+                                className="absolute top-4 right-4"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 aria-label="Fechar menu"
                             >
@@ -133,6 +147,19 @@ export default function Navbar() {
                                     <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </button>
+                            <Image
+                                src="/brand-menu.png"
+                                alt="Rede Salomão"
+                                width={180}
+                                height={59}
+                                className="h-10 w-auto mb-2 dark:hidden"
+                            />
+                            <Image
+                                src={logoLight}
+                                alt="Rede Salomão"
+                                height={48}
+                                className="hidden dark:block h-12 w-auto mb-2"
+                            />
                             <MobileLinks/>
                             <ThemeToggle className="mt-2"/>
                             <a

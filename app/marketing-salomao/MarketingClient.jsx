@@ -130,7 +130,7 @@ export default function MarketingClient() {
                                 viewport={{once: true, margin: "-60px"}}
                                 transition={{duration: 0.6, delay: idx * 0.1}}
                                 whileHover={{y: -8}}
-                                className="bg-white dark:bg-brand-green-dark rounded-3xl p-7 border border-slate-100 dark:border-brand-gold/20 shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300"
+                                className="bg-white dark:bg-brand-green-dark rounded-3xl p-7 border border-slate-200 dark:border-brand-gold/20 shadow-sm hover:shadow-xl hover:border-brand-gold/40 transition-all duration-300"
                             >
                                 <div className="w-12 h-12 rounded-xl bg-brand-green/10 text-brand-green dark:bg-brand-gold/15 dark:text-brand-gold-light flex items-center justify-center mb-5 text-xl">
                                     <Icon/>
@@ -170,7 +170,7 @@ export default function MarketingClient() {
                         </p>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="bg-white dark:bg-brand-green-dark rounded-3xl border border-slate-100 dark:border-brand-gold/20 shadow-sm p-8 space-y-5">
+                    <form onSubmit={handleSubmit} className="bg-white dark:bg-brand-green-dark rounded-3xl border border-slate-200 dark:border-brand-gold/20 shadow-sm p-8 space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <label className="block">
                                 <span className="text-sm font-semibold text-brand-green">Nome*</span>

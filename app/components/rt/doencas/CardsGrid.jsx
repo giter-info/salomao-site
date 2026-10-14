@@ -7,7 +7,7 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
     // Generate paragraphs
     const extractParagraph = (obj) => {
         return Object.entries(obj).map(([key, value]) => (
-            <p className="mt-3 text-slate-700 text-sm md:text-base leading-relaxed" key={key}>
+            <p className="mt-3 text-brand-ink/75 dark:text-brand-offwhite/80 text-sm md:text-base leading-relaxed" key={key}>
                 {value}
             </p>
         ));
@@ -20,14 +20,14 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
     return (
         <motion.div 
             layout
-            className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            className="bg-white dark:bg-brand-green-light rounded-3xl border border-slate-200 dark:border-brand-gold/15 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
         >
             <div 
                 className="p-6 md:p-8 cursor-pointer flex justify-between items-start gap-4 select-none"
                 onClick={onToggle}
             >
                 <div className="flex-grow">
-                    <h3 className="text-xl md:text-2xl font-bold text-rt-green font-cardo mb-2">
+                    <h3 className="font-serif text-xl md:text-2xl font-bold text-brand-green dark:text-brand-gold mb-2">
                         {title}
                     </h3>
                     <AnimatePresence initial={false}>
@@ -36,7 +36,7 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                className="text-slate-500 text-sm leading-relaxed mt-1"
+                                className="text-brand-ink/60 dark:text-brand-offwhite/65 text-sm leading-relaxed mt-1"
                             >
                                 {previewText}
                             </motion.p>
@@ -46,7 +46,7 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="p-2.5 rounded-full bg-slate-50 text-rt-green/80 flex items-center justify-center mt-1"
+                    className="p-2.5 rounded-full bg-slate-50 dark:bg-brand-green text-brand-green dark:text-brand-gold-light flex items-center justify-center mt-1"
                 >
                     <FaChevronDown className="text-sm" />
                 </motion.div>
@@ -59,7 +59,7 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="overflow-hidden border-t border-slate-100 bg-slate-50/50"
+                        className="overflow-hidden border-t border-slate-200 dark:border-brand-gold/10 bg-slate-50/50 dark:bg-brand-green-dark/40"
                     >
                         <div className="p-6 md:p-8">
                             {extractParagraph(fullText)}
@@ -171,14 +171,14 @@ export default function CardsGrid() {
                         placeholder="Buscar doença ou sintoma..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full pl-11 pr-10 py-3 rounded-full border border-slate-200 bg-white/80 focus:bg-white text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-rt-green/20 focus:border-rt-green transition-all"
+                        className="w-full pl-11 pr-10 py-3 rounded-full border border-slate-200 dark:border-brand-gold/15 bg-white/80 dark:bg-brand-green-light/80 focus:bg-white dark:focus:bg-brand-green-light text-brand-ink dark:text-brand-offwhite placeholder-slate-400 dark:placeholder-brand-offwhite/40 focus:outline-none focus:ring-2 focus:ring-brand-gold/40 focus:border-brand-gold transition-all"
                         id="disease-search-input"
                     />
-                    <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm" />
+                    <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-brand-offwhite/40 text-sm" />
                     {searchQuery && (
                         <button
                             onClick={() => setSearchQuery("")}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                            className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-brand-offwhite/40 hover:text-slate-600 dark:hover:text-brand-gold"
                         >
                             <FaTimes className="text-sm" />
                         </button>
@@ -196,8 +196,8 @@ export default function CardsGrid() {
                             }}
                             className={`px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all ${
                                 activeTab === tab.id
-                                    ? "bg-rt-green text-white shadow-md shadow-rt-green/10"
-                                    : "bg-white text-slate-600 border border-slate-100 hover:bg-slate-50"
+                                    ? "bg-brand-green text-white shadow-md shadow-brand-green/10 dark:bg-brand-gold dark:text-brand-green dark:shadow-brand-gold/10"
+                                    : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 dark:bg-brand-green-light dark:text-brand-offwhite/75 dark:border-brand-gold/15 dark:hover:bg-brand-green"
                             }`}
                             id={`tab-filter-${tab.id}`}
                         >
@@ -235,15 +235,15 @@ export default function CardsGrid() {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            className="text-center py-12 bg-white rounded-3xl border border-slate-100"
+                            className="text-center py-12 bg-white dark:bg-brand-green-light rounded-3xl border border-slate-200 dark:border-brand-gold/15"
                         >
-                            <p className="text-slate-500 font-medium">Nenhum resultado encontrado para a busca ou filtro.</p>
+                            <p className="text-brand-ink/60 dark:text-brand-offwhite/65 font-medium">Nenhum resultado encontrado para a busca ou filtro.</p>
                             <button
                                 onClick={() => {
                                     setSearchQuery("");
                                     setActiveTab("all");
                                 }}
-                                className="mt-4 px-6 py-2.5 rounded-full text-sm font-bold text-white bg-rt-green hover:bg-green-800 transition-colors"
+                                className="mt-4 px-6 py-2.5 rounded-full text-sm font-bold text-white bg-brand-green hover:bg-brand-green-dark transition-colors dark:bg-brand-gold dark:text-brand-green dark:hover:bg-brand-gold-light"
                             >
                                 Limpar filtros
                             </button>

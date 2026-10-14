@@ -2,28 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-ink);
+  background-color: var(--color-offwhite);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {
@@ -106,5 +88,44 @@ body {
 
 .dark .border-slate-100,
 .dark .border-slate-200 {
+  border-color: rgba(194, 161, 78, 0.25);
+}
+
+/* ---------------------------------------------------------------
+   Superfícies e cards — identidade Rede Salomão
+   --------------------------------------------------------------- */
+@layer components {
+  .surface-card {
+    @apply bg-white dark:bg-brand-green-light border border-slate-200/70 dark:border-brand-gold/15 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300;
+  }
+}
+
+/* Inversão de superfícies claras legadas no tema escuro */
+.dark .bg-white {
+  background-color: var(--color-green-light);
+}
+
+.dark .bg-slate-50,
+.dark .bg-slate-100 {
+  background-color: var(--color-green-dark);
+}
+
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700 {
+  color: var(--color-offwhite);
+}
+
+.dark .text-slate-600,
+.dark .text-slate-500 {
+  color: rgba(248, 248, 245, 0.75);
+}
+
+.dark .text-slate-400 {
+  color: rgba(248, 248, 245, 0.55);
+}
+
+.dark .bg-gray-100,
+.dark .border-gray-100 {
   border-color: rgba(194, 161, 78, 0.25);
 }

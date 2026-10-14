@@ -36,7 +36,7 @@ export default function DoencasPageComponent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-20 bg-rtback">
+            <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-20 bg-brand-green">
                 <motion.div
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -48,9 +48,9 @@ export default function DoencasPageComponent() {
                         alt="Background"
                         fill
                         priority
-                        className="object-cover"
+                        className="object-cover opacity-25"
                     />
-                    <div className="absolute inset-0 bg-white/10" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark/95 via-brand-green/90 to-brand-green-dark/95" />
                 </motion.div>
 
                 <div className="container mx-auto px-4 z-10">
@@ -71,7 +71,7 @@ export default function DoencasPageComponent() {
                         
                         <motion.h2
                             variants={itemVariants}
-                            className="text-4xl md:text-6xl font-bold text-rt-info mb-10 drop-shadow-sm"
+                            className="font-serif text-4xl md:text-6xl font-bold text-brand-gold mb-10 drop-shadow-sm"
                         >
                             Doenças Atendidas
                         </motion.h2>
@@ -81,7 +81,7 @@ export default function DoencasPageComponent() {
                             onClick={scrollToContent}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-rt-primary/10 border-rt-primary/30 text-rt-primary backdrop-blur-sm border px-8 py-4 rounded-full font-bold transition-all hover:bg-opacity-20 inline-flex items-center gap-2"
+                            className="bg-brand-gold/10 border border-brand-gold/40 text-brand-gold backdrop-blur-sm px-8 py-4 rounded-full font-bold transition-all hover:bg-brand-gold/20 inline-flex items-center gap-2"
                         >
                             Ver doenças <FaChevronDown className="text-sm" />
                         </motion.button>
@@ -94,17 +94,17 @@ export default function DoencasPageComponent() {
             </section>
 
             {/* Content Section */}
-            <section id="doencas-content" className="py-24 bg-slate-50 scroll-mt-20">
+            <section id="doencas-content" className="py-24 bg-brand-offwhite dark:bg-brand-green-dark scroll-mt-20">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 max-w-4xl mx-auto mb-16"
+                        className="bg-white dark:bg-brand-green-light rounded-3xl border border-slate-200 dark:border-brand-gold/15 shadow-sm p-8 max-w-4xl mx-auto mb-16"
                     >
-                        <p className="text-slate-700 text-base md:text-lg leading-relaxed text-center font-medium">
-                            Os <strong className="text-rt-green">Transtornos Psicóticos</strong>, principal enfoque do Residencial Salomão, caracterizam-se como distorções do pensamento e da percepção e por afetos inapropriados ou embotados. Usualmente mantém-se clara a consciência e a capacidade intelectual, embora certos déficits cognitivos possam evoluir no curso do tempo.
+                        <p className="text-brand-ink/75 dark:text-brand-offwhite/80 text-base md:text-lg leading-relaxed text-center font-medium">
+                            Os <strong className="text-brand-green dark:text-brand-gold">Transtornos Psicóticos</strong>, principal enfoque do Residencial Salomão, caracterizam-se como distorções do pensamento e da percepção e por afetos inapropriados ou embotados. Usualmente mantém-se clara a consciência e a capacidade intelectual, embora certos déficits cognitivos possam evoluir no curso do tempo.
                         </p>
                     </motion.div>
                     
