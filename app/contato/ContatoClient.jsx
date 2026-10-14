@@ -8,7 +8,7 @@ export default function ContatoClient() {
         <section className="relative min-h-screen bg-slate-900 text-white pt-28 pb-20 flex flex-col justify-center overflow-hidden">
             {/* Background Image Overlay */}
             <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-root.png')" }} />
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-root.webp')" }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/95 to-slate-950" />
             </div>
 

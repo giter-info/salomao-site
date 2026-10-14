@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { buildWhatsappUrl } from "@/app/config/whatsapp.config";
 import {
     FaHome,
     FaUserCheck,
@@ -84,7 +85,7 @@ export default function ApresentacaoRiClient() {
         <section className="relative min-h-screen bg-ri-primary text-white pt-28 pb-20 flex flex-col justify-center overflow-hidden">
             {/* Background Image Overlay */}
             <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-ri.png')" }} />
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-ri.webp')" }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-[#004148]/95 to-slate-950" />
             </div>
 
@@ -126,7 +127,7 @@ export default function ApresentacaoRiClient() {
                         {["Moradia Digna", "Autonomia", "Inclusão", "Vínculos"].map((badge, idx) => (
                             <span
                                 key={idx}
-                                className="px-5 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-ri-blue/10 text-ri-blue border border-ri-blue/25 rounded-full shadow-lg backdrop-blur-md hover:bg-ri-blue hover:text-white hover:border-ri-blue transition-all duration-300 cursor-default"
+                                className="px-5 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-ri-blue/10 text-ri-blue border border-ri-blue/25 rounded-full shadow-lg backdrop-blur-md hover:bg-ri-blue hover:text-slate-950 hover:border-ri-blue transition-all duration-300 cursor-default"
                             >
                                 {badge}
                             </span>
@@ -450,7 +451,7 @@ export default function ApresentacaoRiClient() {
 
                     <div className="pt-4 flex flex-col items-center gap-3">
                         <a
-                            href="https://api.whatsapp.com/send?phone=5547988080041&text=Olá,%20gostaria%20de%20conversar%20sobre%20a%20proposta%20técnica%20da%20Residência%20Inclusiva."
+                            href={buildWhatsappUrl("Olá, gostaria de conversar sobre a proposta técnica da Residência Inclusiva.")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full md:max-w-md bg-ri-blue text-slate-950 font-bold py-4 rounded-2xl hover:bg-ri-bluest transition-all shadow-lg hover:shadow-ri-blue/20 flex items-center justify-center gap-2 text-base"

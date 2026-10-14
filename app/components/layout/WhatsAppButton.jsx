@@ -5,7 +5,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { rtConfig } from "@/app/config/rt.config";
 import { riConfig } from "@/app/config/ri.config";
-import { asConfig } from "@/app/config/as.config";
 
 export default function WhatsAppButton() {
     const pathname = usePathname();
@@ -21,9 +20,6 @@ export default function WhatsAppButton() {
     if (pathname?.startsWith("/residencia-inclusiva")) {
         socials = riConfig.socials;
         balloonText = "Dúvidas sobre Residência Inclusiva? Fale conosco!";
-    } else if (pathname?.startsWith("/adestramento-salomao")) {
-        socials = asConfig.socials;
-        balloonText = "Dúvidas sobre adestramento? Fale conosco!";
     } else if (pathname?.startsWith("/residencial-terapeutico")) {
         socials = rtConfig.socials;
         balloonText = "Dúvidas sobre Residencial Terapêutico? Fale conosco!";

@@ -1,5 +1,6 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
+import { buildWhatsappUrl } from "@/app/config/whatsapp.config";
 import logo from "@/app/images/layout/logo-rt.png";
 import image1 from "@/app/images/portifólio/port1.jpeg";
 import image2 from "@/app/images/portifólio/port2.jpeg";
@@ -71,7 +72,7 @@ export default function SaibaMaisPageComponent() {
                     ))}
                     <div className="flex justify-center py-2">
                         <a
-                            href="https://api.whatsapp.com/send?phone=5547988080041&text=Entrei%20em%20contato%20pelo%20novo%20site.%20Gostaria%20de%20conversar%20sobre%20o%20residencial."
+                            href={buildWhatsappUrl("Entrei em contato pelo novo site. Gostaria de conversar sobre o residencial.")}
                             target="_blank"
                             className="mx-auto flex flex-row gap-2 rounded-full bg-rt-primary border-2 border-rt-info p-2"
                             rel="noopener noreferrer"

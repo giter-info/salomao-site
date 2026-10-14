@@ -31,7 +31,7 @@ export const rtConfig = {
         shadowAccent: "hover:shadow-rt-primary",
         navbarBg: "bg-rt-green",
         homeBg: "bg-rtback",
-        homeBgImage: "/bg-rt.png",
+        homeBgImage: "/bg-rt.webp",
         sobreBg: "bg-rt-green",
         sobreText: "text-rt-dark",
         useGlass: true
@@ -134,7 +134,7 @@ export const rtConfig = {
         ],
         additionalLinks: [
             { nome: "Residência Inclusiva", link: "/residencia-inclusiva" },
-            { nome: "Adestramento Salomão", link: "/adestramento-salomao" },
+            { nome: "Marketing Salomão", link: "/marketing-salomao" },
             { nome: "Dúvidas Frequentes", link: "/residencial-terapeutico/faq" }
         ]
     }

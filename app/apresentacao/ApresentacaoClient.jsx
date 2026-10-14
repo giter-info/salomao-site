@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaStethoscope, FaUserCheck, FaUsers, FaBalanceScale, FaWhatsapp } from "react-icons/fa";
+import { buildWhatsappUrl } from "@/app/config/whatsapp.config";
 
 export default function ApresentacaoClient() {
     const eixos = [
@@ -44,7 +45,7 @@ export default function ApresentacaoClient() {
         <section className="relative min-h-screen bg-slate-900 text-white pt-28 pb-20 flex flex-col justify-center overflow-hidden">
             {/* Background Image Overlay */}
             <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-root.png')" }} />
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-root.webp')" }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/95 to-slate-950" />
             </div>
 
@@ -199,7 +200,7 @@ export default function ApresentacaoClient() {
                     </div>
                     <div className="pt-4 flex justify-center">
                         <a
-                            href="https://api.whatsapp.com/send?phone=5547988080041&text=Olá,%20gostaria%20de%20conversar%20sobre%20a%20proposta%20técnica%20do%20residencial."
+                            href={buildWhatsappUrl("Olá, gostaria de conversar sobre a proposta técnica do residencial.")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full md:max-w-md bg-rt-primary text-slate-950 font-bold py-4 rounded-2xl hover:bg-rt-info transition-all shadow-lg hover:shadow-rt-primary/20 flex items-center justify-center gap-2 text-base"

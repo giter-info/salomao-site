@@ -44,7 +44,7 @@ export default function DoencasPageComponent() {
                     className="absolute inset-0 -z-10"
                 >
                     <Image
-                        src="/bg-rt.png"
+                        src="/bg-rt.webp"
                         alt="Background"
                         fill
                         priority

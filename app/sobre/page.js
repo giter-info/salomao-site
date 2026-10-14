@@ -14,8 +14,10 @@ export default function Page() {
     return (
         <>
             <RootNavbar/>
-            <AboutHeroSection />
-            <AboutCards />
+            <main id="conteudo">
+                <AboutHeroSection />
+                <AboutCards />
+            </main>
             <WhatsAppButton/>
             <Footer/>
         </>

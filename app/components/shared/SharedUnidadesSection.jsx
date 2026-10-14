@@ -126,7 +126,7 @@ export default function SharedUnidadesSection({ config }) {
 
                                         <div
                                             className={`inline-flex items-center gap-2 font-bold transition-all duration-300 group ${
-                                                theme.textAccent === 'text-rt-primary' ? 'text-rt-primary hover:text-green-700' : 'text-slate-800 hover:text-slate-600'
+                                                theme.textAccent === 'text-rt-primary' ? 'text-rt-green hover:text-green-700' : 'text-slate-800 hover:text-slate-600'
                                             }`}
                                         >
                                             Conheça a estrutura

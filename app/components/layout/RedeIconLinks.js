@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import logort from "@/app/images/layout/logo-rt.png";
 import logori from "@/app/images/layout/logo-ri.png";
-import logodog from "@/app/images/layout/logo-dog.png";
+import logoMarketing from "@/app/images/layout/logo-marketing.png";
 
 export default function RedeIconLinks() {
     const pathname = usePathname();
@@ -26,7 +26,7 @@ export default function RedeIconLinks() {
                     transition={{duration: 1, ease: "easeOut"}}
                 >
                     <Link href="/residencial-terapeutico">
-                        <motion.button
+                        <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: 0.9}}
                             className="relative"
@@ -38,7 +38,7 @@ export default function RedeIconLinks() {
                                 sizes="(max-width: 768px) 112px, (max-width: 1280px) 160px, 192px"
                                 priority
                             />
-                        </motion.button>
+                        </motion.div>
                     </Link>
                 </motion.div>
                 <Tooltip />
@@ -50,7 +50,7 @@ export default function RedeIconLinks() {
                     transition={{duration: 1, ease: "easeOut"}}
                 >
                     <Link href={"/residencia-inclusiva"}>
-                        <motion.button
+                        <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: 0.9}}
                             className="relative"
@@ -62,7 +62,7 @@ export default function RedeIconLinks() {
                                 sizes="(max-width: 768px) 112px, (max-width: 1280px) 160px, 192px"
                                 priority
                             />
-                        </motion.button>
+                        </motion.div>
                     </Link>
                 </motion.div>
                 <Tooltip />
@@ -73,20 +73,20 @@ export default function RedeIconLinks() {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 1, ease: "easeOut"}}
                 >
-                    <Link href={"/adestramento-salomao"}>
-                        <motion.button
+                    <Link href={"/marketing-salomao"}>
+                        <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: 0.9}}
                             className="relative"
                         >
                             <Image
-                                src={logodog}
-                                alt="Logo Adestramento"
+                                src={logoMarketing}
+                                alt="Logo Marketing Salomão"
                                 className="w-28 md:w-40 xl:w-48 h-auto mx-auto"
                                 sizes="(max-width: 768px) 112px, (max-width: 1280px) 160px, 192px"
                                 priority
                             />
-                        </motion.button>
+                        </motion.div>
                     </Link>
                 </motion.div>
                 <Tooltip />

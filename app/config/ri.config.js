@@ -32,11 +32,11 @@ export const riConfig = {
         secondaryBg: "bg-ri-primary",
         mobileMenuBg: "bg-ri-primary",
         textPrimary: "text-rt-white",
-        textAccent: "text-rt-dark",
+        textAccent: "text-ri-blue",
         shadowAccent: "hover:shadow-ri-blue/20",
         navbarBg: "bg-ri-primary",
         homeBg: "bg-riback",
-        homeBgImage: "/bg-ri.png",
+        homeBgImage: "/bg-ri.webp",
         sobreBg: "bg-ri-primary",
         sobreText: "text-rt-white",
         useGlass: true
@@ -130,7 +130,7 @@ export const riConfig = {
         ],
         additionalLinks: [
             { nome: "Residencial Terapêutico", link: "/residencial-terapeutico" },
-            { nome: "Adestramento Salomão", link: "/adestramento-salomao" }
+            { nome: "Marketing Salomão", link: "/marketing-salomao" }
         ]
     }
 };

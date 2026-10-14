@@ -1,5 +1,6 @@
 import * as motion from "framer-motion/client";
 import {FaEnvelope, FaFacebook, FaInstagram, FaWhatsapp} from "react-icons/fa";
+import { buildWhatsappUrl } from "@/app/config/whatsapp.config";
 
 export default function Socials() {
     return (
@@ -50,7 +51,7 @@ export default function Socials() {
                     <FaEnvelope size={42}/>
                 </motion.a>
                 <motion.a
-                    href="https://api.whatsapp.com/send?phone=5547988080041&text=Entrei%20em%20contato%20pelo%20novo%20site.%20"
+                    href={buildWhatsappUrl()}
                     target="_blank"
                     whileHover={{scale: 1.2, rotate: -10}}
                     whileTap={{scale: 0.9}}

@@ -32,6 +32,13 @@ body {
   }
 }
 
+/* Acessibilidade — indicador de foco visível (WCAG 2.4.7) */
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* Adicione esse estilo se você estiver lidando com o menu suspenso */
 .dropdown-menu {
   display: none;
@@ -44,4 +51,60 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+/* ---------------------------------------------------------------
+   Novo branding — Rede Salomão
+   Tokens de tema (light/dark). Consumidos via var(--color-*).
+   Fonte: public/new-site.pdf (deck out/2026).
+   --------------------------------------------------------------- */
+:root {
+  --color-green: #0f3221;       /* Verde Salomão */
+  --color-green-dark: #0a2418;
+  --color-green-light: #1b402b; /* Verde Floresta */
+  --color-gold: #c2a14e;        /* Dourado Metálico */
+  --color-gold-light: #e6c880;
+  --color-gold-dark: #9c7e3c;
+  --color-offwhite: #f8f8f5;    /* Off-White */
+  --color-ink: #0d0d0d;
+}
+
+.dark {
+  --color-green: #0f3221;
+  --color-green-dark: #0a2418;
+  --color-green-light: #1b402b;
+  --color-offwhite: #f8f8f5;
+  --color-ink: #f8f8f5;
+}
+
+/* ---------------------------------------------------------------
+   Tema escuro — inverte as superfícies claras (off-white) para o
+   Verde Salomão e ajusta o texto para manter contraste (WCAG AA).
+   Escopo restrito a `.dark`; seções verdes permanecem verdes.
+   --------------------------------------------------------------- */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: var(--color-green-dark);
+  color: var(--color-offwhite);
+}
+
+.dark .bg-brand-offwhite {
+  background-color: var(--color-green-dark);
+}
+
+.dark .text-brand-ink,
+.dark .text-brand-ink\/70 {
+  color: var(--color-offwhite);
+}
+
+.dark .text-brand-green {
+  color: var(--color-gold-light);
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200 {
+  border-color: rgba(194, 161, 78, 0.25);
 }
