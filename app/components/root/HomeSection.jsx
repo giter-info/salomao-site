@@ -135,8 +135,8 @@ export default function HomeSection() {
                         <h2 className="font-serif text-4xl md:text-5xl text-brand-green mt-3 mb-5">
                             Cuidado humano e crescimento, no mesmo portal
                         </h2>
-                        <p className="text-brand-ink/75 text-lg leading-relaxed">
-                            Oferecemos serviços especializados de saúde mental, inclusão social e soluções em marketing.
+                        <p className="text-brand-ink/75 dark:text-brand-offwhite text-lg leading-relaxed">
+                            Oferecemos serviços especializados em acolhimento em saúde mental e inclusão.
                         </p>
                     </div>
 
