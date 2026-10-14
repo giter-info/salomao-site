@@ -28,7 +28,7 @@ export default function ThemeToggle({className = ""}) {
             aria-label={isDark ? "Ativar tema claro" : "Ativar tema escuro"}
             aria-pressed={isDark}
             title={isDark ? "Tema claro" : "Tema escuro"}
-            className={`inline-flex items-center justify-center w-10 h-10 rounded-full border border-brand-gold/40 text-brand-offwhite hover:text-brand-gold hover:border-brand-gold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 ${className}`}
+            className={`inline-flex items-center justify-center w-10 h-10 rounded-full border border-brand-gold/40 dark:text-brand-offwhite dark:hover:text-brand-gold hover:text-brand-ink text-brand-gold hover:border-brand-ink transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 ${className}`}
         >
             {isDark ? <FaSun size={16}/> : <FaMoon size={16}/>}
         </button>

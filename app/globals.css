@@ -86,6 +86,12 @@ body {
   color: var(--color-gold-light);
 }
 
+/* Botões dourados: manter o texto verde nos dois temas para contraste com o dourado.
+   Especificidade maior que `.dark .text-brand-green` (mesmo elemento). */
+.dark .bg-brand-gold.text-brand-green {
+  color: var(--color-green);
+}
+
 .dark .border-slate-100,
 .dark .border-slate-200 {
   border-color: rgba(194, 161, 78, 0.25);

@@ -45,7 +45,7 @@ export default function SharedNavbar({config}) {
             <a
                 key={index}
                 href={link.link}
-                className="text-2xl text-brand-green dark:text-brand-offwhite hover:text-brand-gold cursor-pointer font-serif font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
+                className="text-2xl text-brand-offwhite hover:text-brand-gold cursor-pointer font-serif font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60 rounded"
                 onClick={(e) => {
                     e.preventDefault();
                     handleNavigation(link.link);
@@ -94,24 +94,29 @@ export default function SharedNavbar({config}) {
                         </a>
                     </div>
                 </div>
+            </nav>
 
-                <AnimatePresence>
-                    {isMobileMenuOpen && (
-                        <motion.div
-                            initial={{opacity: 0, y: -50}}
-                            animate={{opacity: 1, y: 0}}
-                            exit={{opacity: 0, y: -50}}
-                            transition={{duration: 0.3}}
-                            className="fixed inset-0 bg-brand-offwhite dark:bg-brand-green text-brand-green dark:text-brand-offwhite flex flex-col items-center justify-center space-y-6 z-50"
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{opacity: 0, y: -50}}
+                        animate={{opacity: 1, y: 0}}
+                        exit={{opacity: 0, y: -50}}
+                        transition={{duration: 0.3}}
+                        className="fixed inset-0 z-50 overflow-y-auto bg-brand-green-dark/85 backdrop-blur-xl text-brand-offwhite"
+                    >
+                        <button
+                            className="absolute top-4 right-4 z-10 p-2 rounded-full hover:bg-brand-offwhite/10 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-gold/60"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            aria-label="Fechar menu"
                         >
-                            <button className="absolute top-4 right-4" onClick={() => setIsMobileMenuOpen(false)} aria-label="Fechar menu">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
-                                    <title>fechar menu</title>
-                                    <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                </svg>
-                            </button>
-                            <Image src="/brand-menu.png" alt="Rede Salomão" width={180} height={59} className="h-10 w-auto mb-2 dark:hidden"/>
-                            <Image src={logoLight} alt="Rede Salomão" height={48} className="hidden dark:block h-12 w-auto mb-2"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+                                <title>fechar menu</title>
+                                <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </button>
+                        <div className="min-h-full flex flex-col items-center justify-center gap-6 px-6 py-24">
+                            <Image src={logoLight} alt="Rede Salomão" height={48} className="h-12 w-auto mb-2"/>
                             <MobileLinks/>
                             <ThemeToggle className="mt-2"/>
                             <a
@@ -122,10 +127,10 @@ export default function SharedNavbar({config}) {
                             >
                                 <FaWhatsapp/> Falar no WhatsApp
                             </a>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </nav>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             {isLoading && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
