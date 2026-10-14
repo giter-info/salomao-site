@@ -7,6 +7,7 @@ import logort from "@/app/images/layout/logo-rt.png";
 import logori from "@/app/images/layout/logo-ri.png";
 import logomarketing from "@/app/images/layout/logo-marketing.webp";
 import {buildWhatsappUrl} from "@/app/config/whatsapp.config";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 
 const WHATSAPP_URL = buildWhatsappUrl();
 
@@ -67,6 +68,8 @@ export default function HomeSection() {
                     <Image src="/bg-root.webp" alt="Rede Salomão" fill priority className="object-cover opacity-25"/>
                     <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark/95 via-brand-green/95 to-brand-green-dark/95"/>
                 </div>
+
+                <GoldMesh />
 
                 <div className="container mx-auto px-4 z-10 w-full">
                     <motion.div

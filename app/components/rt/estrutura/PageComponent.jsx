@@ -2,6 +2,7 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 
 export default function EstruturaPageComponent({ config, unidade }) {
     const { theme, home } = config;
@@ -52,6 +53,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
                     <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark/95 via-brand-green/90 to-brand-green-dark/95" />
                 </motion.div>
             )}
+            <GoldMesh />
             <div className="container mx-auto px-4 z-10">
                 <motion.div
                     variants={containerVariants}

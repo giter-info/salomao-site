@@ -96,7 +96,7 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="pt-BR">
+        <html lang="pt-BR" suppressHydrationWarning>
             <body className={`${inter.variable} ${nunito.variable} ${montserrat.variable} ${delius.variable} ${playfair.variable} ${inter.className}`}>
                 <a
                     href="#conteudo"

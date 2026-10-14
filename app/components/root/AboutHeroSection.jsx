@@ -1,6 +1,7 @@
 "use client";
 import * as motion from "framer-motion/client";
 import RedeIconLinks from "@/app/components/layout/RedeIconLinks";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 import { FaChevronDown } from "react-icons/fa";
 
 export default function AboutHeroSection() {
@@ -41,6 +42,8 @@ export default function AboutHeroSection() {
             >
                 <div className="absolute inset-0 bg-brand-green-dark/70" />
             </motion.div>
+
+            <GoldMesh />
 
             <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
                 <motion.div

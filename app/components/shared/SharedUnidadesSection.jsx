@@ -3,6 +3,7 @@ import * as motion from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
 import {FaChevronDown, FaArrowRight} from "react-icons/fa";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 
 export default function SharedUnidadesSection({config}) {
     const {unidades, theme, home, basePath} = config;
@@ -38,6 +39,7 @@ export default function SharedUnidadesSection({config}) {
                         <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark/95 via-brand-green/90 to-brand-green-dark/95"/>
                     </motion.div>
                 )}
+                <GoldMesh />
                 <div className="container mx-auto px-4 z-10">
                     <motion.div variants={containerVariants} initial="hidden" animate="visible" className="text-center">
                         <motion.div variants={itemVariants} className="mb-8">

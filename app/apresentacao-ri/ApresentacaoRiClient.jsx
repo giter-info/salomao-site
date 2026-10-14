@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { buildWhatsappUrl } from "@/app/config/whatsapp.config";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 import {
     FaHome,
     FaUserCheck,
@@ -88,6 +89,8 @@ export default function ApresentacaoRiClient() {
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10" style={{ backgroundImage: "url('/bg-ri.webp')" }} />
                 <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark via-brand-green/95 to-brand-green-dark" />
             </div>
+
+            <GoldMesh />
 
             <div className="container mx-auto px-4 z-10 w-full max-w-6xl space-y-12">
                 {/* Header */}

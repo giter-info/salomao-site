@@ -100,6 +100,70 @@ body {
   }
 }
 
+/* ---------------------------------------------------------------
+   Efeito "malha dourada" para heroes (Rede Salomão).
+   Grade dourada sutil + brilho que acompanha o ponteiro.
+   Controlado pelas CSS vars --mesh-x / --mesh-y (0–100%), definidas
+   via JS em app/components/layout/GoldMesh.jsx. Só ativa com mouse
+   (pointer fine); em touch permanece apenas a grade discreta.
+   --------------------------------------------------------------- */
+.gold-mesh {
+  --mesh-x: 50%;
+  --mesh-y: 50%;
+  --mesh-cell: 54px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gold-mesh__grid,
+.gold-mesh__glow {
+  position: absolute;
+  inset: -1px;
+  background-image:
+    linear-gradient(to right, rgba(194, 161, 78, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(194, 161, 78, 0.15) 1px, transparent 1px);
+  background-size: var(--mesh-cell) var(--mesh-cell);
+}
+
+.gold-mesh__glow {
+  background-image:
+    linear-gradient(to right, rgba(230, 200, 128, 0.85) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 200, 128, 0.85) 1px, transparent 1px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  -webkit-mask-image: radial-gradient(220px circle at var(--mesh-x) var(--mesh-y), #000 0%, rgba(0, 0, 0, 0) 62%);
+  mask-image: radial-gradient(220px circle at var(--mesh-x) var(--mesh-y), #000 0%, rgba(0, 0, 0, 0) 62%);
+}
+
+.gold-mesh__spot {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(260px circle at var(--mesh-x) var(--mesh-y), rgba(230, 200, 128, 0.20), rgba(230, 200, 128, 0) 60%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gold-mesh.is-active .gold-mesh__glow,
+.gold-mesh.is-active .gold-mesh__spot {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-mesh__glow,
+  .gold-mesh__spot {
+    transition: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .gold-mesh__glow,
+  .gold-mesh__spot {
+    display: none;
+  }
+}
+
 /* Inversão de superfícies claras legadas no tema escuro */
 .dark .bg-white {
   background-color: var(--color-green-light);

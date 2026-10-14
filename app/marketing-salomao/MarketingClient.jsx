@@ -4,6 +4,7 @@ import * as motion from "framer-motion/client";
 import {FaArrowRight, FaChartLine, FaBullhorn, FaSearch, FaUsers, FaWhatsapp} from "react-icons/fa";
 import {buildWhatsappUrl} from "@/app/config/whatsapp.config";
 import {EVENTS, trackEvent} from "@/app/config/analytics.config";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 
 const AGENDAR_URL = buildWhatsappUrl("Gostaria de agendar uma reunião sobre marketing.");
 
@@ -67,6 +68,7 @@ export default function MarketingClient() {
                 <div className="absolute inset-0 opacity-15 -z-10">
                     <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/40"/>
                 </div>
+                <GoldMesh />
                 <div className="container mx-auto px-4">
                     <motion.div
                         variants={containerVariants}
