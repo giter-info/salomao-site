@@ -37,12 +37,12 @@ const nextConfig = {
             {
                 source: '/adestramento-salomao',
                 destination: '/',
-                permanent: true,
+                statusCode: 301,
             },
             {
                 source: '/adestramento-salomao/:path*',
                 destination: '/',
-                permanent: true,
+                statusCode: 301,
             },
         ];
     },
