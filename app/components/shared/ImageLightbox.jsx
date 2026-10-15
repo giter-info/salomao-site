@@ -59,7 +59,7 @@ export default function ImageLightbox({ images = [], initialIndex = 0, isOpen = 
                             e.stopPropagation();
                             onClose();
                         }}
-                        className="pointer-events-auto text-white hover:text-rt-primary bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300"
+                        className="pointer-events-auto text-white hover:text-brand-gold bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all duration-300"
                         title="Fechar (Esc)"
                         id="lightbox-close-btn"
                     >
@@ -72,7 +72,7 @@ export default function ImageLightbox({ images = [], initialIndex = 0, isOpen = 
                     {/* Previous Button */}
                     <button
                         onClick={handlePrev}
-                        className="absolute left-6 z-[160] text-white hover:text-rt-primary bg-black/40 hover:bg-black/60 p-4 rounded-full transition-all duration-300 border border-white/5 shadow-lg"
+                        className="absolute left-6 z-[160] text-white hover:text-brand-gold bg-black/40 hover:bg-black/60 p-4 rounded-full transition-all duration-300 border border-white/5 shadow-lg"
                         title="Anterior (Seta Esquerda)"
                         id="lightbox-prev-btn"
                     >
@@ -101,7 +101,7 @@ export default function ImageLightbox({ images = [], initialIndex = 0, isOpen = 
                     {/* Next Button */}
                     <button
                         onClick={handleNext}
-                        className="absolute right-6 z-[160] text-white hover:text-rt-primary bg-black/40 hover:bg-black/60 p-4 rounded-full transition-all duration-300 border border-white/5 shadow-lg"
+                        className="absolute right-6 z-[160] text-white hover:text-brand-gold bg-black/40 hover:bg-black/60 p-4 rounded-full transition-all duration-300 border border-white/5 shadow-lg"
                         title="Próxima (Seta Direita)"
                         id="lightbox-next-btn"
                     >

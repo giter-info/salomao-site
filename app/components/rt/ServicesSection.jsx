@@ -42,10 +42,10 @@ export default function ServicesSection() {
     };
 
     return (
-        <section id="servicos" className="py-20 bg-rt-green scroll-mt-12 overflow-hidden">
+        <section id="servicos" className="py-20 bg-brand-offwhite dark:bg-brand-green-dark scroll-mt-12 overflow-hidden">
             <div className="container mx-auto px-4 max-w-6xl">
                 <motion.h2
-                    className="text-4xl md:text-5xl font-bold text-rt-info text-center mb-12"
+                    className="font-serif text-4xl md:text-5xl font-bold text-brand-green dark:text-brand-offwhite text-center mb-12"
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -68,15 +68,15 @@ export default function ServicesSection() {
                                 key={index}
                                 variants={cardVariants}
                                 whileHover={{ y: -8 }}
-                                className="group bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl p-8 rounded-3xl transition-all duration-300 hover:border-rt-primary/30 flex flex-col items-center text-center h-full"
+                                className="group surface-card p-8 flex flex-col items-center text-center h-full"
                             >
-                                <div className="p-4 rounded-2xl bg-rt-primary/10 text-rt-primary w-fit mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-rt-primary/20">
+                                <div className="p-4 rounded-2xl bg-brand-green/10 dark:bg-brand-gold/15 text-brand-green dark:text-brand-gold-light w-fit mb-6 flex items-center justify-center transition-colors duration-300">
                                     <Icon size={32} className="transition-transform duration-500 group-hover:scale-110" />
                                 </div>
-                                <h3 className="text-xl md:text-2xl font-bold mb-4 text-white font-cardo leading-snug">
+                                <h3 className="font-serif text-xl md:text-2xl font-bold mb-4 text-brand-green dark:text-brand-offwhite leading-snug">
                                     {service.title}
                                 </h3>
-                                <p className="text-slate-300 leading-relaxed text-sm md:text-base">
+                                <p className="text-brand-ink/75 dark:text-brand-offwhite/80 leading-relaxed text-sm md:text-base">
                                     {service.description}
                                 </p>
                             </motion.div>

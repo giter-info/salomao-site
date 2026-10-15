@@ -33,3 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# opencode tooling
+.opencode/
+
+# internal deck
+public/new-site.pdf

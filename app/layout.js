@@ -1,6 +1,9 @@
-import {Inter, Nunito_Sans, Montserrat, Delius} from "next/font/google";
+import {Inter, Nunito_Sans, Montserrat, Delius, Playfair_Display} from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 import GTagComponent from "@/app/components/layout/GTagComponent";
+import JsonLd from "@/app/components/layout/JsonLd";
+import {organizationSchema} from "@/app/config/seo.config";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -27,9 +30,15 @@ const delius = Delius({
     display: 'swap',
 });
 
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    variable: "--font-serif",
+    display: 'swap',
+});
+
 const commonTitle = "Rede Salomão | Cuidado, Inclusão e Acolhimento";
 const commonDescription =
-    "A Rede Salomão oferece Residencial Terapêutico, Residência Inclusiva e Centro de Adestramento em Blumenau e Chapecó, focando no acolhimento de excelência e dignidade.";
+    "A Rede Salomão oferece Residencial Terapêutico, Residência Inclusiva e Marketing Salomão em Blumenau e Chapecó, com acolhimento de excelência, dignidade e soluções B2B.";
 const commonUrl = "https://redesalomao.com.br/";
 const commonImage = "/capa-2.jpeg";
 const commonImageDetails = {
@@ -67,11 +76,12 @@ export const metadata = {
         "Rede Salomão",
         "Residencial Terapêutico",
         "Residência Inclusiva",
-        "Adestramento Salomão",
+        "Marketing Salomão",
+        "Marketing Corporativo",
+        "Marketing B2B",
         "Saúde Mental",
         "Transtornos Mentais",
         "Acolhimento de deficientes",
-        "Adestramento de cães Blumenau",
         "desospitalização",
         "antimanicomial",
         "Blumenau",
@@ -86,9 +96,19 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="pt">
-            <body className={`${inter.variable} ${nunito.variable} ${montserrat.variable} ${delius.variable} ${inter.className}`}>
+        <html lang="pt-BR" suppressHydrationWarning>
+            <body className={`${inter.variable} ${nunito.variable} ${montserrat.variable} ${delius.variable} ${playfair.variable} ${inter.className}`}>
+                <a
+                    href="#conteudo"
+                    className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-brand-gold focus:text-brand-green focus:px-4 focus:py-2 focus:rounded-full focus:font-bold"
+                >
+                    Pular para o conteúdo
+                </a>
+                <Script id="theme-init" strategy="beforeInteractive">
+                    {`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`}
+                </Script>
                 <GTagComponent />
+                <JsonLd data={organizationSchema} />
                 {children}
             </body>
         </html>

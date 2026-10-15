@@ -2,6 +2,7 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 import { FaChevronDown } from "react-icons/fa";
+import GoldMesh from "@/app/components/layout/GoldMesh";
 
 export default function EstruturaPageComponent({ config, unidade }) {
     const { theme, home } = config;
@@ -34,7 +35,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
     };
 
     return (
-        <section id="atendidas" className={`relative min-h-[70vh] flex items-center overflow-hidden pt-20 ${theme.homeBg}`}>
+        <section id="atendidas" className="relative min-h-[70vh] flex items-center overflow-hidden pt-20 bg-brand-green">
             {theme.homeBgImage && (
                 <motion.div
                     initial={{ scale: 1.1, opacity: 0 }}
@@ -47,11 +48,12 @@ export default function EstruturaPageComponent({ config, unidade }) {
                         alt="Background"
                         fill
                         priority
-                        className="object-cover"
+                        className="object-cover opacity-25"
                     />
-                    <div className="absolute inset-0 bg-white/10" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-brand-green-dark/95 via-brand-green/90 to-brand-green-dark/95" />
                 </motion.div>
             )}
+            <GoldMesh />
             <div className="container mx-auto px-4 z-10">
                 <motion.div
                     variants={containerVariants}
@@ -72,7 +74,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
                     
                     <motion.h2
                         variants={itemVariants}
-                        className={`text-4xl md:text-6xl font-bold text-white mb-10 drop-shadow-sm`}
+                        className={`font-serif text-4xl md:text-6xl font-bold text-white mb-10 drop-shadow-sm`}
                     >
                         Imagens da {unidade?.nome || "Estrutura"}
                     </motion.h2>
@@ -82,7 +84,7 @@ export default function EstruturaPageComponent({ config, unidade }) {
                         onClick={scrollToGrid}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`inline-flex items-center gap-2 ${theme.textAccent === 'text-rt-primary' ? 'bg-rt-info/10 border-rt-info/30 text-rt-info' : 'bg-white/10 border-white/30 text-white'} backdrop-blur-sm border px-8 py-4 rounded-full font-bold transition-all hover:bg-opacity-20`}
+                        className={`inline-flex items-center gap-2 ${theme.textAccent === 'text-rt-primary' ? 'bg-brand-gold/10 border border-brand-gold/40 text-brand-gold' : 'bg-white/10 border-white/30 text-white'} backdrop-blur-sm px-8 py-4 rounded-full font-bold transition-all hover:bg-brand-gold/20`}
                     >
                         Ver galeria <FaChevronDown className="text-sm" />
                     </motion.button>
@@ -96,10 +98,9 @@ export default function EstruturaPageComponent({ config, unidade }) {
     );
 }
 
-export function EstruturaContent({ children, config }) {
-    const { theme } = config;
+export function EstruturaContent({ children }) {
     return (
-        <div id="estrutura-grid" className={`${theme.primaryBg} py-24 scroll-mt-20`}>
+        <div id="estrutura-grid" className="bg-brand-offwhite dark:bg-brand-green-dark py-24 scroll-mt-20">
             <div className="container mx-auto px-4">
                 {children}
             </div>

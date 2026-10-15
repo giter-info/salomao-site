@@ -35,23 +35,17 @@ export default function AboutCards() {
         {
             title: "Nossa Missão",
             text: "Acolher de forma integral, segura e humanizada pessoas em sofrimento mental ou vulnerabilidade física, restabelecendo a cidadania, dignidade e estimulando o máximo de sua autonomia cotidiana.",
-            icon: FaHeart,
-            color: "text-red-500",
-            bgColor: "bg-red-50"
+            icon: FaHeart
         },
         {
             title: "Nossa Visão",
             text: "Ser reconhecida como a rede de referência em cuidados terapêuticos e inclusão social em Santa Catarina, liderando pelo afeto, inovação em reabilitação singular e excelência técnica.",
-            icon: FaEye,
-            color: "text-blue-500",
-            bgColor: "bg-blue-50"
+            icon: FaEye
         },
         {
             title: "Nossos Valores",
             text: "Empatia profunda, ética inabalável, respeito absoluto à singularidade de cada indivíduo, dedicação constante ao desenvolvimento humano e inclusão social ativa na comunidade.",
-            icon: FaAward,
-            color: "text-amber-500",
-            bgColor: "bg-amber-50"
+            icon: FaAward
         }
     ];
 
@@ -64,18 +58,18 @@ export default function AboutCards() {
     return (
         <div className="flex flex-col">
             {/* Core Services Section */}
-            <section id="about-content" className="text-slate-700 bg-slate-50 py-24 scroll-mt-20">
+            <section id="about-content" className="bg-brand-offwhite dark:bg-brand-green-dark py-24 scroll-mt-20">
                 <div className="container px-5 mx-auto">
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
-                        className="sm:text-4xl text-3xl font-bold title-font text-center text-slate-800 mb-20 max-w-4xl mx-auto leading-tight"
+                        className="font-serif sm:text-4xl text-3xl font-bold text-brand-green dark:text-brand-offwhite text-center mb-20 max-w-4xl mx-auto leading-tight"
                     >
-                        “Somos uma rede comprometida com o <span className="text-rt-green">bem-estar</span>, a <span className="text-rt-green">inclusão</span> e a construção de vínculos humanos sólidos.”
+                        “Somos uma rede comprometida com o <span className="text-brand-gold">bem-estar</span>, a <span className="text-brand-gold">inclusão</span> e a construção de vínculos humanos sólidos.”
                     </motion.h1>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                         {cards.map((card, i) => (
                             <motion.div
@@ -88,17 +82,17 @@ export default function AboutCards() {
                                 variants={cardVariants}
                                 className="flex flex-col"
                             >
-                                <div className="flex-grow bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                                <div className="flex-grow surface-card p-8 flex flex-col justify-between">
                                     <div>
-                                        <div className="w-14 h-14 inline-flex items-center justify-center rounded-2xl bg-rt-green/10 text-rt-green mb-6">
+                                        <div className="w-14 h-14 inline-flex items-center justify-center rounded-2xl bg-brand-green/10 dark:bg-brand-gold/15 text-brand-green dark:text-brand-gold-light mb-6">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
                                                 <path
                                                     d="M19 9.77806V16.2C19 17.8801 19 18.7202 18.673 19.3619C18.3854 19.9264 17.9265 20.3854 17.362 20.673C16.7202 21 15.8802 21 14.2 21H9.8C8.11984 21 7.27976 21 6.63803 20.673C6.07354 20.3854 5.6146 19.9264 5.32698 19.3619C5 18.7202 5 17.8801 5 16.2V9.7774M21 12L15.5668 5.96393C14.3311 4.59116 13.7133 3.90478 12.9856 3.65138C12.3466 3.42882 11.651 3.42887 11.0119 3.65153C10.2843 3.90503 9.66661 4.59151 8.43114 5.96446L3 12M14 12C14 13.1045 13.1046 14 12 14C10.8954 14 10 13.1045 10 12C10 10.8954 10.8954 9.99996 12 9.99996C13.1046 9.99996 14 10.8954 14 12Z"
                                                     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </div>
-                                        <h2 className="text-slate-900 text-xl font-bold mb-4">{card.title}</h2>
-                                        <p className="leading-relaxed text-slate-600 text-sm md:text-base">{card.text}</p>
+                                        <h2 className="font-serif text-brand-green dark:text-brand-offwhite text-xl font-bold mb-4">{card.title}</h2>
+                                        <p className="leading-relaxed text-brand-ink/70 dark:text-brand-offwhite/70 text-sm md:text-base">{card.text}</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -108,11 +102,11 @@ export default function AboutCards() {
             </section>
 
             {/* Mission Vision Values Section */}
-            <section className="bg-white py-24 border-t border-slate-100">
+            <section className="bg-white dark:bg-brand-green-dark py-24 border-t border-slate-200 dark:border-brand-gold/10">
                 <div className="container px-5 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-cardo mb-4">Nossa Essência</h2>
-                        <div className="w-16 h-1 bg-rt-green mx-auto rounded-full"></div>
+                        <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-green dark:text-brand-offwhite mb-4">Nossa Essência</h2>
+                        <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full"></div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -126,13 +120,13 @@ export default function AboutCards() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.6, delay: i * 0.15 }}
                                     whileHover={{ y: -6 }}
-                                    className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-md transition-all duration-300"
+                                    className="bg-brand-offwhite dark:bg-brand-green-light p-8 rounded-3xl border border-slate-200 dark:border-brand-gold/15 hover:shadow-md transition-all duration-300"
                                 >
-                                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${pillar.bgColor} ${pillar.color}`}>
+                                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 bg-brand-green/10 dark:bg-brand-gold/15 text-brand-green dark:text-brand-gold-light">
                                         <Icon size={24} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-4">{pillar.title}</h3>
-                                    <p className="text-slate-600 text-sm md:text-base leading-relaxed">{pillar.text}</p>
+                                    <h3 className="font-serif text-xl font-bold text-brand-green dark:text-brand-offwhite mb-4">{pillar.title}</h3>
+                                    <p className="text-brand-ink/70 dark:text-brand-offwhite/70 text-sm md:text-base leading-relaxed">{pillar.text}</p>
                                 </motion.div>
                             );
                         })}
@@ -141,11 +135,11 @@ export default function AboutCards() {
             </section>
 
             {/* Why Choose Us Section */}
-            <section className="bg-rt-green text-white py-24">
+            <section className="bg-brand-green text-white py-24">
                 <div className="container px-5 mx-auto">
                     <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-bold font-cardo mb-4">Por Que a Rede Salomão?</h2>
-                        <p className="text-rt-primary max-w-lg mx-auto text-base md:text-lg">Pilares fundamentais que nos definem na excelência do acolhimento.</p>
+                        <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">Por Que a Rede Salomão?</h2>
+                        <p className="text-brand-gold max-w-lg mx-auto text-base md:text-lg">Pilares fundamentais que nos definem na excelência do acolhimento.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -158,13 +152,13 @@ export default function AboutCards() {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.6, delay: i * 0.1 }}
-                                    className="flex flex-col items-center text-center p-6 bg-white/5 backdrop-blur-sm rounded-3xl border border-white/10"
+                                    className="flex flex-col items-center text-center p-6 bg-white/5 backdrop-blur-sm rounded-3xl border border-brand-gold/20"
                                 >
-                                    <div className="w-16 h-16 rounded-2xl bg-white/10 text-rt-primary flex items-center justify-center mb-6">
+                                    <div className="w-16 h-16 rounded-2xl bg-brand-gold/15 text-brand-gold flex items-center justify-center mb-6">
                                         <Icon size={30} />
                                     </div>
-                                    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                                    <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-xs">{item.desc}</p>
+                                    <h3 className="font-serif text-xl font-bold mb-3">{item.title}</h3>
+                                    <p className="text-brand-offwhite/80 text-sm md:text-base leading-relaxed max-w-xs">{item.desc}</p>
                                 </motion.div>
                             );
                         })}

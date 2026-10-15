@@ -7,7 +7,9 @@ export default function Home() {
     return (
         <>
             <RootNavbar/>
-            <HomeSection/>
+            <main id="conteudo">
+                <HomeSection/>
+            </main>
             <WhatsAppButton/>
             <Footer/>
         </>

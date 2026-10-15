@@ -5,8 +5,8 @@ import ContatoClient from "./ContatoClient";
 
 export const metadata = {
     title: "Contato",
-    description: "Fale com a Rede Salomão. Entre em contato conosco para saber mais sobre nossos serviços de Residencial Terapêutico, Residência Inclusiva e Adestramento de Cães.",
-    keywords: ["Contato", "Rede Salomão", "Fale conosco", "WhatsApp", "Blumenau", "Chapecó", "Residencial Terapêutico", "Residência Inclusiva", "Adestramento"],
+    description: "Fale com a Rede Salomão. Entre em contato conosco para saber mais sobre nossos serviços de Residencial Terapêutico, Residência Inclusiva e Marketing Salomão.",
+    keywords: ["Contato", "Rede Salomão", "Fale conosco", "WhatsApp", "Blumenau", "Chapecó", "Residencial Terapêutico", "Residência Inclusiva", "Marketing Salomão"],
 };
 
 export default function Page() {

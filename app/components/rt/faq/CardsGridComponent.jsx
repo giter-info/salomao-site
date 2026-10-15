@@ -6,7 +6,7 @@ import { FaChevronDown } from "react-icons/fa";
 const Card = ({ title, fullText, isOpen, onToggle }) => {
     const extractParagraph = (obj) => {
         return Object.entries(obj).map(([key, value]) => (
-            <p className="mt-2 text-slate-700 text-sm md:text-base leading-relaxed" key={key}>
+            <p className="mt-2 text-brand-ink/75 dark:text-brand-offwhite/80 text-sm md:text-base leading-relaxed" key={key}>
                 {value}
             </p>
         ));
@@ -15,19 +15,19 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
     return (
         <motion.div 
             layout
-            className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden"
+            className="bg-white dark:bg-brand-green-light rounded-3xl border border-slate-200 dark:border-brand-gold/15 shadow-sm overflow-hidden"
         >
             <div 
                 className="p-6 md:p-8 cursor-pointer flex justify-between items-center gap-4 select-none"
                 onClick={onToggle}
             >
-                <h3 className="text-lg md:text-xl font-bold text-rt-green font-cardo">
+                <h3 className="font-serif text-lg md:text-xl font-bold text-brand-green dark:text-brand-gold">
                     {title}
                 </h3>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="p-2 rounded-full bg-slate-50 text-rt-green/80 flex items-center justify-center shrink-0"
+                    className="p-2 rounded-full bg-slate-50 dark:bg-brand-green text-brand-green dark:text-brand-gold-light flex items-center justify-center shrink-0"
                 >
                     <FaChevronDown className="text-xs" />
                 </motion.div>
@@ -40,7 +40,7 @@ const Card = ({ title, fullText, isOpen, onToggle }) => {
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="overflow-hidden border-t border-slate-100 bg-slate-50/50"
+                        className="overflow-hidden border-t border-slate-200 dark:border-brand-gold/10 bg-slate-50/50 dark:bg-brand-green-dark/40"
                     >
                         <div className="p-6 md:p-8">
                             {extractParagraph(fullText)}

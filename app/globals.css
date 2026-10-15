@@ -2,34 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-ink);
+  background-color: var(--color-offwhite);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Acessibilidade — indicador de foco visível (WCAG 2.4.7) */
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Adicione esse estilo se você estiver lidando com o menu suspenso */
@@ -44,4 +33,172 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+/* ---------------------------------------------------------------
+   Novo branding — Rede Salomão
+   Tokens de tema (light/dark). Consumidos via var(--color-*).
+   Fonte: public/new-site.pdf (deck out/2026).
+   --------------------------------------------------------------- */
+:root {
+  --color-green: #0f3221;       /* Verde Salomão */
+  --color-green-dark: #0a2418;
+  --color-green-light: #1b402b; /* Verde Floresta */
+  --color-gold: #c2a14e;        /* Dourado Metálico */
+  --color-gold-light: #e6c880;
+  --color-gold-dark: #9c7e3c;
+  --color-offwhite: #f8f8f5;    /* Off-White */
+  --color-ink: #0d0d0d;
+}
+
+.dark {
+  --color-green: #0f3221;
+  --color-green-dark: #0a2418;
+  --color-green-light: #1b402b;
+  --color-offwhite: #f8f8f5;
+  --color-ink: #f8f8f5;
+}
+
+/* ---------------------------------------------------------------
+   Tema escuro — inverte as superfícies claras (off-white) para o
+   Verde Salomão e ajusta o texto para manter contraste (WCAG AA).
+   Escopo restrito a `.dark`; seções verdes permanecem verdes.
+   --------------------------------------------------------------- */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: var(--color-green-dark);
+  color: var(--color-offwhite);
+}
+
+.dark .bg-brand-offwhite {
+  background-color: var(--color-green-dark);
+}
+
+.dark .text-brand-ink,
+.dark .text-brand-ink\/70 {
+  color: var(--color-offwhite);
+}
+
+.dark .text-brand-green {
+  color: var(--color-gold-light);
+}
+
+/* Botões/áreas com fundo dourado: manter o texto verde independente do tema,
+   para contraste com o dourado. Cobre o próprio elemento e os descendentes
+   com `text-brand-green` (ícones, spans), vencendo `.dark .text-brand-green`. */
+.dark .bg-brand-gold,
+.dark .bg-brand-gold.text-brand-green,
+.dark .bg-brand-gold .text-brand-green {
+  color: var(--color-green);
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200 {
+  border-color: rgba(194, 161, 78, 0.25);
+}
+
+/* ---------------------------------------------------------------
+   Superfícies e cards — identidade Rede Salomão
+   --------------------------------------------------------------- */
+@layer components {
+  .surface-card {
+    @apply bg-white dark:bg-brand-green-light border border-slate-200/70 dark:border-brand-gold/15 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Efeito "malha dourada" para heroes (Rede Salomão).
+   Grade dourada sutil + brilho que acompanha o ponteiro.
+   Controlado pelas CSS vars --mesh-x / --mesh-y (0–100%), definidas
+   via JS em app/components/layout/GoldMesh.jsx. Só ativa com mouse
+   (pointer fine); em touch permanece apenas a grade discreta.
+   --------------------------------------------------------------- */
+.gold-mesh {
+  --mesh-x: 50%;
+  --mesh-y: 50%;
+  --mesh-cell: 54px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gold-mesh__grid,
+.gold-mesh__glow {
+  position: absolute;
+  inset: -1px;
+  background-image:
+    linear-gradient(to right, rgba(194, 161, 78, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(194, 161, 78, 0.15) 1px, transparent 1px);
+  background-size: var(--mesh-cell) var(--mesh-cell);
+}
+
+.gold-mesh__glow {
+  background-image:
+    linear-gradient(to right, rgba(230, 200, 128, 0.85) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 200, 128, 0.85) 1px, transparent 1px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  -webkit-mask-image: radial-gradient(220px circle at var(--mesh-x) var(--mesh-y), #000 0%, rgba(0, 0, 0, 0) 62%);
+  mask-image: radial-gradient(220px circle at var(--mesh-x) var(--mesh-y), #000 0%, rgba(0, 0, 0, 0) 62%);
+}
+
+.gold-mesh__spot {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(260px circle at var(--mesh-x) var(--mesh-y), rgba(230, 200, 128, 0.20), rgba(230, 200, 128, 0) 60%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gold-mesh.is-active .gold-mesh__glow,
+.gold-mesh.is-active .gold-mesh__spot {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-mesh__glow,
+  .gold-mesh__spot {
+    transition: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .gold-mesh__glow,
+  .gold-mesh__spot {
+    display: none;
+  }
+}
+
+/* Inversão de superfícies claras legadas no tema escuro */
+.dark .bg-white {
+  background-color: var(--color-green-light);
+}
+
+.dark .bg-slate-50,
+.dark .bg-slate-100 {
+  background-color: var(--color-green-dark);
+}
+
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700 {
+  color: var(--color-offwhite);
+}
+
+.dark .text-slate-600,
+.dark .text-slate-500 {
+  color: rgba(248, 248, 245, 0.75);
+}
+
+.dark .text-slate-400 {
+  color: rgba(248, 248, 245, 0.55);
+}
+
+.dark .bg-gray-100,
+.dark .border-gray-100 {
+  border-color: rgba(194, 161, 78, 0.25);
 }
